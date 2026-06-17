@@ -12,9 +12,22 @@ namespace Proyecto
 {
     public partial class FormFinanza : Form
     {
-        public FormFinanza()
+        public AppBancaria gestorbanco;
+        public FormFinanza(AppBancaria gestor)
         {
             InitializeComponent();
+            this.gestorbanco = gestor;
+        }
+        
+        private void UpdateData()
+        {
+            dataGridView1.DataSource = null;
+            dataGridView1.DataSource = gestorbanco.GetTodosLosPagos();
+        }
+
+        private void FormFinanza_Load(object sender, EventArgs e)
+        {
+            UpdateData();
         }
     }
 }

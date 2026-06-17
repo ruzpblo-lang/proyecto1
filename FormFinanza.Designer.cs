@@ -75,13 +75,13 @@
             // ingresosToolStripMenuItem
             // 
             this.ingresosToolStripMenuItem.Name = "ingresosToolStripMenuItem";
-            this.ingresosToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.ingresosToolStripMenuItem.Size = new System.Drawing.Size(147, 26);
             this.ingresosToolStripMenuItem.Text = "Ingresos";
             // 
             // egresosToolStripMenuItem
             // 
             this.egresosToolStripMenuItem.Name = "egresosToolStripMenuItem";
-            this.egresosToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.egresosToolStripMenuItem.Size = new System.Drawing.Size(147, 26);
             this.egresosToolStripMenuItem.Text = "Egresos";
             // 
             // dataGridView1
@@ -153,6 +153,7 @@
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "FormFinanza";
             this.Text = "FormFinanza";
+            this.Load += new System.EventHandler(this.FormFinanza_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
