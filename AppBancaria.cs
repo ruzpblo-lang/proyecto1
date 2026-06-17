@@ -76,7 +76,8 @@ namespace Proyecto
                     rs.GetString("Nombre"),
                     rs.GetString("Correo"),
                     rs.GetString("TelNum"),
-                    estadoTexto));
+                    estadoTexto,
+                rs.GetString("categoria")));
 
 
             }
@@ -98,5 +99,90 @@ namespace Proyecto
                 ));
             }
             return ListaInventario; 
+        }
+
+        internal object GetTodosLosPuestos()
+        {
+            List<Puesto> listaPuesto = new List<Puesto>();
+
+
+            string query = "SELECT p.PuestoId, p.Categoria, P.Sueldo\r\nFROM Puestos p\r\n";
+
+
+            var rs = conn.ExecuteReader(query);
+
+
+            while (rs.Read())
+            {
+                listaPuesto.Add(new Puesto(
+                    rs.GetInt("PuestoId"),
+                    rs.GetString("Categoria"),
+                    rs.GetDouble("Sueldo")));
+            }
+
+            return listaPuesto;
+        }
+        public object GetEmpleadosPorPuesto(string puestoSeleccionado)
+        {
+            List<Empleado> listaEmpleados = new List<Empleado>();
+
+            string query = "SELECT e.EmpleadoId, e.Nombre, e.Correo, e.TelNum, e.PuestoId, e.Estado\r\nFROM Empleados e\r\nINNER JOIN Puestos p ON e.PuestoId = p.PuestoId\r\nWHERE p.Categoria = '" + puestoSeleccionado + "'\r\n";
+
+            var rs = conn.ExecuteReader(query);
+
+            while (rs.Read())
+            {
+                listaEmpleados.Add(new Empleado(
+                    rs.GetInt("EmpleadoId"),
+                    rs.GetString("Nombre"),
+                    rs.GetString("Correo"),
+                    rs.GetString("TelNum"),
+                    rs.GetInt("PuestoId"),
+                    rs.GetInt("Estado")));
+            }
+
+            return listaEmpleados;
+        }
+
+        internal void CrearEmpleado(string nombre, string correo, string telefono, int puestoId, int estado)
+        {
+            {
+                int nuevoId = 1;
+
+                string query = "SELECT IFNULL(MAX(EmpleadoId), 0) AS MaxId\r\nFROM Empleados";
+
+                var rs = conn.ExecuteReader(query);
+
+                while (rs.Read())
+                {
+                    nuevoId = rs.GetInt("MaxId") + 1;
+                }
+                string queryInsert = "INSERT INTO Empleados (EmpleadoId, Nombre, Correo, TelNum, PuestoId, Estado) \r\n" +
+                               "VALUES ($empleadoId, $nombre, $correo, $telNum, $puestoId, $estado)";
+
+
+                conn.ExecuteNonQuery(
+                    queryInsert,
+                    ("$empleadoId", nuevoId),
+                    ("$nombre", nombre),
+                    ("$correo", correo),
+                    ("$telNum", telefono),
+                    ("$puestoId", puestoId),
+                    ("$estado", estado)
+                );
+            }
+        }
+
+        internal void ModificarEstadoEmpleado(int empleadoId, int nuevoEstado)
+        {
+            {
+                string query = "UPDATE Empleados \r\nSET Estado = $nuevoEstado\r\nWHERE EmpleadoId = $empleadoId;";
+
+                conn.ExecuteNonQuery(
+                    query,
+                    ("$nuevoEstado", nuevoEstado),
+                    ("$empleadoId", empleadoId)
+                );
+            }
         }
     } }
