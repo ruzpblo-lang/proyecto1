@@ -39,6 +39,7 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.CmbEstado = new System.Windows.Forms.ComboBox();
+            this.marcarComoCompletadoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
@@ -59,7 +60,7 @@
             this.reportesToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(669, 28);
+            this.menuStrip1.Size = new System.Drawing.Size(1085, 28);
             this.menuStrip1.TabIndex = 2;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -67,22 +68,25 @@
             // 
             this.reportesToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.ingresosToolStripMenuItem,
-            this.egresosToolStripMenuItem});
+            this.egresosToolStripMenuItem,
+            this.marcarComoCompletadoToolStripMenuItem});
             this.reportesToolStripMenuItem.Name = "reportesToolStripMenuItem";
-            this.reportesToolStripMenuItem.Size = new System.Drawing.Size(82, 24);
-            this.reportesToolStripMenuItem.Text = "Reportes";
+            this.reportesToolStripMenuItem.Size = new System.Drawing.Size(62, 24);
+            this.reportesToolStripMenuItem.Text = "Pagos";
             // 
             // ingresosToolStripMenuItem
             // 
             this.ingresosToolStripMenuItem.Name = "ingresosToolStripMenuItem";
-            this.ingresosToolStripMenuItem.Size = new System.Drawing.Size(147, 26);
-            this.ingresosToolStripMenuItem.Text = "Ingresos";
+            this.ingresosToolStripMenuItem.Size = new System.Drawing.Size(265, 26);
+            this.ingresosToolStripMenuItem.Text = "Agregar";
+            this.ingresosToolStripMenuItem.Click += new System.EventHandler(this.ingresosToolStripMenuItem_Click);
             // 
             // egresosToolStripMenuItem
             // 
             this.egresosToolStripMenuItem.Name = "egresosToolStripMenuItem";
-            this.egresosToolStripMenuItem.Size = new System.Drawing.Size(147, 26);
-            this.egresosToolStripMenuItem.Text = "Egresos";
+            this.egresosToolStripMenuItem.Size = new System.Drawing.Size(265, 26);
+            this.egresosToolStripMenuItem.Text = "Eliminar";
+            this.egresosToolStripMenuItem.Click += new System.EventHandler(this.egresosToolStripMenuItem_Click);
             // 
             // dataGridView1
             // 
@@ -91,7 +95,7 @@
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(410, 290);
+            this.dataGridView1.Size = new System.Drawing.Size(647, 290);
             this.dataGridView1.TabIndex = 3;
             // 
             // button6
@@ -106,7 +110,7 @@
             // CmbTipopago
             // 
             this.CmbTipopago.FormattingEnabled = true;
-            this.CmbTipopago.Location = new System.Drawing.Point(461, 169);
+            this.CmbTipopago.Location = new System.Drawing.Point(698, 201);
             this.CmbTipopago.Name = "CmbTipopago";
             this.CmbTipopago.Size = new System.Drawing.Size(121, 24);
             this.CmbTipopago.TabIndex = 5;
@@ -115,7 +119,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(459, 150);
+            this.label3.Location = new System.Drawing.Point(696, 182);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(123, 16);
             this.label3.TabIndex = 1;
@@ -124,7 +128,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(441, 207);
+            this.label4.Location = new System.Drawing.Point(678, 239);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(152, 16);
             this.label4.TabIndex = 1;
@@ -133,17 +137,24 @@
             // CmbEstado
             // 
             this.CmbEstado.FormattingEnabled = true;
-            this.CmbEstado.Location = new System.Drawing.Point(462, 226);
+            this.CmbEstado.Location = new System.Drawing.Point(699, 258);
             this.CmbEstado.Name = "CmbEstado";
             this.CmbEstado.Size = new System.Drawing.Size(121, 24);
             this.CmbEstado.TabIndex = 5;
             this.CmbEstado.SelectedIndexChanged += new System.EventHandler(this.CmbEstado_SelectedIndexChanged);
             // 
+            // marcarComoCompletadoToolStripMenuItem
+            // 
+            this.marcarComoCompletadoToolStripMenuItem.Name = "marcarComoCompletadoToolStripMenuItem";
+            this.marcarComoCompletadoToolStripMenuItem.Size = new System.Drawing.Size(265, 26);
+            this.marcarComoCompletadoToolStripMenuItem.Text = "Marcar como completado";
+            this.marcarComoCompletadoToolStripMenuItem.Click += new System.EventHandler(this.marcarComoCompletadoToolStripMenuItem_Click);
+            // 
             // FormFinanza
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(669, 468);
+            this.ClientSize = new System.Drawing.Size(1085, 468);
             this.Controls.Add(this.CmbEstado);
             this.Controls.Add(this.CmbTipopago);
             this.Controls.Add(this.button6);
@@ -176,5 +187,6 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.ComboBox CmbEstado;
+        private System.Windows.Forms.ToolStripMenuItem marcarComoCompletadoToolStripMenuItem;
     }
 }

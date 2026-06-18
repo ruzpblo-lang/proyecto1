@@ -54,7 +54,73 @@ namespace Proyecto
         {
 
         }
+        public int ObtenerempleadoId(string nombre)
+        {
+            string query = "SELECT EmpleadoId FROM Empleados WHERE Nombre = $nombre LIMIT 1 ";
+            var rs = conn.ExecuteReader(query,( "$nombre", nombre));
+            if (rs.Read())
+            {
+                return  rs.GetInt("EmpleadoId");
+            }
+            return -1;
+        }
 
+        public void eliminarpago(int id, string tipo)
+        {
+            string query = "";
+            if (tipo == "Nómina")
+            {
+                query = "DELETE FROM Nomina WHERE NominaID ? $id;";
+            }
+            else if (tipo == "Gasto Externo")
+            {
+                query = "DELETE FROM Pagos WHERE PagoId = $id;";
+            }
+            if (!string.IsNullOrEmpty(query))
+            {
+                conn.ExecuteNonQuery(query, ("$id", id));
+            }    
+        }
+
+        public void Cambiarestado(int id, string tipo)
+        {
+            string query = "";
+            if (tipo == "Nómina")
+            {
+                query = "UPDATE Nomina SET Estado = 'Realizado' WHERE NominaID = $id;";
+            }
+            else if (tipo == "Gasto Externo")
+            { 
+                query = "UPDATE Pagos SET Estado = 'Realizado' WHERE PAGOId = $id;";
+            }
+            if (!string.IsNullOrEmpty (query))
+            {
+                conn.ExecuteNonQuery(query,("$id",  id));
+            }
+        }
+        public void AgregarNomina(int EmpleadoId, string fechapago, decimal sueldobase, string estado)
+        {
+            string queryInsert = @"INSERT INTO Nomina (EmpleadoID, FechaPago, SueldoBase,Estado)
+                                   VALUES ($empleadoId, $fecha, $sueldo, $estado);";
+            conn.ExecuteNonQuery(queryInsert,
+                ("$empleadoId", EmpleadoId),
+                ("$fecha", fechapago),
+                ("$sueldo", sueldobase),
+                ("$estado", estado)
+                );
+        }
+        public void AgregarPagoexterno(int exteriorID,string nombre,string fechapago, decimal sueldobase, string estado)
+        {
+            string queryInsert = @"INSERT INTO Pagos (ExteriorID,Nombre, FechaPago, SueldoBase,Estado)
+                                   VALUES ($exteriorId, $nombre, $fecha, $sueldo, $estado);";
+            conn.ExecuteNonQuery(queryInsert,
+                ("$exteriorId", exteriorID),
+                ("$nombre", nombre),
+                ("$fecha", fechapago),
+                ("$sueldo", sueldobase),
+                ("$estado", estado)
+                );
+        }
         public List<FullEmpleado> GetTodosLosEmpleados()
         {
             List<FullEmpleado> listaCompleta = new List<FullEmpleado>();

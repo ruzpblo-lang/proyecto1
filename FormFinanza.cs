@@ -66,5 +66,51 @@ namespace Proyecto
         {
             UpdateData();
         }
+
+        private void ingresosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            AgregarPago_ ventanaAgregar = new AgregarPago_(this.gestorbanco);
+            ventanaAgregar.ShowDialog();
+            UpdateData();
+        }
+
+        private void egresosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (dataGridView1.CurrentRow != null)
+            {
+                int id = Convert.ToInt32(dataGridView1.CurrentRow.Cells["ID"].Value);
+                string tipo = dataGridView1.CurrentRow.Cells["Tipo"].Value.ToString();
+                string concepto = dataGridView1.CurrentRow.Cells["Concepto"].Value.ToString();
+
+                var resultado = MessageBox.Show($"Seguro que desea eliminar este pago de {tipo} '{concepto}'?",
+                                                "Confirmar Eliminación", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+                if (resultado == DialogResult.Yes)
+                {
+                    gestorbanco.eliminarpago(id, tipo);
+                    MessageBox.Show("Pago eliminado exitosamente", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    UpdateData();
+                }
+            }
+            else
+            {
+                MessageBox.Show("Por favor, seleccione una fila de la tabla primero", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+            }
+        }
+        private void marcarComoCompletadoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (dataGridView1.CurrentRow != null )
+            {
+                int id = Convert.ToInt32(dataGridView1.CurrentRow.Cells["ID"].Value);
+                string tipo = dataGridView1.CurrentRow.Cells["Tipo"].Value.ToString();
+
+                gestorbanco.Cambiarestado(id, tipo);
+                MessageBox.Show("El estado se ha actualizado a 'Realizado'", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                UpdateData();
+            }
+            else
+            {
+                MessageBox.Show("Por favor, seleccione una fila de la tabla primero", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+            }
+        }
     }
 }
