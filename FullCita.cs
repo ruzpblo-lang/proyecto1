@@ -6,17 +6,21 @@ using System.Threading.Tasks;
 
 namespace Proyecto
 {
-    public class Cita
+    public class FullCita
     {
-        public Cita(string cliente, string horario, string estado)
+        public FullCita(int folioId, string cliente, string empleado, string horario, string estado)
         {
+            FolioId = folioId;
             Cliente = cliente;
+            Empleado = empleado;
             Horario = horario;
             Estado = estado;
         }
 
+        public int FolioId { get; }
         public string Cliente { get; }
+        public string Empleado { get; }
         public string Horario { get; }
-        public string Estado { get; } //Pendiente
+        public string Estado { get; }
     }
 }
