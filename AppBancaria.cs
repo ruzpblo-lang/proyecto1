@@ -28,7 +28,7 @@ namespace Proyecto
 
         private void btnConsultarAgenda_Click(object sender, EventArgs e)
         {
-            FormAgenda forms = new FormAgenda();
+            FormAgenda forms = new FormAgenda(this);
             forms.ShowDialog();
         }
 
@@ -55,6 +55,75 @@ namespace Proyecto
 
         }
 
+        public List<ShortCliente> ShortClientes()
+        {
+            List<ShortCliente> listacliente = new List<ShortCliente>();
+
+            string query = "SELECT ClienteId, Nombre FROM [Clientes] WHERE Estado = 1;";
+
+            var rs = conn.ExecuteReader(query);
+            while (rs.Read())
+            {
+                listacliente.Add(new ShortCliente(
+                    rs.GetInt("ClienteId"),
+                    rs.GetString("Nombre")));
+            }
+            return listacliente;
+        }
+
+        public List<Cita> GetCitas()
+        {
+            List<Cita> CitasDipsonibles = new List<Cita>();
+
+            string query = "SELECT cl.Nombre AS Cliente, (h.Fecha || ' ' || h.Hora) AS Horario, c.Estado\r\nFROM [Citas] c\r\nINNER JOIN [Clientes] cl ON c.ClienteId = cl.ClienteId\r\nINNER JOIN [HorariosLibres] h ON c.HorarioId = h.HorarioId;";
+
+            var rs = conn.ExecuteReader(query);
+            while (rs.Read())
+            {
+                CitasDipsonibles.Add(new Cita(
+                    rs.GetString("Cliente"),
+                    rs.GetString("Horario"),
+                    rs.GetString("Estado")));
+            }
+
+            return CitasDipsonibles;
+        }
+
+        public List<FullCita> GetFullCitas()
+        {
+            List<FullCita> CitasDipsonibles = new List<FullCita>();
+
+            string query = "SELECT c.FolioId, cl.Nombre AS Cliente, e.Nombre AS Empleado, (h.Fecha || ' ' || h.Hora) AS Horario, c.Estado\r\nFROM [Citas] c\r\nINNER JOIN [Clientes] cl ON c.ClienteId = cl.ClienteId\r\nINNER JOIN [Empleados] e ON c.EmpleadoId = e.EmpleadoId\r\nINNER JOIN [HorariosLibres] h ON c.HorarioId = h.HorarioId;";
+
+            var rs = conn.ExecuteReader(query);
+            while (rs.Read())
+            {
+                CitasDipsonibles.Add(new FullCita(
+                    rs.GetInt("FolioId"),
+                    rs.GetString("Cliente"),
+                    rs.GetString("Empleado"),
+                    rs.GetString("Horario"),
+                    rs.GetString("Estado")));
+            }
+
+            return CitasDipsonibles;
+        }
+
+        public List<Cita> GetCitaPorPaciente(int cuentaId)
+        {
+            List<Cita> CitaPorPaciente = new List<Cita>();
+            string query = $"SELECT cl.Nombre AS Cliente, (h.Fecha || ' ' || h.Hora) AS Horario, c.Estado\r\nFROM [Citas] c\r\nINNER JOIN [Clientes] cl ON c.ClienteId = cl.ClienteId\r\nINNER JOIN [HorariosLibres] h ON c.HorarioId = h.HorarioId\r\nWHERE c.ClienteId = {cuentaId};";
+
+            var rs = conn.ExecuteReader(query);
+            while (rs.Read())
+            {
+                CitaPorPaciente.Add(new Cita(
+                    rs.GetString("Cliente"),
+                    rs.GetString("Horario"),
+                    rs.GetString("Estado")));
+            }
+            return CitaPorPaciente;
+        }
         public List<FullEmpleado> GetTodosLosEmpleados()
         {
             List<FullEmpleado> listaCompleta = new List<FullEmpleado>();
@@ -62,7 +131,6 @@ namespace Proyecto
             string query = "SELECT e.EmpleadoId, e.Nombre, e.Correo, e.TelNum, e.Estado, p.Categoria, p.Sueldo\r\nFROM Empleados e\r\nINNER JOIN Puestos p ON e.PuestoId = p.PuestoId;";
 
             var rs = conn.ExecuteReader(query);
-
             while (rs.Read())
             {
 

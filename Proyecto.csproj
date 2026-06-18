@@ -146,6 +146,7 @@
     <Compile Include="FormInventario.Designer.cs">
       <DependentUpon>FormInventario.cs</DependentUpon>
     </Compile>
+    <Compile Include="FullCita.cs" />
     <Compile Include="FullEmpleados.cs" />
     <Compile Include="HorarioLibre.cs" />
     <Compile Include="Inventario.cs" />
@@ -154,6 +155,7 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Puesto.cs" />
+    <Compile Include="ShortCliente.cs" />
     <Compile Include="SqlConnectionExtensions.cs" />
     <EmbeddedResource Include="AppBancaria.resx">
       <DependentUpon>AppBancaria.cs</DependentUpon>
