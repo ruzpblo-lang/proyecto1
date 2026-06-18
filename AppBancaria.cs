@@ -75,7 +75,11 @@ namespace Proyecto
         {
             List<Cita> CitasDipsonibles = new List<Cita>();
 
-            string query = "SELECT cl.Nombre AS Cliente, (h.Fecha || ' ' || h.Hora) AS Horario, c.Estado\r\nFROM [Citas] c\r\nINNER JOIN [Clientes] cl ON c.ClienteId = cl.ClienteId\r\nINNER JOIN [HorariosLibres] h ON c.HorarioId = h.HorarioId;";
+            string query = "SELECT cl.Nombre AS Cliente, (h.Fecha || ' ' || h.Hora) AS Horario, c.Estado" +
+                            "\r\nFROM [Citas] c" +
+                            "\r\nINNER JOIN [Cuenta] cu ON c.CuentaId = cu.CuentaId" +
+                            "\r\nINNER JOIN [Clientes] cl ON cu.ClienteId = cl.ClienteId" +
+                            "\r\nINNER JOIN [HorariosLibres] h ON c.HorarioId = h.HorarioId;";
 
             var rs = conn.ExecuteReader(query);
             while (rs.Read())
@@ -112,7 +116,7 @@ namespace Proyecto
         public List<Cita> GetCitaPorPaciente(int cuentaId)
         {
             List<Cita> CitaPorPaciente = new List<Cita>();
-            string query = $"SELECT cl.Nombre AS Cliente, (h.Fecha || ' ' || h.Hora) AS Horario, c.Estado\r\nFROM [Citas] c\r\nINNER JOIN [Clientes] cl ON c.ClienteId = cl.ClienteId\r\nINNER JOIN [HorariosLibres] h ON c.HorarioId = h.HorarioId\r\nWHERE c.ClienteId = {cuentaId};";
+            string query = $"SELECT cl.Nombre AS Cliente, (h.Fecha || ' ' || h.Hora) AS Horario, c.Estado\r\nFROM [Citas] c\r\nINNER JOIN [Cuenta] cu ON c.CuentaId = cu.CuentaId\r\nINNER JOIN [Clientes] cl ON cu.ClienteId = cl.ClienteId\r\nINNER JOIN [HorariosLibres] h ON c.HorarioId = h.HorarioId\r\nWHERE c.CuentaId = {cuentaId};";
 
             var rs = conn.ExecuteReader(query);
             while (rs.Read())
