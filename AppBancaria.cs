@@ -40,7 +40,7 @@ namespace Proyecto
 
         private void btnFinanzas_Click(object sender, EventArgs e)
         {
-            FormFinanza forms = new FormFinanza();
+            FormFinanza forms = new FormFinanza(this);
             forms.ShowDialog();
         }
 
@@ -83,6 +83,30 @@ namespace Proyecto
             }
             return listaCompleta;
         }           
+
+        public List<Fullpagos> GetTodosLosPagos()
+        {
+            List<Fullpagos> listaPagos = new List<Fullpagos>();
+            string query = @"SELECT N.NominaID as ID, 'Nómina' AS Tipo, E.Nombre AS Concepto, N.FechaPago AS Fecha, N.SueldoBase AS Monto, N.Estado AS Estado
+                           FROM Nomina N
+                           INNER JOIN Empleados E ON N.EmpleadoId = E.EmpleadoId
+                           UNION ALL
+                           SELECT P.PagoId AS ID, 'Gasto Externo' AS Tipo, P.Nombre AS Concepto,P.FechaPago AS Fecha, P.SueldoBase AS Monto, P.Estado AS Estado
+                           FROM Pagos P;";
+            var rs =conn.ExecuteReader(query);
+            while (rs.Read())
+            {
+                listaPagos.Add(new Fullpagos(
+                    rs.GetInt("ID"),
+                    rs.GetString("Tipo"),
+                    rs.GetString("Concepto"),
+                    rs.GetString("Fecha"),
+                    rs.GetDouble("Monto"),
+                    rs.GetString("Estado")
+                    ));
+            }
+            return listaPagos;
+        }
         public List<Inventario> GetInventario()
         {
             List<Inventario> ListaInventario = new List<Inventario>();

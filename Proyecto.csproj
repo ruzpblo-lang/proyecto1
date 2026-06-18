@@ -165,6 +165,7 @@
       <DependentUpon>FormInventario.cs</DependentUpon>
     </Compile>
     <Compile Include="FullEmpleados.cs" />
+    <Compile Include="Fullpagos.cs" />
     <Compile Include="HorarioLibre.cs" />
     <Compile Include="Inventario.cs" />
     <Compile Include="Nomina.cs" />
