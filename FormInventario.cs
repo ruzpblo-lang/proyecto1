@@ -19,10 +19,16 @@ namespace Proyecto
             this.gestorempresa = gestorempresa;
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void btnInventarioBanco_Click(object sender, EventArgs e)
         {
             FormsInventarioBanco forms = new FormsInventarioBanco(gestorempresa);
             forms.ShowDialog();
-        }   
+        }
+
+        private void btnInventarioCuenta_Click(object sender, EventArgs e)
+        {
+            FormInventarioCuenta forms = new FormInventarioCuenta();
+            forms.ShowDialog();
+        }
     }
 }
