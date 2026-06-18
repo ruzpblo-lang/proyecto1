@@ -8,13 +8,14 @@ namespace Proyecto
 {
     public class Fullpagos
     {
-       public Fullpagos(int id, string tipo, string concepto,string fecha,double monto)
+       public Fullpagos(int id, string tipo, string concepto,string fecha,double monto, string estado)
         {
             ID = id;
             Tipo = tipo;
             Concepto = concepto;
             Fecha = fecha;
             Monto = monto;
+            Estado = estado;
         }
 
         public int ID { get;}
@@ -22,5 +23,6 @@ namespace Proyecto
         public string Concepto { get;}
         public string Fecha { get;}
         public double Monto { get;}
+        public string Estado { get;}
     }
 }

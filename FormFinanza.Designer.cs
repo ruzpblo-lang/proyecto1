@@ -35,10 +35,10 @@
             this.egresosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.button6 = new System.Windows.Forms.Button();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.CmbTipopago = new System.Windows.Forms.ComboBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.CmbEstado = new System.Windows.Forms.ComboBox();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
@@ -103,47 +103,49 @@
             this.button6.Text = "Menú";
             this.button6.UseVisualStyleBackColor = true;
             // 
-            // comboBox1
+            // CmbTipopago
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(461, 169);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(121, 24);
-            this.comboBox1.TabIndex = 5;
+            this.CmbTipopago.FormattingEnabled = true;
+            this.CmbTipopago.Location = new System.Drawing.Point(461, 169);
+            this.CmbTipopago.Name = "CmbTipopago";
+            this.CmbTipopago.Size = new System.Drawing.Size(121, 24);
+            this.CmbTipopago.TabIndex = 5;
+            this.CmbTipopago.SelectedIndexChanged += new System.EventHandler(this.CmbTipopago_SelectedIndexChanged);
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(477, 150);
+            this.label3.Location = new System.Drawing.Point(459, 150);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(76, 16);
+            this.label3.Size = new System.Drawing.Size(123, 16);
             this.label3.TabIndex = 1;
-            this.label3.Text = "-- PAGOS --";
+            this.label3.Text = "-- TIPO DE PAGO --";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(477, 207);
+            this.label4.Location = new System.Drawing.Point(441, 207);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(97, 16);
+            this.label4.Size = new System.Drawing.Size(152, 16);
             this.label4.TabIndex = 1;
-            this.label4.Text = "-- SERVICIOS--";
+            this.label4.Text = "-- ESTADO DEL PAGO--";
             // 
-            // comboBox2
+            // CmbEstado
             // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(461, 226);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(121, 24);
-            this.comboBox2.TabIndex = 5;
+            this.CmbEstado.FormattingEnabled = true;
+            this.CmbEstado.Location = new System.Drawing.Point(462, 226);
+            this.CmbEstado.Name = "CmbEstado";
+            this.CmbEstado.Size = new System.Drawing.Size(121, 24);
+            this.CmbEstado.TabIndex = 5;
+            this.CmbEstado.SelectedIndexChanged += new System.EventHandler(this.CmbEstado_SelectedIndexChanged);
             // 
             // FormFinanza
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(669, 468);
-            this.Controls.Add(this.comboBox2);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.CmbEstado);
+            this.Controls.Add(this.CmbTipopago);
             this.Controls.Add(this.button6);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.label4);
@@ -170,9 +172,9 @@
         private System.Windows.Forms.ToolStripMenuItem egresosToolStripMenuItem;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox CmbTipopago;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.ComboBox CmbEstado;
     }
 }

@@ -86,11 +86,11 @@ namespace Proyecto
         public List<Fullpagos> GetTodosLosPagos()
         {
             List<Fullpagos> listaPagos = new List<Fullpagos>();
-            string query = @"SELECT N.NominaID as ID, 'Nómina' AS Tipo, E.Nombre AS Concepto, N.FechaPago AS Fecha, N.SueldoBase AS Monto
+            string query = @"SELECT N.NominaID as ID, 'Nómina' AS Tipo, E.Nombre AS Concepto, N.FechaPago AS Fecha, N.SueldoBase AS Monto, N.Estado AS Estado
                            FROM Nomina N
                            INNER JOIN Empleados E ON N.EmpleadoId = E.EmpleadoId
                            UNION ALL
-                           SELECT P.PagoId AS ID, 'Gasto Externo' AS Tipo, P.Nombre AS Concepto,P.FechaPago AS Fecha, P.SueldoBase AS Monto 
+                           SELECT P.PagoId AS ID, 'Gasto Externo' AS Tipo, P.Nombre AS Concepto,P.FechaPago AS Fecha, P.SueldoBase AS Monto, P.Estado AS Estado
                            FROM Pagos P;";
             var rs =conn.ExecuteReader(query);
             while (rs.Read())
@@ -100,7 +100,8 @@ namespace Proyecto
                     rs.GetString("Tipo"),
                     rs.GetString("Concepto"),
                     rs.GetString("Fecha"),
-                    rs.GetDouble("Monto")
+                    rs.GetDouble("Monto"),
+                    rs.GetString("Estado")
                     ));
             }
             return listaPagos;
