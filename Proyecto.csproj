@@ -152,6 +152,12 @@
     <Compile Include="FormInventarioBancoboton.Designer.cs">
       <DependentUpon>FormInventarioBancoboton.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormInventarioCuenta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormInventarioCuenta.Designer.cs">
+      <DependentUpon>FormInventarioCuenta.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormPersonal.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -202,6 +208,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormInventarioBancoboton.resx">
       <DependentUpon>FormInventarioBancoboton.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormInventarioCuenta.resx">
+      <DependentUpon>FormInventarioCuenta.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormPersonal.resx">
       <DependentUpon>FormPersonal.cs</DependentUpon>

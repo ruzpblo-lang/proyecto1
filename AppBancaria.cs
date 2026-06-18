@@ -341,6 +341,13 @@ namespace Proyecto
                     ("$empleadoId", empleadoId)
                 );
             }
+
+        internal void AgregarBillete(object tipo, object cantidad)
+        {
+            string query = "UPDATE Inventario SET Cantidad = Cantidad + $cantidad WHERE [Tipo] = $tipo";
+            conn.ExecuteNonQuery(query,
+                ("$tipo", tipo),
+                ("$cantidad",  cantidad));
         }
     } }
 }
