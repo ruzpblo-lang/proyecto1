@@ -1,61 +1,14 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\shani\\Desktop\\Git\\proyecto1\\",
+  "WorkspaceRootPath": "C:\\Users\\ricar\\OneDrive\\Documentos\\GitHub\\proyecto1\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{5ED591AE-3C6E-43F6-9E76-265A2B3EABD6}|Proyecto.csproj|C:\\Users\\shani\\Desktop\\Git\\proyecto1\\formpersonal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{5ED591AE-3C6E-43F6-9E76-265A2B3EABD6}|Proyecto.csproj|solutionrelative:formpersonal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5ED591AE-3C6E-43F6-9E76-265A2B3EABD6}|Proyecto.csproj|C:\\Users\\shani\\Desktop\\Git\\proyecto1\\formpersonal.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5ED591AE-3C6E-43F6-9E76-265A2B3EABD6}|Proyecto.csproj|solutionrelative:formpersonal.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5ED591AE-3C6E-43F6-9E76-265A2B3EABD6}|Proyecto.csproj|c:\\users\\shani\\desktop\\git\\proyecto1\\formpersonal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5ED591AE-3C6E-43F6-9E76-265A2B3EABD6}|Proyecto.csproj|solutionrelative:formpersonal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5ED591AE-3C6E-43F6-9E76-265A2B3EABD6}|Proyecto.csproj|C:\\Users\\shani\\Desktop\\Git\\proyecto1\\despedirgente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{5ED591AE-3C6E-43F6-9E76-265A2B3EABD6}|Proyecto.csproj|solutionrelative:despedirgente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5ED591AE-3C6E-43F6-9E76-265A2B3EABD6}|Proyecto.csproj|C:\\Users\\shani\\Desktop\\Git\\proyecto1\\formpersonal.resx||{81828910-B8B3-4D2B-99A3-067027C180C1}",
-      "RelativeMoniker": "D:0:0:{5ED591AE-3C6E-43F6-9E76-265A2B3EABD6}|Proyecto.csproj|solutionrelative:formpersonal.resx||{81828910-B8B3-4D2B-99A3-067027C180C1}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5ED591AE-3C6E-43F6-9E76-265A2B3EABD6}|Proyecto.csproj|C:\\Users\\shani\\Desktop\\Git\\proyecto1\\agregarempleado.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5ED591AE-3C6E-43F6-9E76-265A2B3EABD6}|Proyecto.csproj|solutionrelative:agregarempleado.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5ED591AE-3C6E-43F6-9E76-265A2B3EABD6}|Proyecto.csproj|C:\\Users\\shani\\Desktop\\Git\\proyecto1\\appbancaria.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{5ED591AE-3C6E-43F6-9E76-265A2B3EABD6}|Proyecto.csproj|c:\\users\\ricar\\onedrive\\documentos\\github\\proyecto1\\appbancaria.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5ED591AE-3C6E-43F6-9E76-265A2B3EABD6}|Proyecto.csproj|solutionrelative:appbancaria.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5ED591AE-3C6E-43F6-9E76-265A2B3EABD6}|Proyecto.csproj|C:\\Users\\shani\\Desktop\\Git\\proyecto1\\despedirgente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5ED591AE-3C6E-43F6-9E76-265A2B3EABD6}|Proyecto.csproj|solutionrelative:despedirgente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5ED591AE-3C6E-43F6-9E76-265A2B3EABD6}|Proyecto.csproj|C:\\Users\\shani\\Desktop\\Git\\proyecto1\\fullempleados.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5ED591AE-3C6E-43F6-9E76-265A2B3EABD6}|Proyecto.csproj|solutionrelative:fullempleados.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5ED591AE-3C6E-43F6-9E76-265A2B3EABD6}|Proyecto.csproj|C:\\Users\\shani\\Desktop\\Git\\proyecto1\\agregarempleado.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{5ED591AE-3C6E-43F6-9E76-265A2B3EABD6}|Proyecto.csproj|solutionrelative:agregarempleado.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5ED591AE-3C6E-43F6-9E76-265A2B3EABD6}|Proyecto.csproj|C:\\Users\\shani\\Desktop\\Git\\proyecto1\\formbusquedapuesto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5ED591AE-3C6E-43F6-9E76-265A2B3EABD6}|Proyecto.csproj|solutionrelative:formbusquedapuesto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5ED591AE-3C6E-43F6-9E76-265A2B3EABD6}|Proyecto.csproj|C:\\Users\\shani\\Desktop\\Git\\proyecto1\\appbancaria.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{5ED591AE-3C6E-43F6-9E76-265A2B3EABD6}|Proyecto.csproj|C:\\Users\\ricar\\OneDrive\\Documentos\\GitHub\\proyecto1\\appbancaria.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{5ED591AE-3C6E-43F6-9E76-265A2B3EABD6}|Proyecto.csproj|solutionrelative:appbancaria.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5ED591AE-3C6E-43F6-9E76-265A2B3EABD6}|Proyecto.csproj|C:\\Users\\shani\\Desktop\\Git\\proyecto1\\cita.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5ED591AE-3C6E-43F6-9E76-265A2B3EABD6}|Proyecto.csproj|solutionrelative:cita.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{00000000-0000-0000-0000-000000000000}|\u003CSolution\u003E|Proyecto||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
     }
   ],
   "DocumentGroupContainers": [
@@ -65,174 +18,39 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 2,
           "Children": [
             {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "AgregarEmpleado.cs",
-              "DocumentMoniker": "C:\\Users\\shani\\Desktop\\Git\\proyecto1\\AgregarEmpleado.cs",
-              "RelativeDocumentMoniker": "AgregarEmpleado.cs",
-              "ToolTip": "C:\\Users\\shani\\Desktop\\Git\\proyecto1\\AgregarEmpleado.cs",
-              "RelativeToolTip": "AgregarEmpleado.cs",
-              "ViewState": "AgIAAAcAAAAAAAAAAAAowBUAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-17T20:32:00.529Z",
-              "IsPinned": true
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{c9c0ae26-aa77-11d2-b3f0-0000f87570ee}"
             },
             {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "DespedirGente.cs",
-              "DocumentMoniker": "C:\\Users\\shani\\Desktop\\Git\\proyecto1\\DespedirGente.cs",
-              "RelativeDocumentMoniker": "DespedirGente.cs",
-              "ToolTip": "C:\\Users\\shani\\Desktop\\Git\\proyecto1\\DespedirGente.cs",
-              "RelativeToolTip": "DespedirGente.cs",
-              "ViewState": "AgIAACcAAAAAAAAAAAAQwDYAAAAsAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-17T21:25:41.217Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "DespedirGente.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\shani\\Desktop\\Git\\proyecto1\\DespedirGente.cs",
-              "RelativeDocumentMoniker": "DespedirGente.cs",
-              "ToolTip": "C:\\Users\\shani\\Desktop\\Git\\proyecto1\\DespedirGente.cs [Dise\u00F1o]",
-              "RelativeToolTip": "DespedirGente.cs [Dise\u00F1o]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-17T21:08:19.923Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "FormPersonal.Designer.cs",
-              "DocumentMoniker": "C:\\Users\\shani\\Desktop\\Git\\proyecto1\\FormPersonal.Designer.cs",
-              "RelativeDocumentMoniker": "FormPersonal.Designer.cs",
-              "ToolTip": "C:\\Users\\shani\\Desktop\\Git\\proyecto1\\FormPersonal.Designer.cs",
-              "RelativeToolTip": "FormPersonal.Designer.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-17T20:53:51.94Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "FormPersonal.resx",
-              "DocumentMoniker": "C:\\Users\\shani\\Desktop\\Git\\proyecto1\\FormPersonal.resx",
-              "RelativeDocumentMoniker": "FormPersonal.resx",
-              "ToolTip": "C:\\Users\\shani\\Desktop\\Git\\proyecto1\\FormPersonal.resx",
-              "RelativeToolTip": "FormPersonal.resx",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001005|",
-              "WhenOpened": "2026-06-17T20:53:49.535Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "FormPersonal.cs",
-              "DocumentMoniker": "C:\\Users\\shani\\Desktop\\Git\\proyecto1\\FormPersonal.cs",
-              "RelativeDocumentMoniker": "FormPersonal.cs",
-              "ToolTip": "C:\\Users\\shani\\Desktop\\Git\\proyecto1\\FormPersonal.cs",
-              "RelativeToolTip": "FormPersonal.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-17T20:49:23.695Z",
-              "EditorCaption": ""
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "FormPersonal.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\shani\\Desktop\\Git\\proyecto1\\FormPersonal.cs",
-              "RelativeDocumentMoniker": "FormPersonal.cs",
-              "ToolTip": "C:\\Users\\shani\\Desktop\\Git\\proyecto1\\FormPersonal.cs [Dise\u00F1o]",
-              "RelativeToolTip": "FormPersonal.cs [Dise\u00F1o]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-17T20:49:20.091Z",
-              "EditorCaption": " [Dise\u00F1o]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "AgregarEmpleado.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\shani\\Desktop\\Git\\proyecto1\\AgregarEmpleado.cs",
-              "RelativeDocumentMoniker": "AgregarEmpleado.cs",
-              "ToolTip": "C:\\Users\\shani\\Desktop\\Git\\proyecto1\\AgregarEmpleado.cs [Dise\u00F1o]",
-              "RelativeToolTip": "AgregarEmpleado.cs [Dise\u00F1o]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-17T20:49:09.98Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "FormBusquedaPuesto.cs",
-              "DocumentMoniker": "C:\\Users\\shani\\Desktop\\Git\\proyecto1\\FormBusquedaPuesto.cs",
-              "RelativeDocumentMoniker": "FormBusquedaPuesto.cs",
-              "ToolTip": "C:\\Users\\shani\\Desktop\\Git\\proyecto1\\FormBusquedaPuesto.cs",
-              "RelativeToolTip": "FormBusquedaPuesto.cs",
-              "ViewState": "AgIAAA4AAAAAAAAAAAAAwBkAAAA5AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-17T20:39:16.461Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
               "Title": "AppBancaria.cs",
-              "DocumentMoniker": "C:\\Users\\shani\\Desktop\\Git\\proyecto1\\AppBancaria.cs",
+              "DocumentMoniker": "C:\\Users\\ricar\\OneDrive\\Documentos\\GitHub\\proyecto1\\AppBancaria.cs",
               "RelativeDocumentMoniker": "AppBancaria.cs",
-              "ToolTip": "C:\\Users\\shani\\Desktop\\Git\\proyecto1\\AppBancaria.cs",
+              "ToolTip": "C:\\Users\\ricar\\OneDrive\\Documentos\\GitHub\\proyecto1\\AppBancaria.cs",
               "RelativeToolTip": "AppBancaria.cs",
-              "ViewState": "AgIAAK4AAAAAAAAAAAAswLcAAAAvAAAAAAAAAA==",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-17T20:31:36.463Z"
+              "WhenOpened": "2026-06-18T01:34:43.852Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "FullEmpleados.cs",
-              "DocumentMoniker": "C:\\Users\\shani\\Desktop\\Git\\proyecto1\\FullEmpleados.cs",
-              "RelativeDocumentMoniker": "FullEmpleados.cs",
-              "ToolTip": "C:\\Users\\shani\\Desktop\\Git\\proyecto1\\FullEmpleados.cs",
-              "RelativeToolTip": "FullEmpleados.cs",
-              "ViewState": "AgIAAA4AAAAAAAAAAAAgwBIAAAAMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-17T20:28:23.82Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "Cita.cs",
-              "DocumentMoniker": "C:\\Users\\shani\\Desktop\\Git\\proyecto1\\Cita.cs",
-              "RelativeDocumentMoniker": "Cita.cs",
-              "ToolTip": "C:\\Users\\shani\\Desktop\\Git\\proyecto1\\Cita.cs",
-              "RelativeToolTip": "Cita.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-17T20:24:34.301Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "Proyecto",
-              "DocumentMoniker": "C:\\Users\\shani\\Desktop\\Git\\proyecto1\\Proyecto.csproj",
-              "RelativeDocumentMoniker": "Proyecto.csproj",
-              "ToolTip": "C:\\Users\\shani\\Desktop\\Git\\proyecto1\\Proyecto.csproj",
-              "RelativeToolTip": "Proyecto.csproj",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2026-06-17T20:24:15.411Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 1,
               "Title": "AppBancaria.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\shani\\Desktop\\Git\\proyecto1\\AppBancaria.cs",
+              "DocumentMoniker": "C:\\Users\\ricar\\OneDrive\\Documentos\\GitHub\\proyecto1\\AppBancaria.cs",
               "RelativeDocumentMoniker": "AppBancaria.cs",
-              "ToolTip": "C:\\Users\\shani\\Desktop\\Git\\proyecto1\\AppBancaria.cs [Dise\u00F1o]",
+              "ToolTip": "C:\\Users\\ricar\\OneDrive\\Documentos\\GitHub\\proyecto1\\AppBancaria.cs [Dise\u00F1o]",
               "RelativeToolTip": "AppBancaria.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-17T01:24:09.384Z"
+              "WhenOpened": "2026-06-18T01:34:43.857Z"
             }
           ]
         }
