@@ -120,6 +120,7 @@ namespace Proyecto
                 ("$sueldo", sueldobase),
                 ("$estado", estado)
                 );
+        }
         public List<ShortCliente> ShortClientes()
         {
             List<ShortCliente> listacliente = new List<ShortCliente>();
@@ -341,6 +342,7 @@ namespace Proyecto
                     ("$empleadoId", empleadoId)
                 );
             }
+        }
 
         internal void AgregarBillete(object tipo, object cantidad)
         {
@@ -349,5 +351,5 @@ namespace Proyecto
                 ("$tipo", tipo),
                 ("$cantidad",  cantidad));
         }
-    } }
+    } 
 }
