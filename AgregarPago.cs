@@ -22,15 +22,21 @@ namespace Proyecto
 
         private void btnagregar_Click(object sender, EventArgs e)
         {
-            if (string.IsNullOrWhiteSpace(txtConcepto.Text) || string.IsNullOrWhiteSpace(txtFecha.Text) || string.IsNullOrWhiteSpace(txtMonto.Text))
+            string tiposeleccionado = cmbTipo.SelectedItem.ToString();
+            if (tiposeleccionado == "Gasto Externo" && string.IsNullOrWhiteSpace(txtFecha.Text))
             {
-                MessageBox.Show("Porfavor rellene los campos en blanco", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                return;
+                MessageBox.Show("Por rellene el campo Concepto", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+
+            if (string.IsNullOrWhiteSpace(txtFecha.Text) || string.IsNullOrWhiteSpace(txtMonto.Text))
+
+            {
+                MessageBox.Show("Por rellene los campos en blanco", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+
             switch (MessageBox.Show("Confirma los datos del pago?", "Confirmacion", MessageBoxButtons.YesNo, MessageBoxIcon.Question))
             {
                 case DialogResult.Yes:
-                    string tiposeleccionado = cmbTipo.SelectedItem.ToString();
                     string concepto = txtConcepto.Text;
                     string fecha = txtFecha.Text;
                     decimal monto = Convert.ToDecimal(txtMonto.Text);
@@ -38,13 +44,16 @@ namespace Proyecto
 
                 if(tiposeleccionado == "Nómina")
                     {
-                        int EmpleadoId = gestorbanco.ObtenerempleadoId(concepto);
-                        if (EmpleadoId == -1 )
-                        {
-                            MessageBox.Show("No se encontró ningún empleado con ese nombre. Verifica la ortografía.", "Empleado no encontrado", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                            return; 
-                        }
-                        gestorbanco.AgregarNomina(EmpleadoId, fecha,monto,estado);
+                        FullEmpleado empleadoseleccionado = (FullEmpleado)cmbempleado.SelectedItem;
+                        int EmpleadoId = empleadoseleccionado.ID;
+
+                        List<Puesto> listapuestos = (List<Puesto>)gestorbanco.GetTodosLosPuestos();
+                        Puesto puestodelempleado = listapuestos.FirstOrDefault(p => p.Categoria == empleadoseleccionado.Puesto);
+                        decimal SueldoBase = puestodelempleado != null ? Convert.ToDecimal(puestodelempleado.Sueldo) : 0m;
+                        int Horasextra = Convert.ToInt32(txtMonto.Text);
+                        int tarifaHorasextra = 100;
+                        decimal montoCalculado = SueldoBase + (Horasextra * tarifaHorasextra);
+                        gestorbanco.AgregarNomina(EmpleadoId, fecha,montoCalculado,estado);
                      }
 
                 if(tiposeleccionado == "Gasto Externo")
@@ -69,6 +78,31 @@ namespace Proyecto
             cmbEstado.Items.Add("Pendiente");
             cmbEstado.Items.Add("Realizado");
             cmbEstado.SelectedIndex = 0;
+
+            List<FullEmpleado> todoslosempleados = gestorbanco.GetTodosLosEmpleados();
+            var EmpleadosActivos = todoslosempleados.Where(emp => emp.Estado == "Activo").ToList();
+            cmbempleado.DataSource = EmpleadosActivos;
+            cmbempleado.DisplayMember = "Nombre";
+            cmbempleado.ValueMember = "ID";
+        }
+
+        private void cmbTipo_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (cmbTipo.SelectedItem.ToString() == "Nómina")
+            {
+                txtConcepto.Visible = false;
+                cmbempleado.Visible = true;
+                label2.Text = "Empleado";
+                label4.Text = "Cantidad de horas extra";
+            }
+
+            if (cmbTipo.SelectedItem.ToString() == "Gasto Externo")
+            {
+                txtConcepto.Visible = true;
+                cmbempleado.Visible = false;
+                label2.Text = "Concepto";
+                label4.Text = "Monto";
+            }
         }
     }
 }
