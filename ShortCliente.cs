@@ -8,13 +8,13 @@ namespace Proyecto
 {
     public class ShortCliente
     {
-        public ShortCliente(int cuentaId, string nombre)
+        public ShortCliente(int clienteId, string nombre)
         {
-            CuentaId = cuentaId;
+            ClienteId = clienteId;
             Nombre = nombre;
         }
 
-        public int CuentaId { get; }
+        public int ClienteId { get; }
         public string Nombre { get; }
     }
 }

@@ -59,13 +59,13 @@ namespace Proyecto
         {
             List<ShortCliente> listacliente = new List<ShortCliente>();
 
-            string query = "SELECT CuentaId, Nombre FROM [Clientes] WHERE Estado = 1;";
+            string query = "SELECT ClienteId, Nombre FROM [Clientes] WHERE Estado = 1;";
 
             var rs = conn.ExecuteReader(query);
             while (rs.Read())
             {
                 listacliente.Add(new ShortCliente(
-                    rs.GetInt("CuentaId"),
+                    rs.GetInt("ClienteId"),
                     rs.GetString("Nombre")));
             }
             return listacliente;
@@ -75,10 +75,9 @@ namespace Proyecto
         {
             List<Cita> CitasDipsonibles = new List<Cita>();
 
-            string query = "SELECT cl.Nombre AS Cliente, (h.Fecha || ' ' || h.Hora) AS Horario, c.Estado" +
+            string query = "SELECT cl.Nombre AS Cliente, (c.Fecha || ' ' || c.Hora) AS Horario, c.Estado" +
                             "\r\nFROM [Citas] c" +
-                            "\r\nINNER JOIN [Clientes] cl ON c.CuentaId = cl.CuentaId" +
-                            "\r\nINNER JOIN [HorariosLibres] h ON c.HorarioId = h.HorarioId;";
+                            "\r\nINNER JOIN [Clientes] cl ON c.ClienteId = cl.ClienteId";
 
             var rs = conn.ExecuteReader(query);
             while (rs.Read())
@@ -115,10 +114,9 @@ namespace Proyecto
         public List<Cita> GetCitaPorPaciente(int cuentaId)
         {
             List<Cita> CitaPorPaciente = new List<Cita>();
-            string query = $"SELECT cl.Nombre AS Cliente, (h.Fecha || ' ' || h.Hora) AS Horario, c.Estado" +
+            string query = $"SELECT cl.Nombre AS Cliente, (c.Fecha || ' ' || c.Hora) AS Horario, c.Estado" +
                             $"\r\nFROM [Citas] c" +
-                            $"\r\nINNER JOIN [Clientes] cl ON c.CuentaId = cl.CuentaId" +
-                            $"\r\nINNER JOIN [HorariosLibres] h ON c.HorarioId = h.HorarioId\r\nWHERE c.CuentaId = {cuentaId};";
+                            $"\r\nINNER JOIN [Clientes] cl ON c.ClienteId = cl.ClienteId\r\nWHERE c.ClienteId = {cuentaId};";
 
             var rs = conn.ExecuteReader(query);
             while (rs.Read())
