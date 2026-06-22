@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Numerics;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -21,7 +22,16 @@ namespace Proyecto
             cmbCliente.DisplayMember = "Nombre";
             cmbCliente.ValueMember = "ClienteId";
             cmbCliente.DataSource = gestorcitas.ShortClientes();
+           
+
+          
         }
+
+       /* private void UpdateData()
+        {
+            dgvpersonal.DataSource = null;
+            dgvpersonal.DataSource = gestorbanco.GetTodosLosEmpleados();
+        }*/
 
         private void FormAgenda_Load(object sender, EventArgs e)
         {
@@ -41,6 +51,27 @@ namespace Proyecto
         private void btnInfo_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void citarProvedoorToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            GerenteCitas ventanaAgregar = new GerenteCitas(gestorcitas, "Proveedor");
+
+            ventanaAgregar.ShowDialog();
+
+            //UpdateData();
+        }
+
+        private void citarEmpleadosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            GerenteCitas ventanaAgregar = new GerenteCitas(gestorcitas, "Empleado");
+            ventanaAgregar.ShowDialog();
+        }
+
+        private void citarClienteToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            GerenteCitas ventanaAgregar = new GerenteCitas(gestorcitas, "Cliente");
+            ventanaAgregar.ShowDialog();
         }
     }
 }
