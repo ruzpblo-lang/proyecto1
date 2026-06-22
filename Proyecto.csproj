@@ -112,6 +112,12 @@
     <Compile Include="AgregarPago.Designer.cs">
       <DependentUpon>AgregarPago.cs</DependentUpon>
     </Compile>
+    <Compile Include="AgregarProductos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AgregarProductos.Designer.cs">
+      <DependentUpon>AgregarProductos.cs</DependentUpon>
+    </Compile>
     <Compile Include="Cita.cs" />
     <Compile Include="Cliente.cs" />
     <Compile Include="Cuenta.cs" />
@@ -192,11 +198,20 @@
     </Compile>
     <Compile Include="HorarioLibre.cs" />
     <Compile Include="Inventario.cs" />
+    <Compile Include="FormInventarioDeposito.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormInventarioDeposito.Designer.cs">
+      <DependentUpon>FormInventarioDeposito.cs</DependentUpon>
+    </Compile>
     <Compile Include="Nomina.cs" />
     <Compile Include="Pago.cs" />
+    <Compile Include="PrecioProveedor.cs" />
+    <Compile Include="ProductoBodega.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Provedor.cs" />
+    <Compile Include="Proveedor.cs" />
     <Compile Include="Puesto.cs" />
     <Compile Include="ShortCliente.cs" />
     <Compile Include="SqlConnectionExtensions.cs" />
@@ -205,6 +220,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="AgregarPago.resx">
       <DependentUpon>AgregarPago.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AgregarProductos.resx">
+      <DependentUpon>AgregarProductos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="AppBancaria.resx">
       <DependentUpon>AppBancaria.cs</DependentUpon>
@@ -237,6 +255,8 @@
     </EmbeddedResource>
     <EmbeddedResource Include="GerenteCitas.resx">
       <DependentUpon>GerenteCitas.cs</DependentUpon>
+    <EmbeddedResource Include="FormInventarioDeposito.resx">
+      <DependentUpon>FormInventarioDeposito.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

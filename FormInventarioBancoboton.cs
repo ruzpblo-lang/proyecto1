@@ -40,7 +40,20 @@ namespace Proyecto
 
         private void btnAgregar_Click(object sender, EventArgs e)
         {
-            if(txtCantidad.Text == "")
+            switch (MessageBox.Show("Confirmas Agregar mas billetes!", "Confirmacion", MessageBoxButtons.YesNo, MessageBoxIcon.Question))
+            {
+                case DialogResult.Yes:
+                string Tipo = cmbBIllete.SelectedItem.ToString();
+                int Cantidad = Convert.ToInt32(txtCantidad.Text);
+                gestorempresa.AgregarBillete(Tipo, Cantidad);
+
+                    MessageBox.Show("¡BILLETE GENERADO CON EXITO!");
+                    
+                    break;
+                case DialogResult.No:
+                    break;
+            }
+            /*if(txtCantidad.Text == "")
             {
                 MessageBox.Show("Escirbe una cantidad: ");
                     return;
@@ -51,6 +64,11 @@ namespace Proyecto
             /*   FormInventario agregarBilletes = new FormInventario(gestorempresa);
                agregarBilletes.ShowDialog();*/
             dgvInventario.DataSource = gestorempresa.GetInventario();//Update
+        }
+
+        private void btnRegresar_Click(object sender, EventArgs e)
+        {
+            this.Close(); 
         }
     }
 }
