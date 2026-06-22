@@ -12,9 +12,21 @@ namespace Proyecto
 {
     public partial class FormInventarioCuenta : Form
     {
-        public FormInventarioCuenta()
+        public AppBancaria gestorempresa;
+        public FormInventarioCuenta(AppBancaria gestorempresa)
         {
             InitializeComponent();
+            this.gestorempresa = gestorempresa;
+        }
+
+        private void FormInventarioCuenta_Load(object sender, EventArgs e)
+        {
+            dgvInventarioCuenta.DataSource = gestorempresa.GetInventarioCliente();
+        }
+
+        private void btnRegresar_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

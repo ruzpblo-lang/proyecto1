@@ -257,14 +257,36 @@ namespace Proyecto
             while (rs.Read())
             {
                 ListaInventario.Add(new Inventario(
-                    rs.GetInt32(0),
+                    rs.GetInt ("ObjetoId"),
                     rs.GetString("Tipo"),
-                    rs.GetInt32(2)
+                    rs.GetInt ("Cantidad")
                 ));
             }
             return ListaInventario; 
         }
 
+        public List<Cliente> GetInventarioCliente()
+        {
+            List<Cliente> clientes = new List<Cliente>();
+            string query = "SELECT ClienteId, CuentaId, Nombre, Correo, TelNum, Estado, Monto FROM clientes";
+
+            var rs = conn.ExecuteReader(query);
+            while(rs.Read())
+            {
+                clientes.Add(new Cliente(
+                    rs.GetInt("ClienteId"),
+                    rs.GetInt("CuentaId"),
+                    rs.GetString("Nombre"),
+                    rs.GetString("Correo"),
+                    rs.GetString("TelNum"),
+                    rs.GetInt("Estado"),
+                    rs.GetDouble("Monto")
+                    ));
+            }
+            return clientes;
+        }
+
+        
         internal object GetTodosLosPuestos()
         {
             List<Puesto> listaPuesto = new List<Puesto>();
@@ -356,6 +378,54 @@ namespace Proyecto
             conn.ExecuteNonQuery(query,
                 ("$tipo", tipo),
                 ("$cantidad",  cantidad));
+        }
+
+        public List<ProductoBodega> GetInventarioDeposito()
+        {
+            List<ProductoBodega> productosBodega = new List<ProductoBodega>();
+            string query = "SELECT ObjetoId, Tipo, Cantidad FROM productosBodega";
+
+            var rs = conn.ExecuteReader(query);
+                while (rs.Read())
+            {
+                productosBodega.Add(new ProductoBodega(
+                    rs.GetInt("ObjetoId"),
+                    rs.GetString("Tipo"),
+                    rs.GetInt("Cantidad")
+                    ));
+            }
+            return productosBodega;
+        }
+
+        public List<PrecioProveedor> MostrarProductosProveedores()
+        {
+            List<PrecioProveedor> preciosproveedores = new List<PrecioProveedor>();
+            string query = "SELECT pp.PrecioId, pp.ObjetoId, pb.Tipo, pv.Nombre, pp.Precio " +
+                            "FROM PreciosProveedor pp " +
+                            "INNER JOIN ProductosBodega pb ON pp.ObjetoId = pb.ObjetoId " +
+                            "INNER JOIN Proveedores pv ON pp.ProveedorId = pv.ProveedorID " +
+                            "ORDER BY pb.Tipo ASC, pp.Precio ASC";
+            var rs = conn.ExecuteReader(query);
+
+            while(rs.Read())
+            {
+                preciosproveedores.Add(new PrecioProveedor(
+                    rs.GetInt("PrecioId"),
+                    rs.GetInt("ObjetoId"),
+                    rs.GetString("Tipo"),
+                    rs.GetString("Nombre"),
+                    rs.GetDouble("Precio")
+                    ));
+            }
+            return preciosproveedores;
+        }
+
+        internal void AgregarProducto(int objetoId, int cantidad)
+        {
+            string query = "UPDATE ProductosBodega SET Cantidad = Cantidad + $cantidad WHERE ObjetoId = $objetoId";
+            conn.ExecuteNonQuery(query,
+                ("$objetoId", objetoId),
+                ("$cantidad", cantidad));
         }
     } 
 }
