@@ -425,5 +425,32 @@ namespace Proyecto
                 ("$objetoId", objetoId),
                 ("$cantidad", cantidad));
         }
+
+        internal void AgregarCliente(string nombre, string correo, string telefono, decimal monto)
+        {
+            int nuevoCuentaId = 1;
+
+            string query = "SELECT IFNULL (MAX(CuentaId), 0) AS MaxId\r\nFROM Clientes";
+            var rs = conn.ExecuteReader(query);
+
+            while (rs.Read())
+            {
+                nuevoCuentaId = rs.GetInt("MaxId") + 1;
+            }
+
+            string queryInsert = "INSERT into Clientes (CuentaId, Nombre, Correo, TelNum, Monto, Estado) " +
+                            "VALUES ($cuentaId, $nombre, $correo, $telNum, $monto, $estado)";
+            conn.ExecuteNonQuery(
+                queryInsert,
+                ("$cuentaId", nuevoCuentaId),
+                ("$nombre", nombre),
+                ("$correo", correo),
+                ("$telNum", telefono),
+                ("$monto", monto),
+                ("$estado", 1)
+                );
+
+
+        }
     } 
 }

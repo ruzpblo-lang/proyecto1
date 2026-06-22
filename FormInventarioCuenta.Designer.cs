@@ -30,23 +30,25 @@
         {
             this.dgvInventarioCuenta = new System.Windows.Forms.DataGridView();
             this.btnRegresar = new System.Windows.Forms.Button();
-            this.btnActualizar = new System.Windows.Forms.Button();
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.agregarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.dgvInventarioCuenta)).BeginInit();
+            this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // dgvInventarioCuenta
             // 
             this.dgvInventarioCuenta.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvInventarioCuenta.Location = new System.Drawing.Point(47, 28);
+            this.dgvInventarioCuenta.Location = new System.Drawing.Point(47, 51);
             this.dgvInventarioCuenta.Name = "dgvInventarioCuenta";
             this.dgvInventarioCuenta.RowHeadersWidth = 51;
             this.dgvInventarioCuenta.RowTemplate.Height = 24;
-            this.dgvInventarioCuenta.Size = new System.Drawing.Size(715, 348);
+            this.dgvInventarioCuenta.Size = new System.Drawing.Size(685, 325);
             this.dgvInventarioCuenta.TabIndex = 0;
             // 
             // btnRegresar
             // 
-            this.btnRegresar.Location = new System.Drawing.Point(640, 415);
+            this.btnRegresar.Location = new System.Drawing.Point(610, 415);
             this.btnRegresar.Name = "btnRegresar";
             this.btnRegresar.Size = new System.Drawing.Size(122, 23);
             this.btnRegresar.TabIndex = 1;
@@ -54,28 +56,41 @@
             this.btnRegresar.UseVisualStyleBackColor = true;
             this.btnRegresar.Click += new System.EventHandler(this.btnRegresar_Click);
             // 
-            // btnActualizar
+            // menuStrip1
             // 
-            this.btnActualizar.Location = new System.Drawing.Point(47, 415);
-            this.btnActualizar.Name = "btnActualizar";
-            this.btnActualizar.Size = new System.Drawing.Size(75, 23);
-            this.btnActualizar.TabIndex = 2;
-            this.btnActualizar.Text = "Actualizar";
-            this.btnActualizar.UseVisualStyleBackColor = true;
+            this.menuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.agregarToolStripMenuItem});
+            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Size = new System.Drawing.Size(776, 30);
+            this.menuStrip1.TabIndex = 3;
+            this.menuStrip1.Text = "menuStrip1";
+            // 
+            // agregarToolStripMenuItem
+            // 
+            this.agregarToolStripMenuItem.Name = "agregarToolStripMenuItem";
+            this.agregarToolStripMenuItem.Size = new System.Drawing.Size(75, 26);
+            this.agregarToolStripMenuItem.Text = "agregar";
+            this.agregarToolStripMenuItem.Click += new System.EventHandler(this.agregarToolStripMenuItem_Click);
             // 
             // FormInventarioCuenta
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.btnActualizar);
+            this.ClientSize = new System.Drawing.Size(776, 450);
             this.Controls.Add(this.btnRegresar);
             this.Controls.Add(this.dgvInventarioCuenta);
+            this.Controls.Add(this.menuStrip1);
+            this.MainMenuStrip = this.menuStrip1;
             this.Name = "FormInventarioCuenta";
             this.Text = "FormInventarioCuenta";
             this.Load += new System.EventHandler(this.FormInventarioCuenta_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvInventarioCuenta)).EndInit();
+            this.menuStrip1.ResumeLayout(false);
+            this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -83,6 +98,7 @@
 
         private System.Windows.Forms.DataGridView dgvInventarioCuenta;
         private System.Windows.Forms.Button btnRegresar;
-        private System.Windows.Forms.Button btnActualizar;
+        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem agregarToolStripMenuItem;
     }
 }

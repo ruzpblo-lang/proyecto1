@@ -75,6 +75,8 @@ namespace Proyecto
         {
 
             precioProveedores = gestorempresa.MostrarProductosProveedores();
+            //dgvAgregarProducto.Columns["PrecioId"].Visible = false;
+
             cmbProducto.Items.Add("Todos");
             cmbProducto.Items.Add("Garrafón de agua 20L");
             cmbProducto.Items.Add("Paquete de hojas blancas");

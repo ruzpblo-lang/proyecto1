@@ -3,79 +3,91 @@
   "WorkspaceRootPath": "C:\\Users\\pablp\\proyecto1\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{5ED591AE-3C6E-43F6-9E76-265A2B3EABD6}|Proyecto.csproj|c:\\users\\pablp\\proyecto1\\forminventariodeposito.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5ED591AE-3C6E-43F6-9E76-265A2B3EABD6}|Proyecto.csproj|solutionrelative:forminventariodeposito.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5ED591AE-3C6E-43F6-9E76-265A2B3EABD6}|Proyecto.csproj|C:\\Users\\pablp\\proyecto1\\forminventariocuenta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{5ED591AE-3C6E-43F6-9E76-265A2B3EABD6}|Proyecto.csproj|solutionrelative:forminventariocuenta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5ED591AE-3C6E-43F6-9E76-265A2B3EABD6}|Proyecto.csproj|c:\\users\\pablp\\proyecto1\\agregarproductos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{5ED591AE-3C6E-43F6-9E76-265A2B3EABD6}|Proyecto.csproj|solutionrelative:agregarproductos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{5ED591AE-3C6E-43F6-9E76-265A2B3EABD6}|Proyecto.csproj|C:\\Users\\pablp\\proyecto1\\forminventariocuenta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5ED591AE-3C6E-43F6-9E76-265A2B3EABD6}|Proyecto.csproj|solutionrelative:forminventariocuenta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5ED591AE-3C6E-43F6-9E76-265A2B3EABD6}|Proyecto.csproj|c:\\users\\pablp\\proyecto1\\agregarproductos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5ED591AE-3C6E-43F6-9E76-265A2B3EABD6}|Proyecto.csproj|solutionrelative:agregarproductos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5ED591AE-3C6E-43F6-9E76-265A2B3EABD6}|Proyecto.csproj|c:\\users\\pablp\\proyecto1\\forminventariodeposito.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{5ED591AE-3C6E-43F6-9E76-265A2B3EABD6}|Proyecto.csproj|solutionrelative:forminventariodeposito.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5ED591AE-3C6E-43F6-9E76-265A2B3EABD6}|Proyecto.csproj|c:\\users\\pablp\\proyecto1\\forminventariobancoboton.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{5ED591AE-3C6E-43F6-9E76-265A2B3EABD6}|Proyecto.csproj|solutionrelative:forminventariobancoboton.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{5ED591AE-3C6E-43F6-9E76-265A2B3EABD6}|Proyecto.csproj|C:\\Users\\pablp\\proyecto1\\agregarcliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{5ED591AE-3C6E-43F6-9E76-265A2B3EABD6}|Proyecto.csproj|solutionrelative:agregarcliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{5ED591AE-3C6E-43F6-9E76-265A2B3EABD6}|Proyecto.csproj|c:\\users\\pablp\\proyecto1\\appbancaria.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5ED591AE-3C6E-43F6-9E76-265A2B3EABD6}|Proyecto.csproj|solutionrelative:appbancaria.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5ED591AE-3C6E-43F6-9E76-265A2B3EABD6}|Proyecto.csproj|c:\\users\\pablp\\proyecto1\\forminventario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{5ED591AE-3C6E-43F6-9E76-265A2B3EABD6}|Proyecto.csproj|solutionrelative:forminventario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{5ED591AE-3C6E-43F6-9E76-265A2B3EABD6}|Proyecto.csproj|C:\\Users\\pablp\\proyecto1\\agregarpago.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5ED591AE-3C6E-43F6-9E76-265A2B3EABD6}|Proyecto.csproj|solutionrelative:agregarpago.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5ED591AE-3C6E-43F6-9E76-265A2B3EABD6}|Proyecto.csproj|C:\\Users\\pablp\\proyecto1\\agregarpago.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{5ED591AE-3C6E-43F6-9E76-265A2B3EABD6}|Proyecto.csproj|solutionrelative:agregarpago.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5ED591AE-3C6E-43F6-9E76-265A2B3EABD6}|Proyecto.csproj|C:\\Users\\pablp\\proyecto1\\agregarcliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5ED591AE-3C6E-43F6-9E76-265A2B3EABD6}|Proyecto.csproj|solutionrelative:agregarcliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{5ED591AE-3C6E-43F6-9E76-265A2B3EABD6}|Proyecto.csproj|c:\\users\\pablp\\proyecto1\\appbancaria.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{5ED591AE-3C6E-43F6-9E76-265A2B3EABD6}|Proyecto.csproj|solutionrelative:appbancaria.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5ED591AE-3C6E-43F6-9E76-265A2B3EABD6}|Proyecto.csproj|c:\\users\\pablp\\proyecto1\\formfinanza.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{5ED591AE-3C6E-43F6-9E76-265A2B3EABD6}|Proyecto.csproj|c:\\users\\pablp\\proyecto1\\agregarcliente.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5ED591AE-3C6E-43F6-9E76-265A2B3EABD6}|Proyecto.csproj|solutionrelative:agregarcliente.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5ED591AE-3C6E-43F6-9E76-265A2B3EABD6}|Proyecto.csproj|C:\\Users\\pablp\\proyecto1\\agregarproductos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5ED591AE-3C6E-43F6-9E76-265A2B3EABD6}|Proyecto.csproj|solutionrelative:agregarproductos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5ED591AE-3C6E-43F6-9E76-265A2B3EABD6}|Proyecto.csproj|C:\\Users\\pablp\\proyecto1\\forminventario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{5ED591AE-3C6E-43F6-9E76-265A2B3EABD6}|Proyecto.csproj|solutionrelative:forminventario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5ED591AE-3C6E-43F6-9E76-265A2B3EABD6}|Proyecto.csproj|C:\\Users\\pablp\\proyecto1\\forminventario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5ED591AE-3C6E-43F6-9E76-265A2B3EABD6}|Proyecto.csproj|solutionrelative:forminventario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5ED591AE-3C6E-43F6-9E76-265A2B3EABD6}|Proyecto.csproj|C:\\Users\\pablp\\proyecto1\\forminventariodeposito.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5ED591AE-3C6E-43F6-9E76-265A2B3EABD6}|Proyecto.csproj|solutionrelative:forminventariodeposito.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5ED591AE-3C6E-43F6-9E76-265A2B3EABD6}|Proyecto.csproj|C:\\Users\\pablp\\proyecto1\\forminventariodeposito.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{5ED591AE-3C6E-43F6-9E76-265A2B3EABD6}|Proyecto.csproj|solutionrelative:forminventariodeposito.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5ED591AE-3C6E-43F6-9E76-265A2B3EABD6}|Proyecto.csproj|C:\\Users\\pablp\\proyecto1\\formfinanza.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{5ED591AE-3C6E-43F6-9E76-265A2B3EABD6}|Proyecto.csproj|solutionrelative:formfinanza.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5ED591AE-3C6E-43F6-9E76-265A2B3EABD6}|Proyecto.csproj|c:\\users\\pablp\\proyecto1\\formfinanza.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{5ED591AE-3C6E-43F6-9E76-265A2B3EABD6}|Proyecto.csproj|C:\\Users\\pablp\\proyecto1\\formfinanza.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5ED591AE-3C6E-43F6-9E76-265A2B3EABD6}|Proyecto.csproj|solutionrelative:formfinanza.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5ED591AE-3C6E-43F6-9E76-265A2B3EABD6}|Proyecto.csproj|c:\\users\\pablp\\proyecto1\\formpersonal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{5ED591AE-3C6E-43F6-9E76-265A2B3EABD6}|Proyecto.csproj|C:\\Users\\pablp\\proyecto1\\formpersonal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{5ED591AE-3C6E-43F6-9E76-265A2B3EABD6}|Proyecto.csproj|solutionrelative:formpersonal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5ED591AE-3C6E-43F6-9E76-265A2B3EABD6}|Proyecto.csproj|c:\\users\\pablp\\proyecto1\\agregarpago.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{5ED591AE-3C6E-43F6-9E76-265A2B3EABD6}|Proyecto.csproj|solutionrelative:agregarpago.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5ED591AE-3C6E-43F6-9E76-265A2B3EABD6}|Proyecto.csproj|c:\\users\\pablp\\proyecto1\\agregarpago.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5ED591AE-3C6E-43F6-9E76-265A2B3EABD6}|Proyecto.csproj|solutionrelative:agregarpago.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5ED591AE-3C6E-43F6-9E76-265A2B3EABD6}|Proyecto.csproj|c:\\users\\pablp\\proyecto1\\agregarempleado.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{5ED591AE-3C6E-43F6-9E76-265A2B3EABD6}|Proyecto.csproj|C:\\Users\\pablp\\proyecto1\\agregarempleado.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{5ED591AE-3C6E-43F6-9E76-265A2B3EABD6}|Proyecto.csproj|solutionrelative:agregarempleado.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5ED591AE-3C6E-43F6-9E76-265A2B3EABD6}|Proyecto.csproj|c:\\users\\pablp\\proyecto1\\agregarempleado.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{5ED591AE-3C6E-43F6-9E76-265A2B3EABD6}|Proyecto.csproj|C:\\Users\\pablp\\proyecto1\\agregarempleado.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5ED591AE-3C6E-43F6-9E76-265A2B3EABD6}|Proyecto.csproj|solutionrelative:agregarempleado.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5ED591AE-3C6E-43F6-9E76-265A2B3EABD6}|Proyecto.csproj|c:\\users\\pablp\\proyecto1\\forminventariocuenta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{5ED591AE-3C6E-43F6-9E76-265A2B3EABD6}|Proyecto.csproj|solutionrelative:forminventariocuenta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5ED591AE-3C6E-43F6-9E76-265A2B3EABD6}|Proyecto.csproj|c:\\users\\pablp\\proyecto1\\formagenda.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{5ED591AE-3C6E-43F6-9E76-265A2B3EABD6}|Proyecto.csproj|C:\\Users\\pablp\\proyecto1\\formagenda.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{5ED591AE-3C6E-43F6-9E76-265A2B3EABD6}|Proyecto.csproj|solutionrelative:formagenda.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5ED591AE-3C6E-43F6-9E76-265A2B3EABD6}|Proyecto.csproj|c:\\users\\pablp\\proyecto1\\formbusquedapuesto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{5ED591AE-3C6E-43F6-9E76-265A2B3EABD6}|Proyecto.csproj|C:\\Users\\pablp\\proyecto1\\formbusquedapuesto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{5ED591AE-3C6E-43F6-9E76-265A2B3EABD6}|Proyecto.csproj|solutionrelative:formbusquedapuesto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5ED591AE-3C6E-43F6-9E76-265A2B3EABD6}|Proyecto.csproj|c:\\users\\pablp\\proyecto1\\forminventariobancoboton.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{5ED591AE-3C6E-43F6-9E76-265A2B3EABD6}|Proyecto.csproj|C:\\Users\\pablp\\proyecto1\\forminventariobancoboton.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5ED591AE-3C6E-43F6-9E76-265A2B3EABD6}|Proyecto.csproj|solutionrelative:forminventariobancoboton.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -86,21 +98,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 7,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "FormInventario.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\pablp\\proyecto1\\FormInventario.cs",
-              "RelativeDocumentMoniker": "FormInventario.cs",
-              "ToolTip": "C:\\Users\\pablp\\proyecto1\\FormInventario.cs [Dise\u00F1o]",
-              "RelativeToolTip": "FormInventario.cs [Dise\u00F1o]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-22T08:40:49.723Z",
-              "IsPinned": true,
-              "EditorCaption": " [Dise\u00F1o]"
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
@@ -119,181 +118,45 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "FormInventarioDeposito.cs",
-              "DocumentMoniker": "C:\\Users\\pablp\\proyecto1\\FormInventarioDeposito.cs",
-              "RelativeDocumentMoniker": "FormInventarioDeposito.cs",
-              "ToolTip": "C:\\Users\\pablp\\proyecto1\\FormInventarioDeposito.cs",
-              "RelativeToolTip": "FormInventarioDeposito.cs",
-              "ViewState": "AgIAAA4AAAAAAAAAAAAAwCMAAABTAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-22T10:12:02.136Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "AppBancaria.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\pablp\\proyecto1\\AppBancaria.cs",
-              "RelativeDocumentMoniker": "AppBancaria.cs",
-              "ToolTip": "C:\\Users\\pablp\\proyecto1\\AppBancaria.cs [Dise\u00F1o]",
-              "RelativeToolTip": "AppBancaria.cs [Dise\u00F1o]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-22T08:41:10.313Z",
-              "EditorCaption": " [Dise\u00F1o]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "AgregarProductos.cs",
-              "DocumentMoniker": "C:\\Users\\pablp\\proyecto1\\AgregarProductos.cs",
-              "RelativeDocumentMoniker": "AgregarProductos.cs",
-              "ToolTip": "C:\\Users\\pablp\\proyecto1\\AgregarProductos.cs",
-              "RelativeToolTip": "AgregarProductos.cs",
-              "ViewState": "AgIAAFIAAAAAAAAAAAAcwGQAAAA6AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-22T04:13:37.813Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "FormInventarioBancoboton.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\pablp\\proyecto1\\FormInventarioBancoboton.cs",
-              "RelativeDocumentMoniker": "FormInventarioBancoboton.cs",
-              "ToolTip": "C:\\Users\\pablp\\proyecto1\\FormInventarioBancoboton.cs [Dise\u00F1o]",
-              "RelativeToolTip": "FormInventarioBancoboton.cs [Dise\u00F1o]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-22T04:16:04.927Z",
-              "EditorCaption": " [Dise\u00F1o]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "AgregarProductos.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\pablp\\proyecto1\\AgregarProductos.cs",
-              "RelativeDocumentMoniker": "AgregarProductos.cs",
-              "ToolTip": "C:\\Users\\pablp\\proyecto1\\AgregarProductos.cs [Dise\u00F1o]",
-              "RelativeToolTip": "AgregarProductos.cs [Dise\u00F1o]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-22T04:13:35.21Z",
-              "EditorCaption": " [Dise\u00F1o]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 3,
               "Title": "AppBancaria.cs",
               "DocumentMoniker": "C:\\Users\\pablp\\proyecto1\\AppBancaria.cs",
               "RelativeDocumentMoniker": "AppBancaria.cs",
               "ToolTip": "C:\\Users\\pablp\\proyecto1\\AppBancaria.cs",
               "RelativeToolTip": "AppBancaria.cs",
-              "ViewState": "AgIAAI4BAAAAAAAAAAAqwJ0BAAAqAAAAAAAAAA==",
+              "ViewState": "AgIAAKYBAAAAAAAAAAAkwLMBAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-22T10:01:45.217Z",
+              "WhenOpened": "2026-06-22T22:58:01.339Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "FormInventarioDeposito.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\pablp\\proyecto1\\FormInventarioDeposito.cs",
-              "RelativeDocumentMoniker": "FormInventarioDeposito.cs",
-              "ToolTip": "C:\\Users\\pablp\\proyecto1\\FormInventarioDeposito.cs [Dise\u00F1o]",
-              "RelativeToolTip": "FormInventarioDeposito.cs [Dise\u00F1o]",
+              "DocumentIndex": 2,
+              "Title": "AgregarCliente.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\pablp\\proyecto1\\AgregarCliente.cs",
+              "RelativeDocumentMoniker": "AgregarCliente.cs",
+              "ToolTip": "C:\\Users\\pablp\\proyecto1\\AgregarCliente.cs [Dise\u00F1o]",
+              "RelativeToolTip": "AgregarCliente.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-22T08:40:57.949Z",
+              "WhenOpened": "2026-06-22T16:22:17.748Z",
               "EditorCaption": " [Dise\u00F1o]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "FormFinanza.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\pablp\\proyecto1\\FormFinanza.cs",
-              "RelativeDocumentMoniker": "FormFinanza.cs",
-              "ToolTip": "C:\\Users\\pablp\\proyecto1\\FormFinanza.cs [Dise\u00F1o]",
-              "RelativeToolTip": "FormFinanza.cs [Dise\u00F1o]",
+              "DocumentIndex": 6,
+              "Title": "AgregarCliente.cs",
+              "DocumentMoniker": "C:\\Users\\pablp\\proyecto1\\AgregarCliente.cs",
+              "RelativeDocumentMoniker": "AgregarCliente.cs",
+              "ToolTip": "C:\\Users\\pablp\\proyecto1\\AgregarCliente.cs",
+              "RelativeToolTip": "AgregarCliente.cs",
+              "ViewState": "AgIAABwAAAAAAAAAAAAIwDEAAAAlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-22T08:40:09.946Z",
-              "EditorCaption": " [Dise\u00F1o]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "FormFinanza.cs",
-              "DocumentMoniker": "C:\\Users\\pablp\\proyecto1\\FormFinanza.cs",
-              "RelativeDocumentMoniker": "FormFinanza.cs",
-              "ToolTip": "C:\\Users\\pablp\\proyecto1\\FormFinanza.cs",
-              "RelativeToolTip": "FormFinanza.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-22T08:40:12.877Z",
+              "WhenOpened": "2026-06-22T16:24:47.796Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "FormPersonal.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\pablp\\proyecto1\\FormPersonal.cs",
-              "RelativeDocumentMoniker": "FormPersonal.cs",
-              "ToolTip": "C:\\Users\\pablp\\proyecto1\\FormPersonal.cs [Dise\u00F1o]",
-              "RelativeToolTip": "FormPersonal.cs [Dise\u00F1o]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-22T08:41:02.316Z",
-              "EditorCaption": " [Dise\u00F1o]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "AgregarPago.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\pablp\\proyecto1\\AgregarPago.cs",
-              "RelativeDocumentMoniker": "AgregarPago.cs",
-              "ToolTip": "C:\\Users\\pablp\\proyecto1\\AgregarPago.cs [Dise\u00F1o]",
-              "RelativeToolTip": "AgregarPago.cs [Dise\u00F1o]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-22T04:13:31.38Z",
-              "EditorCaption": " [Dise\u00F1o]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "AgregarPago.cs",
-              "DocumentMoniker": "C:\\Users\\pablp\\proyecto1\\AgregarPago.cs",
-              "RelativeDocumentMoniker": "AgregarPago.cs",
-              "ToolTip": "C:\\Users\\pablp\\proyecto1\\AgregarPago.cs",
-              "RelativeToolTip": "AgregarPago.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-22T08:41:24.409Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "AgregarEmpleado.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\pablp\\proyecto1\\AgregarEmpleado.cs",
-              "RelativeDocumentMoniker": "AgregarEmpleado.cs",
-              "ToolTip": "C:\\Users\\pablp\\proyecto1\\AgregarEmpleado.cs [Dise\u00F1o]",
-              "RelativeToolTip": "AgregarEmpleado.cs [Dise\u00F1o]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-22T08:42:09.675Z",
-              "EditorCaption": " [Dise\u00F1o]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "AgregarEmpleado.cs",
-              "DocumentMoniker": "C:\\Users\\pablp\\proyecto1\\AgregarEmpleado.cs",
-              "RelativeDocumentMoniker": "AgregarEmpleado.cs",
-              "ToolTip": "C:\\Users\\pablp\\proyecto1\\AgregarEmpleado.cs",
-              "RelativeToolTip": "AgregarEmpleado.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-22T08:42:15.929Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 0,
               "Title": "FormInventarioCuenta.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\pablp\\proyecto1\\FormInventarioCuenta.cs",
               "RelativeDocumentMoniker": "FormInventarioCuenta.cs",
@@ -305,31 +168,208 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "AgregarPago.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\pablp\\proyecto1\\AgregarPago.cs",
+              "RelativeDocumentMoniker": "AgregarPago.cs",
+              "ToolTip": "C:\\Users\\pablp\\proyecto1\\AgregarPago.cs [Dise\u00F1o]",
+              "RelativeToolTip": "AgregarPago.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-22T04:13:31.38Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "AgregarPago.cs",
+              "DocumentMoniker": "C:\\Users\\pablp\\proyecto1\\AgregarPago.cs",
+              "RelativeDocumentMoniker": "AgregarPago.cs",
+              "ToolTip": "C:\\Users\\pablp\\proyecto1\\AgregarPago.cs",
+              "RelativeToolTip": "AgregarPago.cs",
+              "ViewState": "AgIAACoAAAAAAAAAAAAYwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-22T08:41:24.409Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "FormInventarioCuenta.cs",
+              "DocumentMoniker": "C:\\Users\\pablp\\proyecto1\\FormInventarioCuenta.cs",
+              "RelativeDocumentMoniker": "FormInventarioCuenta.cs",
+              "ToolTip": "C:\\Users\\pablp\\proyecto1\\FormInventarioCuenta.cs",
+              "RelativeToolTip": "FormInventarioCuenta.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAkwCQAAABSAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-22T16:21:50.37Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "AppBancaria.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\pablp\\proyecto1\\AppBancaria.cs",
+              "RelativeDocumentMoniker": "AppBancaria.cs",
+              "ToolTip": "C:\\Users\\pablp\\proyecto1\\AppBancaria.cs [Dise\u00F1o]",
+              "RelativeToolTip": "AppBancaria.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-22T22:57:59.626Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "AgregarProductos.cs",
+              "DocumentMoniker": "C:\\Users\\pablp\\proyecto1\\AgregarProductos.cs",
+              "RelativeDocumentMoniker": "AgregarProductos.cs",
+              "ToolTip": "C:\\Users\\pablp\\proyecto1\\AgregarProductos.cs",
+              "RelativeToolTip": "AgregarProductos.cs",
+              "ViewState": "AgIAAEcAAAAAAAAAAAAUwE0AAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-22T04:13:37.813Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "AgregarCliente.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\pablp\\proyecto1\\AgregarCliente.Designer.cs",
+              "RelativeDocumentMoniker": "AgregarCliente.Designer.cs",
+              "ToolTip": "C:\\Users\\pablp\\proyecto1\\AgregarCliente.Designer.cs",
+              "RelativeToolTip": "AgregarCliente.Designer.cs",
+              "ViewState": "AgIAAGQAAAAAAAAAAAD4v3IAAABSAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-22T17:50:40.359Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "FormInventario.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\pablp\\proyecto1\\FormInventario.cs",
+              "RelativeDocumentMoniker": "FormInventario.cs",
+              "ToolTip": "C:\\Users\\pablp\\proyecto1\\FormInventario.cs [Dise\u00F1o]",
+              "RelativeToolTip": "FormInventario.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-22T08:40:49.723Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "FormInventario.cs",
+              "DocumentMoniker": "C:\\Users\\pablp\\proyecto1\\FormInventario.cs",
+              "RelativeDocumentMoniker": "FormInventario.cs",
+              "ToolTip": "C:\\Users\\pablp\\proyecto1\\FormInventario.cs",
+              "RelativeToolTip": "FormInventario.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAAQwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-22T16:23:03.492Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "FormInventarioDeposito.cs",
+              "DocumentMoniker": "C:\\Users\\pablp\\proyecto1\\FormInventarioDeposito.cs",
+              "RelativeDocumentMoniker": "FormInventarioDeposito.cs",
+              "ToolTip": "C:\\Users\\pablp\\proyecto1\\FormInventarioDeposito.cs",
+              "RelativeToolTip": "FormInventarioDeposito.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAAwCEAAABJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-22T10:12:02.136Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "FormInventarioDeposito.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\pablp\\proyecto1\\FormInventarioDeposito.cs",
+              "RelativeDocumentMoniker": "FormInventarioDeposito.cs",
+              "ToolTip": "C:\\Users\\pablp\\proyecto1\\FormInventarioDeposito.cs [Dise\u00F1o]",
+              "RelativeToolTip": "FormInventarioDeposito.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-22T08:40:57.949Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "FormFinanza.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\pablp\\proyecto1\\FormFinanza.cs",
+              "RelativeDocumentMoniker": "FormFinanza.cs",
+              "ToolTip": "C:\\Users\\pablp\\proyecto1\\FormFinanza.cs [Dise\u00F1o]",
+              "RelativeToolTip": "FormFinanza.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-22T08:40:09.946Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "FormFinanza.cs",
+              "DocumentMoniker": "C:\\Users\\pablp\\proyecto1\\FormFinanza.cs",
+              "RelativeDocumentMoniker": "FormFinanza.cs",
+              "ToolTip": "C:\\Users\\pablp\\proyecto1\\FormFinanza.cs",
+              "RelativeToolTip": "FormFinanza.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-22T08:40:12.877Z"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 16,
+              "Title": "FormPersonal.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\pablp\\proyecto1\\FormPersonal.cs",
+              "RelativeDocumentMoniker": "FormPersonal.cs",
+              "ToolTip": "C:\\Users\\pablp\\proyecto1\\FormPersonal.cs [Dise\u00F1o]",
+              "RelativeToolTip": "FormPersonal.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-22T08:41:02.316Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "AgregarEmpleado.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\pablp\\proyecto1\\AgregarEmpleado.cs",
+              "RelativeDocumentMoniker": "AgregarEmpleado.cs",
+              "ToolTip": "C:\\Users\\pablp\\proyecto1\\AgregarEmpleado.cs [Dise\u00F1o]",
+              "RelativeToolTip": "AgregarEmpleado.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-22T08:42:09.675Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "AgregarEmpleado.cs",
+              "DocumentMoniker": "C:\\Users\\pablp\\proyecto1\\AgregarEmpleado.cs",
+              "RelativeDocumentMoniker": "AgregarEmpleado.cs",
+              "ToolTip": "C:\\Users\\pablp\\proyecto1\\AgregarEmpleado.cs",
+              "RelativeToolTip": "AgregarEmpleado.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-22T08:42:15.929Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
               "Title": "FormAgenda.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\pablp\\proyecto1\\FormAgenda.cs",
               "RelativeDocumentMoniker": "FormAgenda.cs",
               "ToolTip": "C:\\Users\\pablp\\proyecto1\\FormAgenda.cs [Dise\u00F1o]",
               "RelativeToolTip": "FormAgenda.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-22T08:40:46.467Z",
-              "EditorCaption": " [Dise\u00F1o]"
+              "WhenOpened": "2026-06-22T08:40:46.467Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 20,
               "Title": "FormBusquedaPuesto.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\pablp\\proyecto1\\FormBusquedaPuesto.cs",
               "RelativeDocumentMoniker": "FormBusquedaPuesto.cs",
               "ToolTip": "C:\\Users\\pablp\\proyecto1\\FormBusquedaPuesto.cs [Dise\u00F1o]",
               "RelativeToolTip": "FormBusquedaPuesto.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-22T08:40:44.963Z",
-              "EditorCaption": " [Dise\u00F1o]"
+              "WhenOpened": "2026-06-22T08:40:44.963Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 21,
               "Title": "FormInventarioBancoboton.cs",
               "DocumentMoniker": "C:\\Users\\pablp\\proyecto1\\FormInventarioBancoboton.cs",
               "RelativeDocumentMoniker": "FormInventarioBancoboton.cs",
@@ -337,8 +377,7 @@
               "RelativeToolTip": "FormInventarioBancoboton.cs",
               "ViewState": "AgIAAA4AAAAAAAAAAAAAwCUAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-22T04:16:06.73Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-06-22T04:16:06.73Z"
             }
           ]
         }
