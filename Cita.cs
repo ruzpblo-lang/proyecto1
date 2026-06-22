@@ -8,10 +8,15 @@ namespace Proyecto
 {
     public class Cita
     {
-        public int FolioId { get; }
-        public int EmpleadoId { get; }
-        public int ClienteId { get; }
-        public int HorarioId { get; }
+        public Cita(string cliente, string horario, string estado)
+        {
+            Cliente = cliente;
+            Horario = horario;
+            Estado = estado;
+        }
+
+        public string Cliente { get; }
+        public string Horario { get; }
         public string Estado { get; } //Pendiente
     }
 }

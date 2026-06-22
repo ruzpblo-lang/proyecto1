@@ -8,15 +8,15 @@ namespace Proyecto
 {
     public  class FullEmpleado
     {
-        public FullEmpleado(int iD, string nombre, string correo, string telNum, string estado)
+        public FullEmpleado(int iD, string nombre, string correo, string telNum, string estado, string puesto)
         {
             ID = iD;
             Nombre = nombre;
             Correo = correo;
             TelNum = telNum;
             Estado = estado;
-           
-          
+            Puesto = puesto;
+            
         }
 
         public int ID { get; }
@@ -25,6 +25,8 @@ namespace Proyecto
         public string TelNum { get; }
         public string Estado { get; }
         public string Puesto { get; }
+
+       
      
       
 

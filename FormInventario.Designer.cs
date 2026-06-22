@@ -29,75 +29,88 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.btnMenu = new System.Windows.Forms.Button();
+            this.btnInventarioCuenta = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnInventarioBanco = new System.Windows.Forms.Button();
+            this.btnInventarioDeposito = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.button4);
-            this.groupBox1.Controls.Add(this.button2);
+            this.groupBox1.Controls.Add(this.btnInventarioDeposito);
+            this.groupBox1.Controls.Add(this.btnMenu);
+            this.groupBox1.Controls.Add(this.btnInventarioCuenta);
             this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Controls.Add(this.button1);
-            this.groupBox1.Location = new System.Drawing.Point(128, 49);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox1.Controls.Add(this.btnInventarioBanco);
+            this.groupBox1.Location = new System.Drawing.Point(171, 60);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.groupBox1.Size = new System.Drawing.Size(298, 214);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.groupBox1.Size = new System.Drawing.Size(397, 263);
             this.groupBox1.TabIndex = 2;
             this.groupBox1.TabStop = false;
             // 
-            // button4
+            // btnMenu
             // 
-            this.button4.Location = new System.Drawing.Point(237, 190);
-            this.button4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(56, 19);
-            this.button4.TabIndex = 4;
-            this.button4.Text = "Menú";
-            this.button4.UseVisualStyleBackColor = true;
+            this.btnMenu.Location = new System.Drawing.Point(316, 234);
+            this.btnMenu.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnMenu.Name = "btnMenu";
+            this.btnMenu.Size = new System.Drawing.Size(75, 23);
+            this.btnMenu.TabIndex = 4;
+            this.btnMenu.Text = "Menú";
+            this.btnMenu.UseVisualStyleBackColor = true;
+            this.btnMenu.Click += new System.EventHandler(this.btnMenu_Click);
             // 
-            // button2
+            // btnInventarioCuenta
             // 
-            this.button2.Location = new System.Drawing.Point(18, 104);
-            this.button2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(262, 25);
-            this.button2.TabIndex = 2;
-            this.button2.Text = "Cuenta del cliente";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btnInventarioCuenta.Location = new System.Drawing.Point(24, 128);
+            this.btnInventarioCuenta.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnInventarioCuenta.Name = "btnInventarioCuenta";
+            this.btnInventarioCuenta.Size = new System.Drawing.Size(349, 31);
+            this.btnInventarioCuenta.TabIndex = 2;
+            this.btnInventarioCuenta.Text = "Cuenta del cliente";
+            this.btnInventarioCuenta.UseVisualStyleBackColor = true;
+            this.btnInventarioCuenta.Click += new System.EventHandler(this.btnInventarioCuenta_Click);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(128, 15);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Location = new System.Drawing.Point(171, 18);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(54, 13);
+            this.label1.Size = new System.Drawing.Size(65, 16);
             this.label1.TabIndex = 1;
             this.label1.Text = "Inventario";
             // 
-            // button1
+            // btnInventarioBanco
             // 
-            this.button1.Location = new System.Drawing.Point(18, 63);
-            this.button1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(262, 22);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "Inventario del Banco";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.btnInventarioBanco.Location = new System.Drawing.Point(24, 78);
+            this.btnInventarioBanco.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnInventarioBanco.Name = "btnInventarioBanco";
+            this.btnInventarioBanco.Size = new System.Drawing.Size(349, 27);
+            this.btnInventarioBanco.TabIndex = 0;
+            this.btnInventarioBanco.Text = "Inventario del Banco";
+            this.btnInventarioBanco.UseVisualStyleBackColor = true;
+            this.btnInventarioBanco.Click += new System.EventHandler(this.btnInventarioBanco_Click);
+            // 
+            // btnInventarioDeposito
+            // 
+            this.btnInventarioDeposito.Location = new System.Drawing.Point(24, 188);
+            this.btnInventarioDeposito.Name = "btnInventarioDeposito";
+            this.btnInventarioDeposito.Size = new System.Drawing.Size(349, 23);
+            this.btnInventarioDeposito.TabIndex = 5;
+            this.btnInventarioDeposito.Text = "InventarioDeposito";
+            this.btnInventarioDeposito.UseVisualStyleBackColor = true;
+            this.btnInventarioDeposito.Click += new System.EventHandler(this.btnInventarioDeposito_Click);
             // 
             // FormInventario
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(600, 366);
+            this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.groupBox1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "FormInventario";
             this.Text = "FormInventario";
             this.groupBox1.ResumeLayout(false);
@@ -109,9 +122,10 @@
         #endregion
 
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btnMenu;
+        private System.Windows.Forms.Button btnInventarioCuenta;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnInventarioBanco;
+        private System.Windows.Forms.Button btnInventarioDeposito;
     }
 }
