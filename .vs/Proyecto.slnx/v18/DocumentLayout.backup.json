@@ -11,7 +11,7 @@
       "RelativeMoniker": "D:0:0:{5ED591AE-3C6E-43F6-9E76-265A2B3EABD6}|Proyecto.csproj|solutionrelative:appbancaria.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5ED591AE-3C6E-43F6-9E76-265A2B3EABD6}|Proyecto.csproj|c:\\users\\shani\\desktop\\git\\proyecto1\\agregarpago.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{5ED591AE-3C6E-43F6-9E76-265A2B3EABD6}|Proyecto.csproj|C:\\Users\\shani\\Desktop\\Git\\proyecto1\\agregarpago.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{5ED591AE-3C6E-43F6-9E76-265A2B3EABD6}|Proyecto.csproj|solutionrelative:agregarpago.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
@@ -59,8 +59,7 @@
               "ViewState": "AgIAAAkAAAAAAAAAAAAAAC4AAABjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-06-18T02:24:16.84Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Document",
@@ -72,8 +71,7 @@
               "RelativeToolTip": "AgregarPago.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-06-18T02:20:31.045Z",
-              "IsPinned": true,
-              "EditorCaption": " [Dise\u00F1o]"
+              "IsPinned": true
             },
             {
               "$type": "Document",
@@ -86,8 +84,7 @@
               "ViewState": "AgIAAAkBAAAAAAAAAAAQwBwBAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-06-18T01:34:43.852Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Document",
@@ -95,8 +92,8 @@
               "Title": "FormPersonal.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\shani\\Desktop\\Git\\proyecto1\\FormPersonal.cs",
               "RelativeDocumentMoniker": "FormPersonal.cs",
-              "ToolTip": "C:\\Users\\shani\\Desktop\\Git\\proyecto1\\FormPersonal.cs [Dise\u00F1o]*",
-              "RelativeToolTip": "FormPersonal.cs [Dise\u00F1o]*",
+              "ToolTip": "C:\\Users\\shani\\Desktop\\Git\\proyecto1\\FormPersonal.cs [Dise\u00F1o]",
+              "RelativeToolTip": "FormPersonal.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-06-22T02:33:02.967Z",
               "EditorCaption": " [Dise\u00F1o]"
@@ -119,8 +116,8 @@
               "Title": "FormFinanza.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\shani\\Desktop\\Git\\proyecto1\\FormFinanza.cs",
               "RelativeDocumentMoniker": "FormFinanza.cs",
-              "ToolTip": "C:\\Users\\ricar\\OneDrive\\Documentos\\GitHub\\proyecto1\\FormFinanza.cs [Dise\u00F1o]",
-              "RelativeToolTip": "..\\..\\..\\..\\ricar\\OneDrive\\Documentos\\GitHub\\proyecto1\\FormFinanza.cs [Dise\u00F1o]",
+              "ToolTip": "C:\\Users\\shani\\Desktop\\Git\\proyecto1\\FormFinanza.cs [Dise\u00F1o]",
+              "RelativeToolTip": "FormFinanza.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-06-18T02:28:36.56Z"
             },
@@ -130,8 +127,8 @@
               "Title": "FormAgenda.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\shani\\Desktop\\Git\\proyecto1\\FormAgenda.cs",
               "RelativeDocumentMoniker": "FormAgenda.cs",
-              "ToolTip": "C:\\Users\\ricar\\OneDrive\\Documentos\\GitHub\\proyecto1\\FormAgenda.cs [Dise\u00F1o]",
-              "RelativeToolTip": "..\\..\\..\\..\\ricar\\OneDrive\\Documentos\\GitHub\\proyecto1\\FormAgenda.cs [Dise\u00F1o]",
+              "ToolTip": "C:\\Users\\shani\\Desktop\\Git\\proyecto1\\FormAgenda.cs [Dise\u00F1o]",
+              "RelativeToolTip": "FormAgenda.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-06-18T13:16:06.498Z"
             },
@@ -156,8 +153,7 @@
               "ToolTip": "C:\\Users\\shani\\Desktop\\Git\\proyecto1\\AppBancaria.cs [Dise\u00F1o]",
               "RelativeToolTip": "AppBancaria.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-18T01:34:43.857Z",
-              "EditorCaption": " [Dise\u00F1o]"
+              "WhenOpened": "2026-06-18T01:34:43.857Z"
             }
           ]
         }
