@@ -23,6 +23,8 @@ namespace Proyecto
         {
             dgvInventarioCuenta.DataSource = gestorempresa.GetInventarioCliente();
             dgvInventarioCuenta.Columns["CuentaId"].Visible = false;
+            dgvInventarioCuenta.Columns["ClienteId"].Visible = false;
+
         }
 
         private void btnRegresar_Click(object sender, EventArgs e)
