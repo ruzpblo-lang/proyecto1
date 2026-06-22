@@ -19,7 +19,7 @@ namespace Proyecto
             this.gestorcitas = gestorcitas;
 
             cmbCliente.DisplayMember = "Nombre";
-            cmbCliente.ValueMember = "CuentaId";
+            cmbCliente.ValueMember = "ClienteId";
             cmbCliente.DataSource = gestorcitas.ShortClientes();
         }
 

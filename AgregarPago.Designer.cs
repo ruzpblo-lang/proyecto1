@@ -29,6 +29,8 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.cmbEstado = new System.Windows.Forms.ComboBox();
+            this.label5 = new System.Windows.Forms.Label();
             this.btnagregar = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -38,13 +40,13 @@
             this.txtMonto = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.cmbEstado = new System.Windows.Forms.ComboBox();
-            this.label5 = new System.Windows.Forms.Label();
+            this.cmbempleado = new System.Windows.Forms.ComboBox();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.cmbempleado);
             this.groupBox1.Controls.Add(this.cmbEstado);
             this.groupBox1.Controls.Add(this.label5);
             this.groupBox1.Controls.Add(this.btnagregar);
@@ -63,12 +65,30 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "groupBox1";
             // 
+            // cmbEstado
+            // 
+            this.cmbEstado.FormattingEnabled = true;
+            this.cmbEstado.Location = new System.Drawing.Point(27, 226);
+            this.cmbEstado.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.cmbEstado.Name = "cmbEstado";
+            this.cmbEstado.Size = new System.Drawing.Size(196, 24);
+            this.cmbEstado.TabIndex = 19;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(231, 234);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(50, 16);
+            this.label5.TabIndex = 18;
+            this.label5.Text = "Estado";
+            // 
             // btnagregar
             // 
-            this.btnagregar.Location = new System.Drawing.Point(317, 285);
+            this.btnagregar.Location = new System.Drawing.Point(305, 285);
             this.btnagregar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnagregar.Name = "btnagregar";
-            this.btnagregar.Size = new System.Drawing.Size(67, 32);
+            this.btnagregar.Size = new System.Drawing.Size(79, 32);
             this.btnagregar.TabIndex = 17;
             this.btnagregar.Text = "Agregar";
             this.btnagregar.UseVisualStyleBackColor = true;
@@ -108,6 +128,7 @@
             this.cmbTipo.Name = "cmbTipo";
             this.cmbTipo.Size = new System.Drawing.Size(196, 24);
             this.cmbTipo.TabIndex = 15;
+            this.cmbTipo.SelectedIndexChanged += new System.EventHandler(this.cmbTipo_SelectedIndexChanged);
             // 
             // txtConcepto
             // 
@@ -143,23 +164,13 @@
             this.label1.TabIndex = 12;
             this.label1.Text = "Tipo";
             // 
-            // cmbEstado
+            // cmbempleado
             // 
-            this.cmbEstado.FormattingEnabled = true;
-            this.cmbEstado.Location = new System.Drawing.Point(27, 226);
-            this.cmbEstado.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.cmbEstado.Name = "cmbEstado";
-            this.cmbEstado.Size = new System.Drawing.Size(196, 24);
-            this.cmbEstado.TabIndex = 19;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(231, 234);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(50, 16);
-            this.label5.TabIndex = 18;
-            this.label5.Text = "Estado";
+            this.cmbempleado.FormattingEnabled = true;
+            this.cmbempleado.Location = new System.Drawing.Point(27, 92);
+            this.cmbempleado.Name = "cmbempleado";
+            this.cmbempleado.Size = new System.Drawing.Size(196, 24);
+            this.cmbempleado.TabIndex = 1;
             // 
             // AgregarPago_
             // 
@@ -190,5 +201,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ComboBox cmbEstado;
         private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.ComboBox cmbempleado;
     }
 }
