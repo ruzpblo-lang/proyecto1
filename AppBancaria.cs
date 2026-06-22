@@ -28,9 +28,9 @@ namespace Proyecto
 
         private void btnConsultarAgenda_Click(object sender, EventArgs e)
         {
-            FormAgenda forms = new FormAgenda(this);
+          FormAgenda forms = new FormAgenda(this);
             forms.ShowDialog();
-        }
+        }  
 
         private void btnGestionarPersonal_Click(object sender, EventArgs e)
         {
@@ -354,6 +354,61 @@ namespace Proyecto
             conn.ExecuteNonQuery(query,
                 ("$tipo", tipo),
                 ("$cantidad",  cantidad));
+        }
+
+        public bool VerificarDisponibilidadCita(string fecha, string hora)
+        {
+            string query = "SELECT COUNT(*) AS Total FROM Citas WHERE Fecha = $fecha AND Hora = $hora AND Estado != 'Cancelada'";
+
+            var rs = conn.ExecuteReader(query,
+                ("$fecha", fecha),
+                ("$hora", hora));
+
+            if (rs.Read())
+            {
+                int total = rs.GetInt("Total");
+                return total == 0; 
+            }
+            return false;
+        }
+
+  
+        public bool AgendarCitaGerencia(int empleadoId, int clienteId, string fecha, string hora)
+        {
+         
+            if (!VerificarDisponibilidadCita(fecha, hora))
+            {
+                return false; 
+            }
+
+            string queryInsert = @"INSERT INTO Citas (EmpleadoId, ClienteId, Fecha, Hora, Estado) 
+                                   VALUES ($empleadoId, $clienteId, $fecha, $hora, 'Confirmada');";
+
+            conn.ExecuteNonQuery(queryInsert,
+                ("$empleadoId", empleadoId),
+                ("$clienteId", clienteId),
+                ("$fecha", fecha),
+                ("$hora", hora)
+            );
+
+            return true;
+        }
+
+        internal object GetProveedores()
+        {
+            List<Proveedor> listaProveedores = new List<Proveedor>();
+            string query = "SELECT ProveedorId, Nombre FROM Proveedores;";
+
+            var rs = conn.ExecuteReader(query);
+            while (rs.Read())
+            {
+                listaProveedores.Add(new Proveedor(
+                    rs.GetInt("ProveedorId"),
+                    rs.GetString("Nombre")
+                ));
+            }
+
+            return listaProveedores;
         }
     } 
 }
