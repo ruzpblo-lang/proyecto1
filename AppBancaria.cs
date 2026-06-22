@@ -95,7 +95,7 @@ namespace Proyecto
         {
             List<FullCita> CitasDipsonibles = new List<FullCita>();
 
-            string query = "SELECT c.FolioId, cl.Nombre AS Cliente, e.Nombre AS Empleado, (h.Fecha || ' ' || h.Hora) AS Horario, c.Estado\r\nFROM [Citas] c\r\nINNER JOIN [Clientes] cl ON c.ClienteId = cl.ClienteId\r\nINNER JOIN [Empleados] e ON c.EmpleadoId = e.EmpleadoId\r\nINNER JOIN [HorariosLibres] h ON c.HorarioId = h.HorarioId;";
+            string query = "SELECT c.FolioId, cl.Nombre AS Cliente, e.Nombre AS Empleado, (c.Fecha || ' ' || c.Hora) AS Horario, c.Estado\r\nFROM [Citas] c\r\nINNER JOIN [Clientes] cl ON c.ClienteId = cl.ClienteId\r\nINNER JOIN [Empleados] e ON c.EmpleadoId = e.EmpleadoId";
 
             var rs = conn.ExecuteReader(query);
             while (rs.Read())

@@ -122,6 +122,12 @@
     <Compile Include="FormAgenda.Designer.cs">
       <DependentUpon>FormAgenda.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormInfoCita.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormInfoCita.Designer.cs">
+      <DependentUpon>FormInfoCita.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormInventarioBancoboton.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -162,6 +168,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormAgenda.resx">
       <DependentUpon>FormAgenda.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormInfoCita.resx">
+      <DependentUpon>FormInfoCita.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormInventarioBancoboton.resx">
       <DependentUpon>FormInventarioBancoboton.cs</DependentUpon>
