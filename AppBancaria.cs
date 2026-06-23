@@ -255,14 +255,36 @@ namespace Proyecto
             while (rs.Read())
             {
                 ListaInventario.Add(new Inventario(
-                    rs.GetInt32(0),
+                    rs.GetInt ("ObjetoId"),
                     rs.GetString("Tipo"),
-                    rs.GetInt32(2)
+                    rs.GetInt ("Cantidad")
                 ));
             }
             return ListaInventario; 
         }
 
+        public List<Cliente> GetInventarioCliente()
+        {
+            List<Cliente> clientes = new List<Cliente>();
+            string query = "SELECT ClienteId, CuentaId, Nombre, Correo, TelNum, Estado, Monto FROM clientes";
+
+            var rs = conn.ExecuteReader(query);
+            while(rs.Read())
+            {
+                clientes.Add(new Cliente(
+                    rs.GetInt("ClienteId"),
+                    rs.GetInt("CuentaId"),
+                    rs.GetString("Nombre"),
+                    rs.GetString("Correo"),
+                    rs.GetString("TelNum"),
+                    rs.GetInt("Estado"),
+                    rs.GetDouble("Monto")
+                    ));
+            }
+            return clientes;
+        }
+
+        
         internal object GetTodosLosPuestos()
         {
             List<Puesto> listaPuesto = new List<Puesto>();
@@ -356,59 +378,6 @@ namespace Proyecto
                 ("$cantidad",  cantidad));
         }
 
-        public bool VerificarDisponibilidadCita(string fecha, string hora)
-        {
-            string query = "SELECT COUNT(*) AS Total FROM Citas WHERE Fecha = $fecha AND Hora = $hora AND Estado != 'Cancelada'";
 
-            var rs = conn.ExecuteReader(query,
-                ("$fecha", fecha),
-                ("$hora", hora));
-
-            if (rs.Read())
-            {
-                int total = rs.GetInt("Total");
-                return total == 0; 
-            }
-            return false;
-        }
-
-  
-        public bool AgendarCitaGerencia(int empleadoId, int clienteId, string fecha, string hora)
-        {
-         
-            if (!VerificarDisponibilidadCita(fecha, hora))
-            {
-                return false; 
-            }
-
-            string queryInsert = @"INSERT INTO Citas (EmpleadoId, ClienteId, Fecha, Hora, Estado) 
-                                   VALUES ($empleadoId, $clienteId, $fecha, $hora, 'Confirmada');";
-
-            conn.ExecuteNonQuery(queryInsert,
-                ("$empleadoId", empleadoId),
-                ("$clienteId", clienteId),
-                ("$fecha", fecha),
-                ("$hora", hora)
-            );
-
-            return true;
-        }
-
-        internal object GetProveedores()
-        {
-            List<Proveedor> listaProveedores = new List<Proveedor>();
-            string query = "SELECT ProveedorId, Nombre FROM Proveedores;";
-
-            var rs = conn.ExecuteReader(query);
-            while (rs.Read())
-            {
-                listaProveedores.Add(new Proveedor(
-                    rs.GetInt("ProveedorId"),
-                    rs.GetString("Nombre")
-                ));
-            }
-
-            return listaProveedores;
         }
     } 
-}

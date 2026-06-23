@@ -1,12 +1,15 @@
-﻿
-DROP TABLE IF EXISTS [Citas];
+﻿DROP TABLE IF EXISTS [Citas];
 DROP TABLE IF EXISTS [Nomina];
 DROP TABLE IF EXISTS [Empleados];
 DROP TABLE IF EXISTS [Puestos];
-DROP TABLE IF EXISTS [HorariosLibres];
 DROP TABLE IF EXISTS [Clientes];
 DROP TABLE IF EXISTS [Pagos];
 DROP TABLE IF EXISTS [Inventario];
+DROP TABLE IF EXISTS [Proveedores];
+DROP TABLE IF EXISTS [ProductosBodega];
+DROP TABLE IF EXISTS [PreciosProveedor];
+
+
 
 CREATE TABLE [Puestos] (
   [PuestoId] INTEGER PRIMARY KEY AUTOINCREMENT,
@@ -27,23 +30,18 @@ CREATE TABLE [Empleados] (
   [Nombre] TEXT NOT NULL,
   [Correo] TEXT UNIQUE NOT NULL,
   [TelNum] TEXT UNIQUE NOT NULL,
-  [Estado] INTEGER NOT NULL ); -- Por si tiene de baja la cuenta 
-  
-  CREATE TABLE [HorariosLibres] (
-  [HorarioId] INTEGER PRIMARY KEY AUTOINCREMENT,
-  [Fecha] TEXT NOT NULL, 
-  [Hora] TEXT NOT NULL   
-);
+  [Estado] INTEGER NOT NULL, -- Por si tiene de baja la cuenta
+  [Monto] DECIMAL NOT NULL DEFAULT 0); --Se agrego el monto del cliente 
 
 CREATE TABLE [Citas] (
   [FolioId] INTEGER PRIMARY KEY AUTOINCREMENT,
   [EmpleadoId] INTEGER REFERENCES Empleados(EmpleadoId),
-  [CuentaId] INTEGER NOT NULL, 
-  [HorarioId] INTEGER REFERENCES HorariosLibres(HorarioId),
+  [ClienteId] INTEGER NOT NULL, --Se cambio cuentas por cliente
+  [Fecha] TEXT NOT NULL,  --Se quito la tabla horarios,
+  [Hora] TEXT NOT NULL,   --- Se incluyo en la tabal citas
   [Estado] TEXT NOT NULL DEFAULT 'Pendiente'
 );
 
-  
   CREATE TABLE Nomina (
     [NominaId] INTEGER PRIMARY KEY AUTOINCREMENT,
     [EmpleadoId] INTEGER REFERENCES Empleados(EmpleadoId),
@@ -60,8 +58,24 @@ CREATE TABLE [Citas] (
   CREATE TABLE [Inventario] (
   [ObjetoId] INTEGER PRIMARY KEY AUTOINCREMENT,
   [Tipo] TEXT UNIQUE NOT NULL, 
-  [Cantidad] INTEGER NOT NULL DEFAULT 0
-);
+  [Cantidad] INTEGER NOT NULL DEFAULT 0);
+  
+  CREATE TABLE[Proveedores](
+  [ProveedorId] INTEGER PRIMARY KEY AUTOINCREMENT,
+  [Nombre] TEXT UNIQUE NOT NULL);
+  
+  CREATE TABLE[ProductosBodega](
+  [ObjetoId] INTEGER PRIMARY KEY AUTOINCREMENT,
+  [Tipo] TEXT UNIQUE NOT NULL,
+  [Cantidad] INTEGER NOT NULL DEFAULT 0);
+  
+  CREATE TABLE[PreciosProveedor](
+  [PrecioID] INTEGER PRIMARY KEY AUTOINCREMENT,
+  [ObjetoId] INTEGER NOT NULL REFERENCES ProductosBodega(ObjetoId),
+  [ProveedorId] INTEGER NOT NULL REFERENCES Proveedores(ProveedorId),
+  [Precio] DECIMAL NOT NULL DEFAULT 0);
+  
+
 
 -- Datos ramdoms generados por IA
 
@@ -76,21 +90,15 @@ INSERT INTO [Empleados] (Nombre, Correo, TelNum, PuestoId, Estado) VALUES
 ('Byron', 'byron.cajero@banco.mx', '9992223344', 1, 1),
 ('Valeria Gomez', 'valeria.gerente@banco.mx', '9993334455', 2, 1);
 
-INSERT INTO [Clientes] (CuentaId, Nombre, Correo, TelNum, Estado) VALUES
-(50001, 'Ana Perez', 'ana.perez@correo.com', '9994445566', 1),
-(50002, 'Juan Lopez', 'juan.lopez@correo.com', '9995556677', 1),
-(50003, 'Maria Fernandez', 'maria.f@correo.com', '9996667788', 1);
+INSERT INTO [Clientes] (CuentaId, Nombre, Correo, TelNum, Estado, Monto) VALUES
+(50001, 'Ana Perez', 'ana.perez@correo.com', '9994445566', 1, 67),
+(50002, 'Juan Lopez', 'juan.lopez@correo.com', '9995556677', 1, 41),
+(50003, 'Maria Fernandez', 'maria.f@correo.com', '9996667788', 1, 777);
 
-INSERT INTO [HorariosLibres] (Fecha, Hora) VALUES
-('2026-06-08', '09:00'),
-('2026-06-08', '10:30'),
-('2026-06-09', '12:00'),
-('2026-06-10', '14:00');
-
-INSERT INTO [Citas] (EmpleadoId, CuentaId, HorarioId, Estado) VALUES
-(3, 50001, 1, 'Confirmada'), 
-(3, 50002, 2, 'Pendiente'),  
-(2, 50003, 3, 'Pendiente');  
+INSERT INTO [Citas] (EmpleadoId, ClienteId, Fecha, Hora, Estado) VALUES
+(3, 1,'2026-06-08', '09:00', 'Confirmada'), 
+(3, 2,'2026-06-08', '10:30', 'Pendiente'),  
+(2, 3,'2026-06-10', '14:00', 'Pendiente');  
 
 INSERT INTO [Nomina] (EmpleadoId, FechaPago, SueldoBase) VALUES
 (1, '2026-06-15', 12500.00), 
@@ -107,3 +115,23 @@ INSERT INTO [Inventario] (Tipo, Cantidad) VALUES
 ('Billete de 200', 150),
 ('Billete de 100', 300),
 ('Moneda de 10', 500);
+
+INSERT INTO [Proveedores] (Nombre) VALUES
+('Office Depot'),
+('Garrafones del Sureste'),
+('Papelera Yucateca');
+
+INSERT INTO [ProductosBodega] (Tipo, Cantidad) VALUES
+('Garrafón de agua 20L', 15),
+('Paquete de hojas blancas', 30),
+('Folder tamaño carta', 100),
+('Plumas color negro', 50);
+
+INSERT INTO [PreciosProveedor] (ObjetoId, ProveedorId, Precio) VALUES
+(1, 2, 45.00), 
+(1, 1, 48.50), 
+(2, 1, 65.00), 
+(2, 3, 60.00), 
+(3, 1, 3.50),  
+(3, 3, 3.00),  
+(4, 1, 6.00);  
