@@ -3,11 +3,11 @@
   "WorkspaceRootPath": "C:\\Users\\pablp\\proyecto1\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{5ED591AE-3C6E-43F6-9E76-265A2B3EABD6}|Proyecto.csproj|C:\\Users\\pablp\\proyecto1\\agregarproductos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{5ED591AE-3C6E-43F6-9E76-265A2B3EABD6}|Proyecto.csproj|c:\\users\\pablp\\proyecto1\\agregarproductos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5ED591AE-3C6E-43F6-9E76-265A2B3EABD6}|Proyecto.csproj|solutionrelative:agregarproductos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5ED591AE-3C6E-43F6-9E76-265A2B3EABD6}|Proyecto.csproj|c:\\users\\pablp\\proyecto1\\agregarproductos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{5ED591AE-3C6E-43F6-9E76-265A2B3EABD6}|Proyecto.csproj|C:\\Users\\pablp\\proyecto1\\agregarproductos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{5ED591AE-3C6E-43F6-9E76-265A2B3EABD6}|Proyecto.csproj|solutionrelative:agregarproductos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
@@ -145,8 +145,7 @@
               "ToolTip": "C:\\Users\\pablp\\proyecto1\\FormInventarioBancoboton.cs [Dise\u00F1o]",
               "RelativeToolTip": "FormInventarioBancoboton.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-23T05:00:43.555Z",
-              "EditorCaption": " [Dise\u00F1o]"
+              "WhenOpened": "2026-06-23T05:00:43.555Z"
             },
             {
               "$type": "Document",
@@ -157,8 +156,7 @@
               "ToolTip": "C:\\Users\\pablp\\proyecto1\\AgregarPago.cs [Dise\u00F1o]",
               "RelativeToolTip": "AgregarPago.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-22T04:13:31.38Z",
-              "EditorCaption": " [Dise\u00F1o]"
+              "WhenOpened": "2026-06-22T04:13:31.38Z"
             },
             {
               "$type": "Document",
@@ -168,7 +166,7 @@
               "RelativeDocumentMoniker": "AgregarProductos.cs",
               "ToolTip": "C:\\Users\\pablp\\proyecto1\\AgregarProductos.cs",
               "RelativeToolTip": "AgregarProductos.cs",
-              "ViewState": "AgIAAFsAAAAAAAAAAAAAAHIAAAAMAAAAAAAAAA==",
+              "ViewState": "AgIAAEYAAAAAAAAAAAAuwHIAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-06-22T04:13:37.813Z",
               "EditorCaption": ""
@@ -182,8 +180,7 @@
               "ToolTip": "C:\\Users\\pablp\\proyecto1\\AppBancaria.cs [Dise\u00F1o]",
               "RelativeToolTip": "AppBancaria.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-22T22:57:59.626Z",
-              "EditorCaption": " [Dise\u00F1o]"
+              "WhenOpened": "2026-06-22T22:57:59.626Z"
             },
             {
               "$type": "Document",
@@ -195,8 +192,7 @@
               "RelativeToolTip": "AppBancaria.cs",
               "ViewState": "AgIAAMQBAAAAAAAAAAAAwNcBAAAzAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-22T22:58:01.339Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-06-22T22:58:01.339Z"
             },
             {
               "$type": "Document",
@@ -253,8 +249,7 @@
               "RelativeToolTip": "AgregarPago.cs",
               "ViewState": "AgIAACoAAAAAAAAAAAAYwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-22T08:41:24.409Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-06-22T08:41:24.409Z"
             },
             {
               "$type": "Document",
@@ -404,8 +399,7 @@
               "RelativeToolTip": "FormInventarioBancoboton.cs",
               "ViewState": "AgIAAA4AAAAAAAAAAAAAwCUAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-22T04:16:06.73Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-06-22T04:16:06.73Z"
             }
           ]
         }
