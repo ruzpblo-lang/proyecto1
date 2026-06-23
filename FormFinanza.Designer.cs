@@ -40,14 +40,16 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.CmbEstado = new System.Windows.Forms.ComboBox();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(182, 78);
+            this.label1.Location = new System.Drawing.Point(180, 11);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(76, 16);
             this.label1.TabIndex = 1;
@@ -60,7 +62,7 @@
             this.reportesToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1085, 28);
+            this.menuStrip1.Size = new System.Drawing.Size(969, 28);
             this.menuStrip1.TabIndex = 2;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -98,7 +100,7 @@
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(25, 110);
+            this.dataGridView1.Location = new System.Drawing.Point(23, 43);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
@@ -107,18 +109,19 @@
             // 
             // button6
             // 
-            this.button6.Location = new System.Drawing.Point(25, 430);
+            this.button6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.button6.Location = new System.Drawing.Point(23, 363);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(75, 23);
             this.button6.TabIndex = 4;
             this.button6.Text = "Menú";
-            this.button6.UseVisualStyleBackColor = true;
+            this.button6.UseVisualStyleBackColor = false;
             this.button6.Click += new System.EventHandler(this.button6_Click);
             // 
             // CmbTipopago
             // 
             this.CmbTipopago.FormattingEnabled = true;
-            this.CmbTipopago.Location = new System.Drawing.Point(698, 201);
+            this.CmbTipopago.Location = new System.Drawing.Point(696, 134);
             this.CmbTipopago.Name = "CmbTipopago";
             this.CmbTipopago.Size = new System.Drawing.Size(121, 24);
             this.CmbTipopago.TabIndex = 5;
@@ -127,7 +130,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(696, 182);
+            this.label3.Location = new System.Drawing.Point(694, 115);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(123, 16);
             this.label3.TabIndex = 1;
@@ -136,7 +139,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(678, 239);
+            this.label4.Location = new System.Drawing.Point(676, 172);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(152, 16);
             this.label4.TabIndex = 1;
@@ -145,24 +148,34 @@
             // CmbEstado
             // 
             this.CmbEstado.FormattingEnabled = true;
-            this.CmbEstado.Location = new System.Drawing.Point(699, 258);
+            this.CmbEstado.Location = new System.Drawing.Point(697, 191);
             this.CmbEstado.Name = "CmbEstado";
             this.CmbEstado.Size = new System.Drawing.Size(121, 24);
             this.CmbEstado.TabIndex = 5;
             this.CmbEstado.SelectedIndexChanged += new System.EventHandler(this.CmbEstado_SelectedIndexChanged);
             // 
+            // groupBox1
+            // 
+            this.groupBox1.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.groupBox1.Controls.Add(this.dataGridView1);
+            this.groupBox1.Controls.Add(this.CmbEstado);
+            this.groupBox1.Controls.Add(this.label1);
+            this.groupBox1.Controls.Add(this.CmbTipopago);
+            this.groupBox1.Controls.Add(this.label3);
+            this.groupBox1.Controls.Add(this.button6);
+            this.groupBox1.Controls.Add(this.label4);
+            this.groupBox1.Location = new System.Drawing.Point(0, 31);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(964, 410);
+            this.groupBox1.TabIndex = 6;
+            this.groupBox1.TabStop = false;
+            // 
             // FormFinanza
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1085, 468);
-            this.Controls.Add(this.CmbEstado);
-            this.Controls.Add(this.CmbTipopago);
-            this.Controls.Add(this.button6);
-            this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label1);
+            this.ClientSize = new System.Drawing.Size(969, 439);
+            this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "FormFinanza";
@@ -171,6 +184,8 @@
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -189,5 +204,6 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.ComboBox CmbEstado;
         private System.Windows.Forms.ToolStripMenuItem marcarComoCompletadoToolStripMenuItem;
+        private System.Windows.Forms.GroupBox groupBox1;
     }
 }

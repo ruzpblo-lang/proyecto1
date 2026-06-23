@@ -29,10 +29,6 @@
         private void InitializeComponent()
         {
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.agendarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.citaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.eventoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.misEventosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.gerenciaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.citarProvedoorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.citarEmpleadosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -53,8 +49,6 @@
             // 
             this.menuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.agendarToolStripMenuItem,
-            this.misEventosToolStripMenuItem,
             this.gerenciaToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
@@ -62,33 +56,6 @@
             this.menuStrip1.Size = new System.Drawing.Size(548, 28);
             this.menuStrip1.TabIndex = 1;
             this.menuStrip1.Text = "menuStrip1";
-            // 
-            // agendarToolStripMenuItem
-            // 
-            this.agendarToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.citaToolStripMenuItem,
-            this.eventoToolStripMenuItem});
-            this.agendarToolStripMenuItem.Name = "agendarToolStripMenuItem";
-            this.agendarToolStripMenuItem.Size = new System.Drawing.Size(80, 24);
-            this.agendarToolStripMenuItem.Text = "Agendar";
-            // 
-            // citaToolStripMenuItem
-            // 
-            this.citaToolStripMenuItem.Name = "citaToolStripMenuItem";
-            this.citaToolStripMenuItem.Size = new System.Drawing.Size(137, 26);
-            this.citaToolStripMenuItem.Text = "Cita";
-            // 
-            // eventoToolStripMenuItem
-            // 
-            this.eventoToolStripMenuItem.Name = "eventoToolStripMenuItem";
-            this.eventoToolStripMenuItem.Size = new System.Drawing.Size(137, 26);
-            this.eventoToolStripMenuItem.Text = "Evento";
-            // 
-            // misEventosToolStripMenuItem
-            // 
-            this.misEventosToolStripMenuItem.Name = "misEventosToolStripMenuItem";
-            this.misEventosToolStripMenuItem.Size = new System.Drawing.Size(101, 24);
-            this.misEventosToolStripMenuItem.Text = "Mis eventos";
             // 
             // gerenciaToolStripMenuItem
             // 
@@ -103,21 +70,21 @@
             // citarProvedoorToolStripMenuItem
             // 
             this.citarProvedoorToolStripMenuItem.Name = "citarProvedoorToolStripMenuItem";
-            this.citarProvedoorToolStripMenuItem.Size = new System.Drawing.Size(195, 26);
+            this.citarProvedoorToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.citarProvedoorToolStripMenuItem.Text = "citarProvedoor";
             this.citarProvedoorToolStripMenuItem.Click += new System.EventHandler(this.citarProvedoorToolStripMenuItem_Click);
             // 
             // citarEmpleadosToolStripMenuItem
             // 
             this.citarEmpleadosToolStripMenuItem.Name = "citarEmpleadosToolStripMenuItem";
-            this.citarEmpleadosToolStripMenuItem.Size = new System.Drawing.Size(195, 26);
+            this.citarEmpleadosToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.citarEmpleadosToolStripMenuItem.Text = "citarEmpleados";
             this.citarEmpleadosToolStripMenuItem.Click += new System.EventHandler(this.citarEmpleadosToolStripMenuItem_Click);
             // 
             // citarClienteToolStripMenuItem
             // 
             this.citarClienteToolStripMenuItem.Name = "citarClienteToolStripMenuItem";
-            this.citarClienteToolStripMenuItem.Size = new System.Drawing.Size(195, 26);
+            this.citarClienteToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.citarClienteToolStripMenuItem.Text = "citarCliente";
             this.citarClienteToolStripMenuItem.Click += new System.EventHandler(this.citarClienteToolStripMenuItem_Click);
             // 
@@ -223,10 +190,6 @@
 
         #endregion
         private System.Windows.Forms.MenuStrip menuStrip1;
-        private System.Windows.Forms.ToolStripMenuItem agendarToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem citaToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem eventoToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem misEventosToolStripMenuItem;
         private System.Windows.Forms.DataGridView dgvCitas;
         private System.Windows.Forms.Button btnInfo;
         private System.Windows.Forms.Button btnMenu;
