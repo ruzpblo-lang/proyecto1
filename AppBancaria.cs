@@ -452,5 +452,28 @@ namespace Proyecto
 
 
         }
+
+        internal void RegistrarPagosProducto(string tipo, decimal totalCompra)
+        {
+            int nuevoPagoExterior = 1;
+
+            string query = "SELECT IFNULL(MAX(ExteriorId), 0) AS MaxId FROM Pagos";
+            var rs = conn.ExecuteReader(query);
+
+            while (rs.Read())
+            {
+                nuevoPagoExterior = rs.GetInt("MaxId") + 1;
+            }
+            string fecha = DateTime.Now.ToString("dd/MM/y");
+            string queryInsert = "INSERT INTO Pagos (ExteriorId, Nombre, FechaPago, SueldoBase) " +
+                                 "VALUES ($exteriorId, $nombre, $fechaPago, $sueldoBase)";
+
+            conn.ExecuteNonQuery(queryInsert,
+                ("$exteriorId", nuevoPagoExterior),
+                ("$nombre", tipo),
+                ("$fechaPago", fecha),
+                ("$sueldoBase", totalCompra)
+                );
+        }
     } 
 }

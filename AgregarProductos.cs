@@ -105,11 +105,14 @@ namespace Proyecto
 
                     MessageBox.Show("Producto Agregado!");  
                     precioProveedores = gestorempresa.MostrarProductosProveedores();
+                    decimal totalCompra = cantidad * (decimal)producto[0].Precio;
+                    gestorempresa.RegistrarPagosProducto(producto[0].Tipo, totalCompra);
                     UpdateData();
                     break;
                 case DialogResult.No:
-                    break;
+                    break; 
             }
+            
         }
 
         private void cmbProducto_SelectedIndexChanged(object sender, EventArgs e)
