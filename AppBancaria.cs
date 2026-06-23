@@ -484,7 +484,7 @@ public List<PrecioProveedor> MostrarProductosProveedores()
             {
                 listaProveedores.Add(new Proveedor(
                     rs.GetInt("ProveedorId"),
-                    rs.GetInt("Nombre")
+                    rs.GetString("Nombre")
                 ));
             }
 
