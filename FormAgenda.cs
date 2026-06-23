@@ -39,6 +39,18 @@ namespace Proyecto
 
             if (dgvCitas.Columns["FolioId"] != null)
                 dgvCitas.Columns["FolioId"].Visible = false;
+            
+            if (dgvCitas.Columns["Empleado"] != null)
+                dgvCitas.Columns["Empleado"].Visible = false;
+            RefreshCitas();
+        }
+        public void RefreshCitas()
+        {
+            dgvCitas.DataSource = null;
+            dgvCitas.DataSource = gestorcitas.GetFullCitas();
+
+            if (dgvCitas.Columns["FolioId"] != null)
+                dgvCitas.Columns["FolioId"].Visible = false;
 
             if (dgvCitas.Columns["Empleado"] != null)
                 dgvCitas.Columns["Empleado"].Visible = false;
@@ -76,7 +88,7 @@ namespace Proyecto
         {
             GerenteCitas ventanaAgregar = new GerenteCitas(gestorcitas, "Proveedor");
 
-            ventanaAgregar.ShowDialog();
+            ventanaAgregar.ShowDialog(this);
 
             //UpdateData();
         }
@@ -84,13 +96,13 @@ namespace Proyecto
         private void citarEmpleadosToolStripMenuItem_Click(object sender, EventArgs e)
         {
             GerenteCitas ventanaAgregar = new GerenteCitas(gestorcitas, "Empleado");
-            ventanaAgregar.ShowDialog();
+            ventanaAgregar.ShowDialog(this);
         }
 
         private void citarClienteToolStripMenuItem_Click(object sender, EventArgs e)
         {
             GerenteCitas ventanaAgregar = new GerenteCitas(gestorcitas, "Cliente");
-            ventanaAgregar.ShowDialog();
+            ventanaAgregar.ShowDialog(this);
         }
     }
 }

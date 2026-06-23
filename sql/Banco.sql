@@ -154,3 +154,31 @@ INSERT INTO [PreciosProveedor] (ObjetoId, ProveedorId, Precio) VALUES
 (3, 1, 3.50),  
 (3, 3, 3.00),  
 (4, 1, 6.00);
+
+SELECT c.FolioId, 
+        CASE 
+            WHEN c.ClienteId > 0 THEN cl.Nombre
+            WHEN c.ClienteId < 0 THEN 'Proveedor'
+            ELSE 'Sin cliente'
+        END AS Cliente,
+        e.Nombre AS Empleado, 
+        (c.Fecha || ' ' || c.Hora) AS Horario, 
+        c.Estado
+    FROM [Citas] c
+    LEFT JOIN [Clientes] cl ON c.ClienteId = cl.ClienteId
+    INNER JOIN [Empleados] e ON c.EmpleadoId = e.EmpleadoId;
+    
+    
+    
+    SELECT c.FolioId, 
+    CASE 
+        WHEN c.ClienteId > 0 THEN cl.Nombre
+        WHEN c.ClienteId < 0 THEN 'Proveedor'
+        WHEN c.ClienteId = 0 THEN e.Nombre
+    END AS Cliente,
+    e.Nombre AS Empleado, 
+    (c.Fecha || ' ' || c.Hora) AS Horario, 
+    c.Estado
+FROM [Citas] c
+LEFT JOIN [Clientes] cl ON c.ClienteId = cl.ClienteId
+INNER JOIN [Empleados] e ON c.EmpleadoId = e.EmpleadoId;

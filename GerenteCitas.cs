@@ -139,6 +139,10 @@ namespace Proyecto
             if (exito)
             {
                 MessageBox.Show("Cita agendada correctamente sin choques de horario.");
+                ((FormAgenda)this.Owner).RefreshCitas();
+
+                this.Close();
+
                 this.Close();
             }
             else

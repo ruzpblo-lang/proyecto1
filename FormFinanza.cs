@@ -112,5 +112,10 @@ namespace Proyecto
                 MessageBox.Show("Por favor, seleccione una fila de la tabla primero", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
             }
         }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

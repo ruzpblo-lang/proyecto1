@@ -33,13 +33,13 @@
             this.reportesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ingresosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.egresosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.marcarComoCompletadoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.button6 = new System.Windows.Forms.Button();
             this.CmbTipopago = new System.Windows.Forms.ComboBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.CmbEstado = new System.Windows.Forms.ComboBox();
-            this.marcarComoCompletadoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
@@ -88,6 +88,13 @@
             this.egresosToolStripMenuItem.Text = "Eliminar";
             this.egresosToolStripMenuItem.Click += new System.EventHandler(this.egresosToolStripMenuItem_Click);
             // 
+            // marcarComoCompletadoToolStripMenuItem
+            // 
+            this.marcarComoCompletadoToolStripMenuItem.Name = "marcarComoCompletadoToolStripMenuItem";
+            this.marcarComoCompletadoToolStripMenuItem.Size = new System.Drawing.Size(265, 26);
+            this.marcarComoCompletadoToolStripMenuItem.Text = "Marcar como completado";
+            this.marcarComoCompletadoToolStripMenuItem.Click += new System.EventHandler(this.marcarComoCompletadoToolStripMenuItem_Click);
+            // 
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -106,6 +113,7 @@
             this.button6.TabIndex = 4;
             this.button6.Text = "Menú";
             this.button6.UseVisualStyleBackColor = true;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
             // 
             // CmbTipopago
             // 
@@ -142,13 +150,6 @@
             this.CmbEstado.Size = new System.Drawing.Size(121, 24);
             this.CmbEstado.TabIndex = 5;
             this.CmbEstado.SelectedIndexChanged += new System.EventHandler(this.CmbEstado_SelectedIndexChanged);
-            // 
-            // marcarComoCompletadoToolStripMenuItem
-            // 
-            this.marcarComoCompletadoToolStripMenuItem.Name = "marcarComoCompletadoToolStripMenuItem";
-            this.marcarComoCompletadoToolStripMenuItem.Size = new System.Drawing.Size(265, 26);
-            this.marcarComoCompletadoToolStripMenuItem.Text = "Marcar como completado";
-            this.marcarComoCompletadoToolStripMenuItem.Click += new System.EventHandler(this.marcarComoCompletadoToolStripMenuItem_Click);
             // 
             // FormFinanza
             // 
