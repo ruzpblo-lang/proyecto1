@@ -35,7 +35,13 @@ namespace Proyecto
 
         private void FormAgenda_Load(object sender, EventArgs e)
         {
-            dgvCitas.DataSource = gestorcitas.GetCitas();
+            dgvCitas.DataSource = gestorcitas.GetFullCitas();
+
+            if (dgvCitas.Columns["FolioId"] != null)
+                dgvCitas.Columns["FolioId"].Visible = false;
+
+            if (dgvCitas.Columns["Empleado"] != null)
+                dgvCitas.Columns["Empleado"].Visible = false;
         }
 
         private void ComboBox1_SelectedIndexChanged(object sender, EventArgs e)
@@ -50,7 +56,20 @@ namespace Proyecto
 
         private void btnInfo_Click(object sender, EventArgs e)
         {
+            if (dgvCitas.CurrentRow != null)
+            {
+                FullCita citaSeleccionada = (FullCita)dgvCitas.CurrentRow.DataBoundItem;
+                int idCita = citaSeleccionada.FolioId;
 
+                FormInfoCita formInfoCita = new FormInfoCita();
+                formInfoCita.ShowDialog();
+
+                //¿MessageBox.Show($"Abriendo detalles para el Folio de Cita: {idCita}");
+            }
+            else
+            {
+                MessageBox.Show("Por favor, selecciona una cita de la tabla primero.");
+            }
         }
 
         private void citarProvedoorToolStripMenuItem_Click(object sender, EventArgs e)
