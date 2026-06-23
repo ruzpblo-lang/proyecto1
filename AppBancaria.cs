@@ -377,7 +377,129 @@ namespace Proyecto
                 ("$tipo", tipo),
                 ("$cantidad",  cantidad));
         }
+        internal void AgregarCliente(string nombre, string correo, string telefono, decimal monto)
+        {
+            int nuevoCuentaId = 1;
+
+            string query = "SELECT IFNULL (MAX(CuentaId), 0) AS MaxId\r\nFROM Clientes";
+            var rs = conn.ExecuteReader(query);
+
+            while (rs.Read())
+            {
+                nuevoCuentaId = rs.GetInt("MaxId") + 1;
+            }
+
+            string queryInsert = "INSERT into Clientes (CuentaId, Nombre, Correo, TelNum, Monto, Estado) " +
+                            "VALUES ($cuentaId, $nombre, $correo, $telNum, $monto, $estado)";
+            conn.ExecuteNonQuery(
+                queryInsert,
+                ("$cuentaId", nuevoCuentaId),
+                ("$nombre", nombre),
+                ("$correo", correo),
+                ("$telNum", telefono),
+                ("$monto", monto),
+                ("$estado", 1)
+                );
 
 
         }
-    } 
+        public List<PrecioProveedor> MostrarProductosProveedores()
+        {
+            List<PrecioProveedor> preciosproveedores = new List<PrecioProveedor>();
+            string query = "SELECT pp.PrecioId, pp.ObjetoId, pb.Tipo, pv.Nombre, pp.Precio " +
+                            "FROM PreciosProveedor pp " +
+                            "INNER JOIN ProductosBodega pb ON pp.ObjetoId = pb.ObjetoId " +
+                            "INNER JOIN Proveedores pv ON pp.ProveedorId = pv.ProveedorID " +
+                            "ORDER BY pb.Tipo ASC, pp.Precio ASC";
+            var rs = conn.ExecuteReader(query);
+
+            while (rs.Read())
+            {
+                preciosproveedores.Add(new PrecioProveedor(
+                    rs.GetInt("PrecioId"),
+                    rs.GetInt("ObjetoId"),
+                    rs.GetString("Tipo"),
+                    rs.GetString("Nombre"),
+                    rs.GetDouble("Precio")
+                    ));
+            }
+            return preciosproveedores;
+        }
+        internal void AgregarProducto(int objetoId, int cantidad)
+        {
+            string query = "UPDATE ProductosBodega SET Cantidad = Cantidad + $cantidad WHERE ObjetoId = $objetoId";
+            conn.ExecuteNonQuery(query,
+                ("$objetoId", objetoId),
+                ("$cantidad", cantidad));
+        }
+        public List<ProductoBodega> GetInventarioDeposito()
+        {
+            List<ProductoBodega> productosBodega = new List<ProductoBodega>();
+            string query = "SELECT ObjetoId, Tipo, Cantidad FROM productosBodega";
+
+            var rs = conn.ExecuteReader(query);
+            while (rs.Read())
+            {
+                productosBodega.Add(new ProductoBodega(
+                    rs.GetInt("ObjetoId"),
+                    rs.GetString("Tipo"),
+                    rs.GetInt("Cantidad")
+                    ));
+            }
+            return productosBodega;
+        }
+        internal object GetProveedores()
+        {
+            List<Proveedor> listaProveedores = new List<Proveedor>();
+            string query = "SELECT ProveedorId, Nombre FROM Proveedores;";
+
+            var rs = conn.ExecuteReader(query);
+            while (rs.Read())
+            {
+                listaProveedores.Add(new Proveedor(
+                    rs.GetInt("ProveedorId"),
+                    rs.GetString("Nombre")
+                ));
+            }
+
+            return listaProveedores;
+        }
+        public bool AgendarCitaGerencia(int empleadoId, int clienteId, string fecha, string hora)
+        {
+
+            if (!VerificarDisponibilidadCita(fecha, hora))
+            {
+                return false;
+            }
+
+            string queryInsert = @"INSERT INTO Citas (EmpleadoId, ClienteId, Fecha, Hora, Estado) 
+                                   VALUES ($empleadoId, $clienteId, $fecha, $hora, 'Confirmada');";
+
+            conn.ExecuteNonQuery(queryInsert,
+                ("$empleadoId", empleadoId),
+                ("$clienteId", clienteId),
+                ("$fecha", fecha),
+                ("$hora", hora)
+            );
+
+            return true;
+        }
+        public bool VerificarDisponibilidadCita(string fecha, string hora)
+        {
+            string query = "SELECT COUNT(*) AS Total FROM Citas WHERE Fecha = $fecha AND Hora = $hora AND Estado != 'Cancelada'";
+
+            var rs = conn.ExecuteReader(query,
+                ("$fecha", fecha),
+                ("$hora", hora));
+
+            if (rs.Read())
+            {
+                int total = rs.GetInt("Total");
+                return total == 0;
+            }
+            return false;
+        }
+
+
+    }
+} 
