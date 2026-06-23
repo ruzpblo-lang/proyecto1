@@ -403,7 +403,7 @@ namespace Proyecto
 
 
         }
-        public List<PrecioProveedor> MostrarProductosProveedores()
+public List<PrecioProveedor> MostrarProductosProveedores()
         {
             List<PrecioProveedor> preciosproveedores = new List<PrecioProveedor>();
             string query = "SELECT pp.PrecioId, pp.ObjetoId, pb.Tipo, pv.Nombre, pp.Precio " +
@@ -411,8 +411,8 @@ namespace Proyecto
                             "INNER JOIN ProductosBodega pb ON pp.ObjetoId = pb.ObjetoId " +
                             "INNER JOIN Proveedores pv ON pp.ProveedorId = pv.ProveedorID " +
                             "ORDER BY pb.Tipo ASC, pp.Precio ASC";
-            var rs = conn.ExecuteReader(query);
 
+            var rs = conn.ExecuteReader(query);
             while (rs.Read())
             {
                 preciosproveedores.Add(new PrecioProveedor(
@@ -425,6 +425,30 @@ namespace Proyecto
             }
             return preciosproveedores;
         }
+
+        internal void RegistrarPagosProducto(string tipo, decimal totalCompra)
+        {
+            int nuevoPagoExterior = 1;
+            string query = "SELECT IFNULL(MAX(ExteriorId), 0) AS MaxId FROM Pagos";
+
+            var rs = conn.ExecuteReader(query);
+            while (rs.Read())
+            {
+                nuevoPagoExterior = rs.GetInt("MaxId") + 1;
+            }
+
+            string fecha = DateTime.Now.ToString("dd/MM/y");
+            string queryInsert = "INSERT INTO Pagos (ExteriorId, Nombre, FechaPago, SueldoBase) " +
+                                 "VALUES ($exteriorId, $nombre, $fechaPago, $sueldoBase)";
+
+            conn.ExecuteNonQuery(queryInsert,
+                ("$exteriorId", nuevoPagoExterior),
+                ("$nombre", tipo),
+                ("$fechaPago", fecha),
+                ("$sueldoBase", totalCompra)
+                );
+        }
+
         internal void AgregarProducto(int objetoId, int cantidad)
         {
             string query = "UPDATE ProductosBodega SET Cantidad = Cantidad + $cantidad WHERE ObjetoId = $objetoId";
@@ -432,6 +456,7 @@ namespace Proyecto
                 ("$objetoId", objetoId),
                 ("$cantidad", cantidad));
         }
+
         public List<ProductoBodega> GetInventarioDeposito()
         {
             List<ProductoBodega> productosBodega = new List<ProductoBodega>();
@@ -448,6 +473,7 @@ namespace Proyecto
             }
             return productosBodega;
         }
+
         internal object GetProveedores()
         {
             List<Proveedor> listaProveedores = new List<Proveedor>();
@@ -458,15 +484,15 @@ namespace Proyecto
             {
                 listaProveedores.Add(new Proveedor(
                     rs.GetInt("ProveedorId"),
-                    rs.GetString("Nombre")
+                    rs.GetInt("Nombre")
                 ));
             }
 
             return listaProveedores;
         }
+
         public bool AgendarCitaGerencia(int empleadoId, int clienteId, string fecha, string hora)
         {
-
             if (!VerificarDisponibilidadCita(fecha, hora))
             {
                 return false;
@@ -484,6 +510,7 @@ namespace Proyecto
 
             return true;
         }
+
         public bool VerificarDisponibilidadCita(string fecha, string hora)
         {
             string query = "SELECT COUNT(*) AS Total FROM Citas WHERE Fecha = $fecha AND Hora = $hora AND Estado != 'Cancelada'";
@@ -499,7 +526,5 @@ namespace Proyecto
             }
             return false;
         }
-
-
     }
-} 
+}
