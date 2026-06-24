@@ -29,6 +29,7 @@ namespace Proyecto
             if (string.IsNullOrWhiteSpace(txtConcepto.Text) || string.IsNullOrWhiteSpace(txtMonto.Text))
             {
                 MessageBox.Show("Por rellene los campos en blanco", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
             }
             }
             if (tiposeleccionado == "Nómina")
@@ -37,6 +38,7 @@ namespace Proyecto
 
                 {
                     MessageBox.Show("Por rellene los campos en blanco", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
                 }
             }
 
@@ -58,8 +60,8 @@ namespace Proyecto
                         int.TryParse(txtBoxhorastriples.Text, out int horastriples);
 
                         decimal valorHoranormal = Sueldobase / 240m;
-                        decimal pagohorasdobles = valorHoranormal * 2m;
-                        decimal pagohorastriples = valorHoranormal / 3m;
+                        decimal pagohorasdobles = valorHoranormal * 2m * horasdoble;
+                        decimal pagohorastriples = valorHoranormal * 3m * horastriples;
                         decimal montocalculado = Sueldobase + pagohorasdobles + pagohorastriples;
                         montocalculado = Math.Round(montocalculado,2);
                         gestorbanco.AgregarNomina(EmpleadoId, fecha, montocalculado, estado);
