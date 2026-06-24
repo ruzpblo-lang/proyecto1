@@ -29,8 +29,8 @@ namespace Proyecto
         {
             if (string.IsNullOrWhiteSpace(txtNombre.Text) ||
                string.IsNullOrWhiteSpace(txtCorreo.Text) ||
-               string.IsNullOrWhiteSpace(txtTelefono.Text) ||
-               string.IsNullOrWhiteSpace(txtMonto.Text))
+               string.IsNullOrWhiteSpace(txtTelefono.Text))
+              
             {
                 MessageBox.Show("Rellenar todos los espacios!!");
                 return;
@@ -41,15 +41,20 @@ namespace Proyecto
                     string nombre = txtNombre.Text;
                     string correo = txtCorreo.Text;
                     string telefono = txtTelefono.Text;
-                    decimal monto = Convert.ToDecimal(txtMonto.Text);
+                    
 
-                    gestorempresa.AgregarCliente(nombre, correo, telefono, monto);
+                    gestorempresa.AgregarCliente(nombre, correo, telefono);
                     this.Close();
 
                     break;
                 case DialogResult.No:
                     break;
             }
+        }
+
+        private void AgregarCliente_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

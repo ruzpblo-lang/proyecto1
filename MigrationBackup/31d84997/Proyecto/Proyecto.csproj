@@ -56,8 +56,8 @@
     <Prefer32Bit>true</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Microsoft.Data.Sqlite, Version=11.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
-      <HintPath>packages\Microsoft.Data.Sqlite.Core.11.0.0-preview.5.26302.115\lib\netstandard2.0\Microsoft.Data.Sqlite.dll</HintPath>
+    <Reference Include="Microsoft.Data.Sqlite, Version=10.0.9.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.Data.Sqlite.Core.10.0.9\lib\netstandard2.0\Microsoft.Data.Sqlite.dll</HintPath>
     </Reference>
     <Reference Include="SQLitePCLRaw.batteries_v2, Version=3.0.3.3048, Culture=neutral, PublicKeyToken=8226ea5df37bcae9, processorArchitecture=MSIL">
       <HintPath>packages\SQLitePCLRaw.config.e_sqlite3.3.0.3\lib\net471\SQLitePCLRaw.batteries_v2.dll</HintPath>
@@ -72,7 +72,7 @@
       <HintPath>packages\SQLitePCLRaw.provider.e_sqlite3.3.0.3\lib\net471\SQLitePCLRaw.provider.e_sqlite3.dll</HintPath>
     </Reference>
     <Reference Include="System">
-      <HintPath>..\..\..\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\System.dll</HintPath>
+      <HintPath>..\..\..\..\..\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\System.dll</HintPath>
     </Reference>
     <Reference Include="System.Buffers, Version=4.0.5.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
       <HintPath>packages\System.Buffers.4.6.1\lib\net462\System.Buffers.dll</HintPath>
@@ -100,51 +100,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AgregarCliente.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="AgregarCliente.Designer.cs">
-      <DependentUpon>AgregarCliente.cs</DependentUpon>
-    </Compile>
-    <Compile Include="AgregarEmpleado.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="AgregarEmpleado.Designer.cs">
-      <DependentUpon>AgregarEmpleado.cs</DependentUpon>
-    </Compile>
-    <Compile Include="AgregarPago.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="AgregarPago.Designer.cs">
-      <DependentUpon>AgregarPago.cs</DependentUpon>
-    </Compile>
-    <Compile Include="AgregarProductos.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="AgregarProductos.Designer.cs">
-      <DependentUpon>AgregarProductos.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Altacuenta.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Altacuenta.Designer.cs">
-      <DependentUpon>Altacuenta.cs</DependentUpon>
-    </Compile>
     <Compile Include="Cita.cs" />
     <Compile Include="Cliente.cs" />
-    <Compile Include="Clientesdown.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Clientesdown.Designer.cs">
-      <DependentUpon>Clientesdown.cs</DependentUpon>
-    </Compile>
     <Compile Include="Cuenta.cs" />
-    <Compile Include="cuentasdown.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="cuentasdown.Designer.cs">
-      <DependentUpon>cuentasdown.cs</DependentUpon>
-    </Compile>
     <Compile Include="CustomControl1.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -157,48 +115,18 @@
     <Compile Include="AppBancaria.Designer.cs">
       <DependentUpon>AppBancaria.cs</DependentUpon>
     </Compile>
-    <Compile Include="DespedirGente.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="DespedirGente.Designer.cs">
-      <DependentUpon>DespedirGente.cs</DependentUpon>
-    </Compile>
     <Compile Include="Empleado.cs" />
-    <Compile Include="ESTADOCLIENTES.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="ESTADOCLIENTES.Designer.cs">
-      <DependentUpon>ESTADOCLIENTES.cs</DependentUpon>
-    </Compile>
     <Compile Include="FormAgenda.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FormAgenda.Designer.cs">
       <DependentUpon>FormAgenda.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormBusquedaPuesto.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FormBusquedaPuesto.Designer.cs">
-      <DependentUpon>FormBusquedaPuesto.cs</DependentUpon>
-    </Compile>
-    <Compile Include="FormInfoCita.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FormInfoCita.Designer.cs">
-      <DependentUpon>FormInfoCita.cs</DependentUpon>
-    </Compile>
     <Compile Include="FormInventarioBancoboton.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FormInventarioBancoboton.Designer.cs">
       <DependentUpon>FormInventarioBancoboton.cs</DependentUpon>
-    </Compile>
-    <Compile Include="FormInventarioCuenta.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FormInventarioCuenta.Designer.cs">
-      <DependentUpon>FormInventarioCuenta.cs</DependentUpon>
     </Compile>
     <Compile Include="FormPersonal.cs">
       <SubType>Form</SubType>
@@ -218,77 +146,23 @@
     <Compile Include="FormInventario.Designer.cs">
       <DependentUpon>FormInventario.cs</DependentUpon>
     </Compile>
-    <Compile Include="FullCita.cs" />
     <Compile Include="FullEmpleados.cs" />
-    <Compile Include="Fullpagos.cs" />
-    <Compile Include="GerenteCitas.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="GerenteCitas.Designer.cs">
-      <DependentUpon>GerenteCitas.cs</DependentUpon>
-    </Compile>
     <Compile Include="HorarioLibre.cs" />
     <Compile Include="Inventario.cs" />
-    <Compile Include="FormInventarioDeposito.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FormInventarioDeposito.Designer.cs">
-      <DependentUpon>FormInventarioDeposito.cs</DependentUpon>
-    </Compile>
     <Compile Include="Nomina.cs" />
     <Compile Include="Pago.cs" />
-    <Compile Include="PrecioProveedor.cs" />
-    <Compile Include="ProductoBodega.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Proveedor.cs" />
     <Compile Include="Puesto.cs" />
-    <Compile Include="ShortCliente.cs" />
     <Compile Include="SqlConnectionExtensions.cs" />
-    <EmbeddedResource Include="AgregarCliente.resx">
-      <DependentUpon>AgregarCliente.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="AgregarEmpleado.resx">
-      <DependentUpon>AgregarEmpleado.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="AgregarPago.resx">
-      <DependentUpon>AgregarPago.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="AgregarProductos.resx">
-      <DependentUpon>AgregarProductos.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Altacuenta.resx">
-      <DependentUpon>Altacuenta.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="AppBancaria.resx">
       <DependentUpon>AppBancaria.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Clientesdown.resx">
-      <DependentUpon>Clientesdown.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="cuentasdown.resx">
-      <DependentUpon>cuentasdown.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="DespedirGente.resx">
-      <DependentUpon>DespedirGente.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="ESTADOCLIENTES.resx">
-      <DependentUpon>ESTADOCLIENTES.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormAgenda.resx">
       <DependentUpon>FormAgenda.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormBusquedaPuesto.resx">
-      <DependentUpon>FormBusquedaPuesto.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FormInfoCita.resx">
-      <DependentUpon>FormInfoCita.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="FormInventarioBancoboton.resx">
       <DependentUpon>FormInventarioBancoboton.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FormInventarioCuenta.resx">
-      <DependentUpon>FormInventarioCuenta.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormPersonal.resx">
       <DependentUpon>FormPersonal.cs</DependentUpon>

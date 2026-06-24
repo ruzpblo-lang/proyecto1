@@ -234,6 +234,7 @@ namespace Proyecto
             var rs =conn.ExecuteReader(query);
             while (rs.Read())
             {
+
                 listaPagos.Add(new Fullpagos(
                     rs.GetInt("ID"),
                     rs.GetString("Tipo"),
@@ -266,19 +267,23 @@ namespace Proyecto
         public List<Cliente> GetInventarioCliente()
         {
             List<Cliente> clientes = new List<Cliente>();
-            string query = "SELECT ClienteId, CuentaId, Nombre, Correo, TelNum, Estado, Monto FROM clientes";
+            string query = "SELECT ClienteId, Nombre, Correo, TelNum, Estado FROM Clientes";
 
             var rs = conn.ExecuteReader(query);
             while(rs.Read())
             {
+                string estadoTexto = "Inactivo";
+                if (rs.GetInt("Estado") == 1)
+                {
+                    estadoTexto = "Activo";
+                }
                 clientes.Add(new Cliente(
                     rs.GetInt("ClienteId"),
-                    rs.GetInt("CuentaId"),
+                   
                     rs.GetString("Nombre"),
                     rs.GetString("Correo"),
                     rs.GetString("TelNum"),
-                    rs.GetInt("Estado"),
-                    rs.GetDouble("Monto")
+                   estadoTexto
                     ));
             }
             return clientes;
@@ -377,29 +382,20 @@ namespace Proyecto
                 ("$tipo", tipo),
                 ("$cantidad",  cantidad));
         }
-        internal void AgregarCliente(string nombre, string correo, string telefono, decimal monto)
+        internal void AgregarCliente(string nombre, string correo, string telefono)
         {
-            int nuevoCuentaId = 1;
+           
 
-            string query = "SELECT IFNULL (MAX(CuentaId), 0) AS MaxId\r\nFROM Clientes";
-            var rs = conn.ExecuteReader(query);
-
-            while (rs.Read())
-            {
-                nuevoCuentaId = rs.GetInt("MaxId") + 1;
-            }
-
-            string queryInsert = "INSERT into Clientes (CuentaId, Nombre, Correo, TelNum, Monto, Estado) " +
-                            "VALUES ($cuentaId, $nombre, $correo, $telNum, $monto, $estado)";
+            string queryInsert = "INSERT into Clientes ( Nombre, Correo, TelNum, Estado) " +
+                            "VALUES ( $nombre, $correo, $telNum, $estado)";
             conn.ExecuteNonQuery(
                 queryInsert,
-                ("$cuentaId", nuevoCuentaId),
+              
                 ("$nombre", nombre),
                 ("$correo", correo),
                 ("$telNum", telefono),
-                ("$monto", monto),
-                ("$estado", 1)
-                );
+                ("$estado", 1));
+               
 
 
         }
@@ -525,6 +521,88 @@ public List<PrecioProveedor> MostrarProductosProveedores()
                 return total == 0;
             }
             return false;
+        }
+        internal void ModificarEstadocLIENTE(int clienteId, int nuevoEstado)
+        {
+            {
+                string query = "UPDATE [Clientes] SET [Estado] = $nuevoEstado WHERE [ClienteId] = $clienteId;";
+
+                conn.ExecuteNonQuery(
+                    query,
+                    ("$nuevoEstado", nuevoEstado),
+                    ("clienteId",clienteId)
+                );
+            }
+        }
+
+        public List<Cliente> GetTodosLosClientes()
+        {
+            List<Cliente> clientes = new List<Cliente>();
+            // Seleccionamos solo los campos necesarios de la tabla Clientes
+            string query = "SELECT ClienteId, Nombre, Correo, TelNum, Estado FROM Clientes WHERE Estado = 1";
+
+            var rs = conn.ExecuteReader(query);
+            while (rs.Read())
+            {
+                clientes.Add(new Cliente(
+                    rs.GetInt("ClienteId"),
+                   
+                    rs.GetString("Nombre"),
+                    rs.GetString("Correo"),
+                    rs.GetString("TelNum"),
+                    rs.GetString("Estado")
+                ));
+            }
+            return clientes;
+        }
+
+        public void CrearCuenta(int clienteId, int numeroCuenta, string tipoCuenta, decimal saldo, int estado)
+        {
+            
+            string query = $"INSERT INTO [Cuentas] ([ClienteId], [NumeroCuenta], [TipoCuenta], [Saldo], [Estado]) " +
+                           $"VALUES ({clienteId}, {numeroCuenta}, '{tipoCuenta}', {saldo}, {estado});";
+
+            conn.ExecuteNonQuery(query);
+        }
+        public List<Cuenta> GetCuentas()
+        {
+            List<Cuenta> cuentas = new List<Cuenta>();
+            string query = "SELECT CuentaId, ClienteId, NumeroCuenta, TipoCuenta, Saldo, Estado FROM Cuentas";
+
+            var rs = conn.ExecuteReader(query);
+            while (rs.Read())
+            {
+                // Aplicamos exactamente tu misma lógica de conversión para el estado
+                string estadoTexto = "Inactivo";
+                if (rs.GetInt("Estado") == 1)
+                {
+                    estadoTexto = "Activo";
+                }
+                decimal saldoDecimal = Convert.ToDecimal(rs.GetString("Saldo"));
+                // Agregamos el objeto Cuenta mapeando cada columna
+                cuentas.Add(new Cuenta(
+                    rs.GetInt("CuentaId"),
+                    rs.GetInt("ClienteId"),
+                    rs.GetInt("NumeroCuenta"),
+                    rs.GetString("TipoCuenta"),
+                    saldoDecimal,
+                    estadoTexto
+                ));
+            }
+            return cuentas;
+        }
+
+        public void ModificarEstadoCuenta(int cuentaId, int nuevoEstado)
+        {
+            
+            string query = "UPDATE [Cuentas] SET [Estado] = $nuevoEstado WHERE [CuentaId] = $cuentaId;";
+
+            
+            conn.ExecuteNonQuery(
+                query,
+                ("$nuevoEstado", nuevoEstado),
+                ("$cuentaId", cuentaId)
+            );
         }
     }
 }

@@ -68,6 +68,38 @@ namespace Proyecto
         {
             this.Close();
         }
+
+        private void agregarClienteToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FormInventarioCuenta forms = new FormInventarioCuenta(gestorbanco);
+            forms.ShowDialog();
+        }
+
+        private void bajaClienteToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Clientesdown forms = new Clientesdown(gestorbanco);
+            forms.ShowDialog();
+
+        }
+
+        private void mostrarClienteToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ESTADO_CLIENTES forms = new ESTADO_CLIENTES(gestorbanco);
+            forms.ShowDialog();
+        }
+
+        private void agregarCuentaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+            Altacuenta forms = new Altacuenta(gestorbanco);
+            forms.ShowDialog();
+        }
+
+        private void bajaCuentaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            cuentasdown forms = new cuentasdown(gestorbanco);
+            forms.ShowDialog();
+        }
     }
     }
 

@@ -22,7 +22,7 @@ namespace Proyecto
         private void FormInventarioCuenta_Load(object sender, EventArgs e)
         {
             dgvInventarioCuenta.DataSource = gestorempresa.GetInventarioCliente();
-            dgvInventarioCuenta.Columns["CuentaId"].Visible = false;
+            
             dgvInventarioCuenta.Columns["ClienteId"].Visible = false;
 
         }
