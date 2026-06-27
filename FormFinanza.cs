@@ -13,30 +13,91 @@ namespace Proyecto
     public partial class FormFinanza : Form
     {
         public AppBancaria gestorbanco;
+        public List<Fullpagos> pagostemporales = new List<Fullpagos>();
         public FormFinanza(AppBancaria gestor)
         {
             InitializeComponent();
             this.gestorbanco = gestor;
         }
         
+        private void CargarPeriodosExistentes()
+        {
+            List<Fullpagos> listacompleta = gestorbanco.GetTodosLosPagos();
+            var listafiltradaBase = listacompleta.Where(p => !pagostemporales.Any(b => b.ID == p.ID && b.Tipo == p.Tipo));
+            if (CmbEstado.SelectedItem != null && CmbEstado.SelectedItem.ToString() != "Todos")
+            {
+                string estadoactual = CmbEstado.SelectedItem.ToString();
+                listafiltradaBase = listafiltradaBase.Where(p => p.Estado == estadoactual);
+            }
+
+            List<String> Periodos = listafiltradaBase
+                .Select(p => DateTime.Parse(p.Fecha).ToString("MM-yyyy"))
+                .Distinct()
+                .OrderByDescending(m  => m)
+                .ToList();
+            string seleccionadoPreviamente = CmbMes.SelectedItem?.ToString();
+            CmbMes.Items.Clear();
+
+            foreach (string mes in Periodos)
+            {
+                CmbMes.Items.Add(mes);
+            }
+            if (CmbMes.Items.Count > 0)
+            { 
+                if(!string.IsNullOrEmpty(seleccionadoPreviamente) && CmbMes.Items.Contains(seleccionadoPreviamente))
+                {
+                    CmbMes.SelectedItem = seleccionadoPreviamente;
+                }
+                else
+                {
+                    CmbMes.SelectedIndex = 0;
+                }
+            }
+        }
         private void UpdateData()
         {
             List <Fullpagos> listacompleta = gestorbanco.GetTodosLosPagos();
-            //filtro tipo
-            var ListaFiltrada = gestorbanco.GetTodosLosPagos(); 
-            if (CmbTipopago.SelectedItem != null && CmbTipopago.SelectedItem.ToString() != "Todos")
-            {
-                string FiltroTipo = CmbTipopago.SelectedItem.ToString();
-                ListaFiltrada = ListaFiltrada.Where(p => p.Tipo == FiltroTipo).ToList();
-            }
-            //filtro Estado
+            var ListaFiltrada = listacompleta.Where(p => !pagostemporales.Any(b => b.ID == p.ID && b.Tipo == p.Tipo)).ToList();
             if (CmbEstado.SelectedItem != null && CmbEstado.SelectedItem.ToString() != "Todos")
             {
                 string FiltroEstado = CmbEstado.SelectedItem.ToString();
                 ListaFiltrada = ListaFiltrada.Where(p => p.Estado == FiltroEstado).ToList();
             }
+            //filtro Estado
+            if (CmbMes.SelectedItem != null)
+            {
+                string MesSeleccionado = CmbMes.SelectedItem.ToString();
+                ListaFiltrada = ListaFiltrada.Where(p => DateTime.Parse(p.Fecha).ToString("MM-yyyy") == MesSeleccionado).ToList();
+            }
+            else
+            {
+                ListaFiltrada.Clear();
+            }
+
+            if (CmbTipopago.SelectedItem != null && CmbTipopago.SelectedItem.ToString() != "Todos")
+            {
+                string FiltroTipo = CmbTipopago.SelectedItem.ToString();
+                ListaFiltrada = ListaFiltrada.Where(p => p.Tipo == FiltroTipo).ToList();
+            }
             dataGridView1.DataSource = null;
             dataGridView1.DataSource = ListaFiltrada;
+            ActualizarLabeldinero();
+        }
+        private void ActualizarLabeldinero()
+        {
+            double presupuestoBase = gestorbanco.ObtenerSaldo();
+            double TotalenBolsa = pagostemporales.Sum(p => Convert.ToDouble(p.Monto));
+            double dinerorestante = presupuestoBase - TotalenBolsa;
+            label2.Text = $"Dinero Actual: ${dinerorestante:N2}";
+            if (dinerorestante < 0)
+            {
+                label2.ForeColor = Color.Red;
+            }
+            else
+            {
+                label2.ForeColor= Color.Black;
+            }
+
         }
 
         private void FormFinanza_Load(object sender, EventArgs e)
@@ -54,6 +115,7 @@ namespace Proyecto
             CmbEstado.Items.Add("Realizado");
             CmbEstado.SelectedIndex = 0;
 
+            CargarPeriodosExistentes();
             UpdateData();
         }
 
@@ -64,6 +126,7 @@ namespace Proyecto
 
         private void CmbEstado_SelectedIndexChanged(object sender, EventArgs e)
         {
+            CargarPeriodosExistentes();
             UpdateData();
         }
 
@@ -71,6 +134,7 @@ namespace Proyecto
         {
             AgregarPago_ ventanaAgregar = new AgregarPago_(this.gestorbanco);
             ventanaAgregar.ShowDialog();
+            CargarPeriodosExistentes();
             UpdateData();
         }
 
@@ -100,22 +164,70 @@ namespace Proyecto
         {
             if (dataGridView1.CurrentRow != null )
             {
-                int id = Convert.ToInt32(dataGridView1.CurrentRow.Cells["ID"].Value);
+                int id  = Convert.ToInt32(dataGridView1.CurrentRow.Cells["ID"].Value);
                 string tipo = dataGridView1.CurrentRow.Cells["Tipo"].Value.ToString();
 
-                gestorbanco.Cambiarestado(id, tipo);
-                MessageBox.Show("El estado se ha actualizado a 'Realizado'", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                UpdateData();
-            }
+                List<Fullpagos> listacompleta = gestorbanco.GetTodosLosPagos();
+                Fullpagos pagoseleccionado = listacompleta.FirstOrDefault(p => p.ID == id && p.Tipo == tipo);
+                if (pagoseleccionado != null)
+                {
+                    if(!pagostemporales.Any(b => b.ID == id && b.Tipo == tipo))
+                    {
+                        pagostemporales.Add(pagoseleccionado);
+                        MessageBox.Show($"'{pagoseleccionado.Concepto}' agregado a la bolsa.", "Bolsa Temporal", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        UpdateData();
+                    }
+                    else
+                    {
+                        MessageBox.Show("Este pago ya está en la bolsa.", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    }
+                }
+                }
             else
             {
                 MessageBox.Show("Por favor, seleccione una fila de la tabla primero", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
             }
-        }
+            }
 
         private void button6_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void CmbMes_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            UpdateData();
+        }
+
+        private void btCM_Click(object sender, EventArgs e)
+        {
+            if(pagostemporales.Count == 0)
+            {
+                MessageBox.Show("No hay pagos en la bolsa temporal para procesar.", "Bolsa Vacía", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+            double presupuestoBase = gestorbanco.ObtenerSaldo();
+            double Totalenbolsa = pagostemporales.Sum(p => Convert.ToDouble(p.Monto));
+
+            if (Totalenbolsa > presupuestoBase)
+            {
+                MessageBox.Show($"Operacion cancelada!! El total de fondos excede a la cantidad actual", "Operacion Cancelada", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+            var pregunta = MessageBox.Show($"¿Desea procesar y marcar como 'Realizados' los {pagostemporales.Count} pagos de la bolsa?",
+                                           "Confirmar operacion", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (pregunta == DialogResult.Yes)
+            {
+                foreach(var pago in pagostemporales)
+                {
+                    gestorbanco.Cambiarestado(pago.ID, pago.Tipo);
+                }
+                pagostemporales.Clear();
+                MessageBox.Show("Todos los pagos se han procesado con éxito", "operacion exitosa", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                CargarPeriodosExistentes();
+                UpdateData();
+            }
+
         }
     }
 }

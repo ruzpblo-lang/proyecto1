@@ -604,5 +604,21 @@ public List<PrecioProveedor> MostrarProductosProveedores()
                 ("$cuentaId", cuentaId)
             );
         }
+
+        public double ObtenerSaldo()
+        {
+            string query = @"
+              SELECT
+                  (SELECT IFNULL(SUM(Monto), 0) FROM Ingresos WHERE  Estado = 'Realizado') -
+                  (SELECT IFNULL(SUM(SueldoBase), 0) FROM Nomina WHERE Estado = 'Realizado') -
+                  (SELECT IFNULL(SUM(SueldoBase), 0) FROM Pagos WHERE Estado = 'Realizado') 
+                   AS SaldoActual;";
+            var rs = conn.ExecuteReader(query);
+            if (rs.Read())
+            {
+                return rs.GetDouble("SaldoActual");
+            }
+            return 0;
+        }
     }
 }
