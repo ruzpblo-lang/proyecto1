@@ -229,5 +229,11 @@ namespace Proyecto
             }
 
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Agregar_ingreso ventana = new Agregar_ingreso(this.gestorbanco);
+            ventana.ShowDialog();
+        }
     }
 }

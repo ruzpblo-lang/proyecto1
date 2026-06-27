@@ -100,6 +100,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Agregar ingreso.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Agregar ingreso.Designer.cs">
+      <DependentUpon>Agregar ingreso.cs</DependentUpon>
+    </Compile>
     <Compile Include="AgregarCliente.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -251,6 +257,9 @@
     <Compile Include="Tabla+-.Designer.cs">
       <DependentUpon>Tabla+-.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Agregar ingreso.resx">
+      <DependentUpon>Agregar ingreso.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="AgregarCliente.resx">
       <DependentUpon>AgregarCliente.cs</DependentUpon>
     </EmbeddedResource>

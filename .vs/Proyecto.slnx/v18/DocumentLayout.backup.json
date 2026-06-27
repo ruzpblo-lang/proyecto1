@@ -3,36 +3,28 @@
   "WorkspaceRootPath": "C:\\Users\\ricar\\OneDrive\\Documentos\\GitHub\\proyecto1\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{5ED591AE-3C6E-43F6-9E76-265A2B3EABD6}|Proyecto.csproj|c:\\users\\ricar\\onedrive\\documentos\\github\\proyecto1\\formfinanza.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5ED591AE-3C6E-43F6-9E76-265A2B3EABD6}|Proyecto.csproj|solutionrelative:formfinanza.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5ED591AE-3C6E-43F6-9E76-265A2B3EABD6}|Proyecto.csproj|c:\\users\\ricar\\onedrive\\documentos\\github\\proyecto1\\agregar ingreso.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5ED591AE-3C6E-43F6-9E76-265A2B3EABD6}|Proyecto.csproj|solutionrelative:agregar ingreso.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5ED591AE-3C6E-43F6-9E76-265A2B3EABD6}|Proyecto.csproj|C:\\Users\\ricar\\OneDrive\\Documentos\\GitHub\\proyecto1\\formfinanza.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{5ED591AE-3C6E-43F6-9E76-265A2B3EABD6}|Proyecto.csproj|solutionrelative:formfinanza.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5ED591AE-3C6E-43F6-9E76-265A2B3EABD6}|Proyecto.csproj|C:\\Users\\ricar\\OneDrive\\Documentos\\GitHub\\proyecto1\\agregarpago.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{5ED591AE-3C6E-43F6-9E76-265A2B3EABD6}|Proyecto.csproj|solutionrelative:agregarpago.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{5ED591AE-3C6E-43F6-9E76-265A2B3EABD6}|Proyecto.csproj|c:\\users\\ricar\\onedrive\\documentos\\github\\proyecto1\\agregar ingreso.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{5ED591AE-3C6E-43F6-9E76-265A2B3EABD6}|Proyecto.csproj|solutionrelative:agregar ingreso.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{5ED591AE-3C6E-43F6-9E76-265A2B3EABD6}|Proyecto.csproj|C:\\Users\\ricar\\OneDrive\\Documentos\\GitHub\\proyecto1\\appbancaria.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5ED591AE-3C6E-43F6-9E76-265A2B3EABD6}|Proyecto.csproj|solutionrelative:appbancaria.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5ED591AE-3C6E-43F6-9E76-265A2B3EABD6}|Proyecto.csproj|C:\\Users\\ricar\\OneDrive\\Documentos\\GitHub\\proyecto1\\sqlconnectionextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5ED591AE-3C6E-43F6-9E76-265A2B3EABD6}|Proyecto.csproj|solutionrelative:sqlconnectionextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5ED591AE-3C6E-43F6-9E76-265A2B3EABD6}|Proyecto.csproj|c:\\users\\ricar\\onedrive\\documentos\\github\\proyecto1\\agregarpago.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{5ED591AE-3C6E-43F6-9E76-265A2B3EABD6}|Proyecto.csproj|solutionrelative:agregarpago.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5ED591AE-3C6E-43F6-9E76-265A2B3EABD6}|Proyecto.csproj|c:\\users\\ricar\\onedrive\\documentos\\github\\proyecto1\\tabla\u002B-.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{5ED591AE-3C6E-43F6-9E76-265A2B3EABD6}|Proyecto.csproj|solutionrelative:tabla\u002B-.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{5ED591AE-3C6E-43F6-9E76-265A2B3EABD6}|Proyecto.csproj|C:\\Users\\ricar\\OneDrive\\Documentos\\GitHub\\proyecto1\\formfinanza.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5ED591AE-3C6E-43F6-9E76-265A2B3EABD6}|Proyecto.csproj|solutionrelative:formfinanza.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5ED591AE-3C6E-43F6-9E76-265A2B3EABD6}|Proyecto.csproj|c:\\users\\ricar\\onedrive\\documentos\\github\\proyecto1\\appbancaria.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{5ED591AE-3C6E-43F6-9E76-265A2B3EABD6}|Proyecto.csproj|solutionrelative:appbancaria.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5ED591AE-3C6E-43F6-9E76-265A2B3EABD6}|Proyecto.csproj|c:\\users\\ricar\\onedrive\\documentos\\github\\proyecto1\\agregarpago.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5ED591AE-3C6E-43F6-9E76-265A2B3EABD6}|Proyecto.csproj|solutionrelative:agregarpago.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5ED591AE-3C6E-43F6-9E76-265A2B3EABD6}|Proyecto.csproj|c:\\users\\ricar\\onedrive\\documentos\\github\\proyecto1\\formfinanza.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{5ED591AE-3C6E-43F6-9E76-265A2B3EABD6}|Proyecto.csproj|solutionrelative:formfinanza.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -42,17 +34,17 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
               "Title": "AppBancaria.cs",
               "DocumentMoniker": "C:\\Users\\ricar\\OneDrive\\Documentos\\GitHub\\proyecto1\\AppBancaria.cs",
               "RelativeDocumentMoniker": "AppBancaria.cs",
-              "ToolTip": "C:\\Users\\ricar\\OneDrive\\Documentos\\GitHub\\proyecto1\\AppBancaria.cs",
-              "RelativeToolTip": "AppBancaria.cs",
-              "ViewState": "AgIAAF0CAAAAAAAAAAAgwGUCAABcAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\ricar\\OneDrive\\Documentos\\GitHub\\proyecto1\\AppBancaria.cs*",
+              "RelativeToolTip": "AppBancaria.cs*",
+              "ViewState": "AgIAAFQCAAAAAAAAAAAgwHMCAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-06-23T00:29:42.934Z",
               "IsPinned": true,
@@ -60,15 +52,68 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 5,
               "Title": "FormFinanza.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\ricar\\OneDrive\\Documentos\\GitHub\\proyecto1\\FormFinanza.cs",
               "RelativeDocumentMoniker": "FormFinanza.cs",
-              "ToolTip": "C:\\Users\\ricar\\OneDrive\\Documentos\\GitHub\\proyecto1\\FormFinanza.cs [Dise\u00F1o]*",
-              "RelativeToolTip": "FormFinanza.cs [Dise\u00F1o]*",
+              "ToolTip": "C:\\Users\\ricar\\OneDrive\\Documentos\\GitHub\\proyecto1\\FormFinanza.cs [Dise\u00F1o]",
+              "RelativeToolTip": "FormFinanza.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-06-24T04:20:34.924Z",
               "IsPinned": true,
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "FormFinanza.cs",
+              "DocumentMoniker": "C:\\Users\\ricar\\OneDrive\\Documentos\\GitHub\\proyecto1\\FormFinanza.cs",
+              "RelativeDocumentMoniker": "FormFinanza.cs",
+              "ToolTip": "C:\\Users\\ricar\\OneDrive\\Documentos\\GitHub\\proyecto1\\FormFinanza.cs",
+              "RelativeToolTip": "FormFinanza.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAADgvxIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-27T00:26:11.322Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Agregar ingreso.cs",
+              "DocumentMoniker": "C:\\Users\\ricar\\OneDrive\\Documentos\\GitHub\\proyecto1\\Agregar ingreso.cs",
+              "RelativeDocumentMoniker": "Agregar ingreso.cs",
+              "ToolTip": "C:\\Users\\ricar\\OneDrive\\Documentos\\GitHub\\proyecto1\\Agregar ingreso.cs*",
+              "RelativeToolTip": "Agregar ingreso.cs*",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAYwCgAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-27T18:49:35.329Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Agregar ingreso.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\ricar\\OneDrive\\Documentos\\GitHub\\proyecto1\\Agregar ingreso.cs",
+              "RelativeDocumentMoniker": "Agregar ingreso.cs",
+              "ToolTip": "C:\\Users\\ricar\\OneDrive\\Documentos\\GitHub\\proyecto1\\Agregar ingreso.cs [Dise\u00F1o]*",
+              "RelativeToolTip": "Agregar ingreso.cs [Dise\u00F1o]*",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-27T18:45:55.881Z",
+              "IsPinned": true,
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "AgregarPago.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\ricar\\OneDrive\\Documentos\\GitHub\\proyecto1\\AgregarPago.cs",
+              "RelativeDocumentMoniker": "AgregarPago.cs",
+              "ToolTip": "C:\\Users\\ricar\\OneDrive\\Documentos\\GitHub\\proyecto1\\AgregarPago.cs [Dise\u00F1o]",
+              "RelativeToolTip": "AgregarPago.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-27T20:23:30.474Z",
               "EditorCaption": " [Dise\u00F1o]"
             },
             {
@@ -78,81 +123,6 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "FormFinanza.cs",
-              "DocumentMoniker": "C:\\Users\\ricar\\OneDrive\\Documentos\\GitHub\\proyecto1\\FormFinanza.cs",
-              "RelativeDocumentMoniker": "FormFinanza.cs",
-              "ToolTip": "C:\\Users\\ricar\\OneDrive\\Documentos\\GitHub\\proyecto1\\FormFinanza.cs*",
-              "RelativeToolTip": "FormFinanza.cs*",
-              "ViewState": "AgIAAD4AAAAAAAAAAAAgwFsAAAAgAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-27T00:26:11.322Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "AgregarPago.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\ricar\\OneDrive\\Documentos\\GitHub\\proyecto1\\AgregarPago.cs",
-              "RelativeDocumentMoniker": "AgregarPago.cs",
-              "ToolTip": "C:\\Users\\ricar\\OneDrive\\Documentos\\GitHub\\proyecto1\\AgregarPago.cs [Dise\u00F1o]",
-              "RelativeToolTip": "AgregarPago.cs [Dise\u00F1o]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-23T00:29:42.934Z",
-              "EditorCaption": " [Dise\u00F1o]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Tabla\u002B-.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\ricar\\OneDrive\\Documentos\\GitHub\\proyecto1\\Tabla\u002B-.cs",
-              "RelativeDocumentMoniker": "Tabla\u002B-.cs",
-              "ToolTip": "C:\\Users\\ricar\\OneDrive\\Documentos\\GitHub\\proyecto1\\Tabla\u002B-.cs [Dise\u00F1o]",
-              "RelativeToolTip": "Tabla\u002B-.cs [Dise\u00F1o]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-26T21:46:18.624Z",
-              "EditorCaption": " [Dise\u00F1o]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "AgregarPago.cs",
-              "DocumentMoniker": "C:\\Users\\ricar\\OneDrive\\Documentos\\GitHub\\proyecto1\\AgregarPago.cs",
-              "RelativeDocumentMoniker": "AgregarPago.cs",
-              "ToolTip": "C:\\Users\\ricar\\OneDrive\\Documentos\\GitHub\\proyecto1\\AgregarPago.cs",
-              "RelativeToolTip": "AgregarPago.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAIEAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-23T00:29:41.767Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "AppBancaria.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\ricar\\OneDrive\\Documentos\\GitHub\\proyecto1\\AppBancaria.cs",
-              "RelativeDocumentMoniker": "AppBancaria.cs",
-              "ToolTip": "C:\\Users\\ricar\\OneDrive\\Documentos\\GitHub\\proyecto1\\AppBancaria.cs [Dise\u00F1o]",
-              "RelativeToolTip": "AppBancaria.cs [Dise\u00F1o]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-26T21:44:31.928Z",
-              "EditorCaption": " [Dise\u00F1o]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "SqlConnectionExtensions.cs",
-              "DocumentMoniker": "C:\\Users\\ricar\\OneDrive\\Documentos\\GitHub\\proyecto1\\SqlConnectionExtensions.cs",
-              "RelativeDocumentMoniker": "SqlConnectionExtensions.cs",
-              "ToolTip": "C:\\Users\\ricar\\OneDrive\\Documentos\\GitHub\\proyecto1\\SqlConnectionExtensions.cs",
-              "RelativeToolTip": "SqlConnectionExtensions.cs",
-              "ViewState": "AgIAABQAAAAAAAAAAAASwCYAAAAMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-24T04:15:55.291Z",
-              "EditorCaption": ""
             }
           ]
         }

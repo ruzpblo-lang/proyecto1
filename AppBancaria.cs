@@ -620,5 +620,13 @@ public List<PrecioProveedor> MostrarProductosProveedores()
             }
             return 0;
         }
+
+        public void Registraringreso(string concepto, double monto, string fecha)
+        {
+            string query = $@"
+                INSERT INTO Ingresos (Concepto, Monto, FechaIngreso)
+                Values ('{concepto}', {monto}, '{fecha}');";
+            conn.ExecuteNonQuery(query);
+        }
     }
 }
