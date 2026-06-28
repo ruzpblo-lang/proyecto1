@@ -71,7 +71,7 @@
             this.Controls.Add(this.cmbEstado);
             this.Controls.Add(this.cmbEmpleado);
             this.Name = "Clientesdown";
-            this.Text = "Clientesdown";
+            this.Text = "iuj";
             this.Load += new System.EventHandler(this.Clientesdown_Load);
             this.ResumeLayout(false);
 

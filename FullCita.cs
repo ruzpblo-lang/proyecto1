@@ -8,9 +8,10 @@ namespace Proyecto
 {
     public class FullCita
     {
-        public FullCita(int folioId, string cliente, string empleado, string horario, string estado)
+        public FullCita(int folioId, int clienteId, string cliente, string empleado, string horario, string estado)
         {
             FolioId = folioId;
+            ClienteId = clienteId;
             Cliente = cliente;
             Empleado = empleado;
             Horario = horario;
@@ -18,6 +19,7 @@ namespace Proyecto
         }
 
         public int FolioId { get; }
+        public int ClienteId { get; }
         public string Cliente { get; }
         public string Empleado { get; }
         public string Horario { get; }

@@ -18,13 +18,19 @@ namespace Proyecto
         {
             InitializeComponent();
             this.gestorcitas = gestorcitas;
+            InciarFlitroTipo();
+        }
 
-            cmbCliente.DisplayMember = "Nombre";
-            cmbCliente.ValueMember = "ClienteId";
-            cmbCliente.DataSource = gestorcitas.ShortClientes();
-           
+        private void InciarFlitroTipo()
+        {
+            cmbFiltroTipo.DataSource = null;
+            cmbFiltroTipo.Items.Clear();
+            cmbFiltroTipo.Items.Add("Todos");
+            cmbFiltroTipo.Items.Add("Cliente");
+            cmbFiltroTipo.Items.Add("Empleado");
+            cmbFiltroTipo.Items.Add("Proveedor");
 
-          
+            cmbFiltroTipo.SelectedIndex = 0;
         }
 
        /* private void UpdateData()
@@ -35,13 +41,6 @@ namespace Proyecto
 
         private void FormAgenda_Load(object sender, EventArgs e)
         {
-            dgvCitas.DataSource = gestorcitas.GetFullCitas();
-
-            if (dgvCitas.Columns["FolioId"] != null)
-                dgvCitas.Columns["FolioId"].Visible = false;
-            
-            if (dgvCitas.Columns["Empleado"] != null)
-                dgvCitas.Columns["Empleado"].Visible = false;
             RefreshCitas();
         }
         public void RefreshCitas()
@@ -49,34 +48,108 @@ namespace Proyecto
             dgvCitas.DataSource = null;
             dgvCitas.DataSource = gestorcitas.GetFullCitas();
 
+            if (dgvCitas.Columns["ClienteId"] != null)
+                dgvCitas.Columns["ClienteId"].Visible = false;
+
+            if (dgvCitas.Columns["Empleado"] != null)
+                dgvCitas.Columns["Empleado"].Visible = false;
+
             if (dgvCitas.Columns["FolioId"] != null)
                 dgvCitas.Columns["FolioId"].Visible = false;
-
+            
             if (dgvCitas.Columns["Empleado"] != null)
                 dgvCitas.Columns["Empleado"].Visible = false;
         }
 
+        private void FiltrosCitas()
+        {
+            if (gestorcitas == null || cmbFiltroTipo.SelectedItem == null) return;
+
+            List<FullCita> listaFiltrada = gestorcitas.GetFullCitas();
+
+            DateTime fechaInicio = dtpFechaInicio.Value.Date;
+            DateTime fechaFinal = dtpFechaFinal.Value.Date;
+
+            if (fechaInicio > fechaFinal)
+            {
+                return;
+            
+            
+            }
+
+            //PRIMER FILTRO POR TIPO
+            
+            string seleccion = cmbFiltroTipo.SelectedItem.ToString();
+
+            if (seleccion == "Cliente")
+            {
+                dgvCitas.DataSource = listaFiltrada.Where(c => c.ClienteId > 0).ToList();
+            }
+            else if (seleccion == "Empleado")
+            {
+                dgvCitas.DataSource = listaFiltrada.Where(c => c.ClienteId == 0).ToList();
+            }
+            else if (seleccion == "Proveedor")
+            {
+                dgvCitas.DataSource = listaFiltrada.Where(c => c.ClienteId < 0).ToList();
+            }
+            else
+            {
+                // Si es "Todos", mostramos la lista sin alteraciones
+                dgvCitas.DataSource = listaFiltrada;
+            }
+
+            //SEGUNDO FILTRO POR RANGO DE FECHAS
+            listaFiltrada = listaFiltrada.Where(c => {
+                if (DateTime.TryParse(c.Horario, out DateTime fechaCita))
+                {
+                    return fechaCita.Date >= fechaInicio && fechaCita.Date <= fechaFinal;
+                }
+                return false; // Si no puede parsear la fecha, descarta la fila
+            }).ToList();
+
+            dgvCitas.DataSource = listaFiltrada;
+        }
         private void ComboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if (cmbCliente.SelectedValue != null && cmbCliente.SelectedValue is int)
-            {
-                int idSeleccionado = (int)cmbCliente.SelectedValue;
-                dgvCitas.DataSource = null;
-                dgvCitas.DataSource = gestorcitas.GetCitaPorPaciente(idSeleccionado);
-            }
+            FiltrosCitas();
+        }
+        private void dtpFechaInicio_ValueChanged(object sender, EventArgs e)
+        {
+            FiltrosCitas();
+        }
+
+        private void dtpFechaFinal_ValueChanged(object sender, EventArgs e)
+        {
+            FiltrosCitas();
         }
 
         private void btnInfo_Click(object sender, EventArgs e)
         {
             if (dgvCitas.CurrentRow != null)
             {
+
                 FullCita citaSeleccionada = (FullCita)dgvCitas.CurrentRow.DataBoundItem;
                 int idCita = citaSeleccionada.FolioId;
 
+                int idCliente = citaSeleccionada.ClienteId;
+
+                if (idCliente > 0)
+                {
+
+                }
+                else if (idCliente == 0)
+                {
+
+                }
+                else
+                {
+
+                }
                 FormInfoCita formInfoCita = new FormInfoCita();
                 formInfoCita.ShowDialog();
 
-                //¿MessageBox.Show($"Abriendo detalles para el Folio de Cita: {idCita}");
+               //¿MessageBox.Show($"Abriendo detalles para el Folio de Cita: {idCita}");
             }
             else
             {
@@ -104,5 +177,11 @@ namespace Proyecto
             GerenteCitas ventanaAgregar = new GerenteCitas(gestorcitas, "Cliente");
             ventanaAgregar.ShowDialog(this);
         }
+
+        private void groupBox1_Enter(object sender, EventArgs e)
+        {
+
+        }
+
     }
 }
