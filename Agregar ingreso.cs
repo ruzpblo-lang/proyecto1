@@ -28,7 +28,7 @@ namespace Proyecto
                 return;
             }
 
-            if(!double .TryParse(txtconcepto.Text, out double montoValido) || montoValido <= 0)
+            if(!double .TryParse(txtmonto.Text, out double montoValido) || montoValido <= 0)
             {
                 MessageBox.Show("Monto invalido porfavor ingrese una cantidad valida", "Error en Monto", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
