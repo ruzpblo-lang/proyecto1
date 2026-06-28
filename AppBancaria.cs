@@ -7,6 +7,7 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Numerics;
+using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -437,7 +438,7 @@ public List<PrecioProveedor> MostrarProductosProveedores()
                 ServicioId = rs.GetInt("ServicioId");
             } 
 
-            string fecha = DateTime.Now.ToString("dd/MM/y");
+            string fecha = DateTime.Now.ToString("yyyy-MM-dd");
             string concepto = tipo + "-" + proveedor;
             string queryInsert = "INSERT INTO Pagos (ServicioId, Nombre, FechaPago, SueldoBase, Estado) " +
                                  "VALUES ($servicioId, $nombre, $fechaPago, $sueldoBase, $estado)";
@@ -665,6 +666,73 @@ public List<PrecioProveedor> MostrarProductosProveedores()
                 lista.Add(fila);
             }
             return lista;
+        }
+        public List<Fullpagos> obtenertodoslosmovimientos()
+        {
+            List<Fullpagos> listamovimientos = new List<Fullpagos>();
+            string query = @"
+                 SELECT N.NominaID as ID, 'Nómina' AS Tipo, E.Nombre AS Concepto, N.FechaPago AS Fecha, N.SueldoBase AS Monto, N.Estado AS Estado
+                 FROM Nomina N
+                 INNER JOIN Empleados E ON N.EmpleadoId = E.EmpleadoId
+
+                 UNION ALL
+                 
+                 SELECT P.PagoId AS ID,
+                        CASE WHEN P.ServicioId IS NOT NULL THEN 'Servicio' ELSE 'Gasto Externo' END AS Tipo,
+                        P.Nombre AS Concepto, P.FechaPago AS Fecha, P.SueldoBase AS Monto, P.Estado AS Estado
+                 FROM Pagos P
+                 
+                 UNION ALL
+                 
+                 SELECT I.IngresoId AS ID, 'Ingreso' AS Tipo, I.Concepto AS Concepto, I.FechaIngreso AS Fecha, I.Monto AS Monto, I.Estado AS Estado
+                 FROM Ingresos I;";
+            var rs =conn.ExecuteReader(query);
+            while(rs.Read())
+            {
+                listamovimientos.Add(new Fullpagos(
+                rs.GetInt("ID"),
+                rs.GetString("Tipo"),
+                rs.GetString("Concepto"),
+                rs.GetString("Fecha"),
+                rs.GetDouble("Monto"),
+                rs.GetString("Estado")
+                ));
+            }
+            return listamovimientos;
+        }
+
+        public void agregarservicio(string Nombreservicio, string fecha, decimal monto, string estado)
+        {
+            string queryservicio = "INSERT OR IGNORE INTO CatalogoServicios (Nombre) VALUES ($nombre)";
+            conn.ExecuteNonQuery(queryservicio, ("$nombre", Nombreservicio));
+            int servicioID = 0;
+            string querygetID = "SELECT ServicioId FROM CatalgoServicios WHERE Nombre = $nombre";
+            var rs = conn.ExecuteReader(querygetID, ("$nombre",  Nombreservicio));
+            if(rs.Read())
+            {
+                servicioID = rs.GetInt("ServicioId");
+            }
+            string queryinsert = @"INSERT INTO Pagos (ServicioId, Nombre, FechaPago, SueldoBase, Estado
+                                   VALUES ($servicioId, $nombre, $fechaPago, $sueldobase, $estado)";
+
+            conn.ExecuteNonQuery(queryinsert,
+                ("$servicioId",  servicioID),
+                ("$nombre", Nombreservicio),
+                ("$fechaPago", fecha),
+                ("$sueldoBase", monto),
+                ("$estado", estado)
+                );
+        }
+        public List<string> Getcatalogoservicios()
+        {
+            List<string> servicios = new List<string>();
+            string query = "SELECT Nombre FROM CatalogoServicios ORDER BY Nombre ASC;";
+            var rs = conn.ExecuteReader(query);
+            while (rs.Read())
+            {
+                servicios.Add(rs.GetString("Nombre"));
+            }
+            return servicios;
         }
     }
 }

@@ -22,8 +22,22 @@ namespace Proyecto
         
         private void CargarPeriodosExistentes()
         {
-            List<Fullpagos> listacompleta = gestorbanco.GetTodosLosPagos();
+            List<Fullpagos> listacompleta = gestorbanco.obtenertodoslosmovimientos();
             var listafiltradaBase = listacompleta.Where(p => !pagostemporales.Any(b => b.ID == p.ID && b.Tipo == p.Tipo));
+
+            if (cmbingeg.SelectedItem != null && cmbingeg.SelectedItem.ToString() != "Todos")
+            {
+                string seleccion = cmbingeg.SelectedItem.ToString();
+                if (seleccion == "Ingresos")
+                {
+                    listafiltradaBase = listafiltradaBase.Where(p => p.Tipo == "Ingreso");
+                }
+                else if (seleccion == "Egresos")
+                {
+                    listafiltradaBase = listafiltradaBase.Where(p => p.Tipo == "Nómina" || p.Tipo == "Gasto Externo" || p.Tipo == "Servicio");
+                }
+            }
+
             if (CmbEstado.SelectedItem != null && CmbEstado.SelectedItem.ToString() != "Todos")
             {
                 string estadoactual = CmbEstado.SelectedItem.ToString();
@@ -31,13 +45,15 @@ namespace Proyecto
             }
 
             List<String> Periodos = listafiltradaBase
-                .Select(p => DateTime.Parse(p.Fecha).ToString("MM-yyyy"))
-                .Distinct()
-                .OrderByDescending(m  => m)
+                .Select(p => DateTime.Parse(p.Fecha))
+                .OrderByDescending(f  => f)
+                .Select(f => f.ToString("MM-yyyy"))
+                .Distinct() 
                 .ToList();
+
             string seleccionadoPreviamente = CmbMes.SelectedItem?.ToString();
             CmbMes.Items.Clear();
-
+            CmbMes.Items.Add("Todos");
             foreach (string mes in Periodos)
             {
                 CmbMes.Items.Add(mes);
@@ -56,25 +72,36 @@ namespace Proyecto
         }
         private void UpdateData()
         {
-            List <Fullpagos> listacompleta = gestorbanco.GetTodosLosPagos();
+            List <Fullpagos> listacompleta = gestorbanco.obtenertodoslosmovimientos();
             var ListaFiltrada = listacompleta.Where(p => !pagostemporales.Any(b => b.ID == p.ID && b.Tipo == p.Tipo)).ToList();
-            if (CmbEstado.SelectedItem != null && CmbEstado.SelectedItem.ToString() != "Todos")
+
+            if(cmbingeg.SelectedItem != null && cmbingeg.SelectedItem.ToString() != "Todos")
+            {
+                string SeleccioonIngeg = cmbingeg.SelectedItem.ToString();
+                if(SeleccioonIngeg == "Ingresos")
+                {
+                    ListaFiltrada = ListaFiltrada.Where(p => p.Tipo == "Ingreso").ToList();
+                }
+                else if(SeleccioonIngeg == "Egresos")
+                {
+                    ListaFiltrada = ListaFiltrada.Where(p => p.Tipo == "Nómina" || p.Tipo == "Gasto Externo" || p.Tipo == "Servicio").ToList();
+                }
+            }
+
+            if (CmbEstado.Visible && CmbEstado.SelectedItem != null && CmbEstado.SelectedItem.ToString() != "Todos")
             {
                 string FiltroEstado = CmbEstado.SelectedItem.ToString();
                 ListaFiltrada = ListaFiltrada.Where(p => p.Estado == FiltroEstado).ToList();
             }
-            //filtro Estado
-            if (CmbMes.SelectedItem != null)
+
+            if (CmbMes.SelectedItem != null && CmbMes.SelectedItem.ToString() != "Todos")
             {
                 string MesSeleccionado = CmbMes.SelectedItem.ToString();
                 ListaFiltrada = ListaFiltrada.Where(p => DateTime.Parse(p.Fecha).ToString("MM-yyyy") == MesSeleccionado).ToList();
             }
-            else
-            {
-                ListaFiltrada.Clear();
-            }
 
-            if (CmbTipopago.SelectedItem != null && CmbTipopago.SelectedItem.ToString() != "Todos")
+
+            if (CmbTipopago.Visible && CmbTipopago.SelectedItem != null && CmbTipopago.SelectedItem.ToString() != "Todos")
             {
                 string FiltroTipo = CmbTipopago.SelectedItem.ToString();
                 ListaFiltrada = ListaFiltrada.Where(p => p.Tipo == FiltroTipo).ToList();
@@ -107,6 +134,7 @@ namespace Proyecto
             CmbTipopago.Items.Add("Todos");
             CmbTipopago.Items.Add("Nómina");
             CmbTipopago.Items.Add("Gasto Externo");
+            CmbTipopago.Items.Add("Servicio");
             CmbTipopago.SelectedIndex = 0;
 
             CmbEstado.Items.Clear();
@@ -114,6 +142,12 @@ namespace Proyecto
             CmbEstado.Items.Add("Pendiente");
             CmbEstado.Items.Add("Realizado");
             CmbEstado.SelectedIndex = 0;
+
+            cmbingeg.Items.Clear();
+            cmbingeg.Items.Add("Todos");
+            cmbingeg.Items.Add("Ingresos");
+            cmbingeg.Items.Add("Egresos");
+            cmbingeg.SelectedIndex = 0;
 
             CargarPeriodosExistentes();
             UpdateData();
@@ -166,6 +200,12 @@ namespace Proyecto
             {
                 int id  = Convert.ToInt32(dataGridView1.CurrentRow.Cells["ID"].Value);
                 string tipo = dataGridView1.CurrentRow.Cells["Tipo"].Value.ToString();
+
+                if (tipo == "Ingreso")
+                {
+                    MessageBox.Show("Los ingresos ya estan aplicadosy no pueden agregarse al carrito", "Error seleccion invalidad", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
+                }
 
                 List<Fullpagos> listacompleta = gestorbanco.GetTodosLosPagos();
                 Fullpagos pagoseleccionado = listacompleta.FirstOrDefault(p => p.ID == id && p.Tipo == tipo);
@@ -240,6 +280,27 @@ namespace Proyecto
         {
            Ingresosvsegresos ventana = new Ingresosvsegresos(this.gestorbanco);
             ventana.ShowDialog();
+        }
+
+        private void cmbingeg_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            string seleccion = cmbingeg.SelectedItem?.ToString();
+            if (seleccion == "Ingresos")
+            {
+                CmbEstado.Visible = false;
+                CmbTipopago.Visible = false;
+                label3.Visible = false;
+                label4.Visible = false;
+            }
+            else
+            {
+                CmbEstado.Visible = true;
+                CmbTipopago.Visible = true;
+                label3.Visible = true;
+                label4.Visible = true;
+            }
+            CargarPeriodosExistentes();
+            UpdateData();
         }
     }
 }
