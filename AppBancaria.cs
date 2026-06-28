@@ -610,5 +610,61 @@ public List<PrecioProveedor> MostrarProductosProveedores()
                 ("$cuentaId", cuentaId)
             );
         }
+
+        public double ObtenerSaldo()
+        {
+            string query = @"
+              SELECT
+                  (SELECT IFNULL(SUM(Monto), 0) FROM Ingresos WHERE  Estado = 'Realizado') -
+                  (SELECT IFNULL(SUM(SueldoBase), 0) FROM Nomina WHERE Estado = 'Realizado') -
+                  (SELECT IFNULL(SUM(SueldoBase), 0) FROM Pagos WHERE Estado = 'Realizado') 
+                   AS SaldoActual;";
+            var rs = conn.ExecuteReader(query);
+            if (rs.Read())
+            {
+                return rs.GetDouble("SaldoActual");
+            }
+            return 0;
+        }
+
+        public void Registraringreso(string concepto, double monto, string fecha)
+        {
+            string query = $@"
+                INSERT INTO Ingresos (Concepto, Monto, FechaIngreso)
+                Values ('{concepto}', {monto}, '{fecha}');";
+            conn.ExecuteNonQuery(query);
+        }
+        public List<Reportemensual> Obtenerdatosgraf()
+        {
+            List<Reportemensual> lista = new List<Reportemensual>();
+            string query = @"
+                SELECT Mes,
+                       SUM(IngresoTotal) AS TotalIngreso,
+                       SUM(EgresoTotal) AS TotalEgreso
+                FROM (
+                   SELECT substr(FechaIngreso, 1, 7) AS Mes, Monto AS IngresoTotal, 0 AS EgresoTotal
+                   FROM Ingresos
+                UNION ALL
+                   SELECT substr(Fechapago, 1, 7) AS Mes, 0 AS IngresoTotal, SueldoBase as EgresoTotal
+                   FROM Nomina
+                   WHERE Estado = 'Realizado'
+                UNION ALL
+                   SELECT substr(Fechapago, 1,7) AS Mes, 0 as IngresoTotal, SueldoBase as EgresoTotal
+                   FROM Pagos
+                   WHERE Estado = 'Realizado'
+                      )
+                 GROUP BY Mes
+                 ORDER BY Mes;";
+            var rs = conn.ExecuteReader(query);
+            while (rs.Read())
+            {
+                Reportemensual fila = new Reportemensual();
+                fila.Mes = rs.GetString("Mes");
+                fila.Ingresos = rs.GetDouble("TotalIngreso");
+                fila.Egresos = rs.GetDouble("TotalEgreso");
+                lista.Add(fila);
+            }
+            return lista;
+        }
     }
 }

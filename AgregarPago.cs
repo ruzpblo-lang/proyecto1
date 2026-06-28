@@ -23,23 +23,28 @@ namespace Proyecto
         private void btnagregar_Click(object sender, EventArgs e)
         {
             string tiposeleccionado = cmbTipo.SelectedItem.ToString();
-            if (tiposeleccionado == "Gasto Externo" && string.IsNullOrWhiteSpace(txtFecha.Text))
+            string fecha = dateTimePicker1.Value.ToString("yyyy-MM-dd");
+            if (tiposeleccionado == "Gasto Externo")
             {
-                MessageBox.Show("Por rellene el campo Concepto", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
-
-            if (string.IsNullOrWhiteSpace(txtFecha.Text) || string.IsNullOrWhiteSpace(txtMonto.Text))
-
+            if (string.IsNullOrWhiteSpace(txtConcepto.Text) || string.IsNullOrWhiteSpace(txtMonto.Text))
             {
                 MessageBox.Show("Por rellene los campos en blanco", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
+            }
+            }
+            if (tiposeleccionado == "Nómina")
+            {
+                if (string.IsNullOrWhiteSpace(txtbxHorasdobles.Text) || string.IsNullOrWhiteSpace(txtBoxhorastriples.Text))
+
+                {
+                    MessageBox.Show("Por rellene los campos en blanco", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
+                }
             }
 
             switch (MessageBox.Show("Confirma los datos del pago?", "Confirmacion", MessageBoxButtons.YesNo, MessageBoxIcon.Question))
             {
                 case DialogResult.Yes:
-                    string concepto = txtConcepto.Text;
-                    string fecha = txtFecha.Text;
-                    decimal monto = Convert.ToDecimal(txtMonto.Text);
                     string estado = cmbEstado.SelectedItem.ToString();
 
                 if(tiposeleccionado == "Nómina")
@@ -49,15 +54,23 @@ namespace Proyecto
 
                         List<Puesto> listapuestos = (List<Puesto>)gestorbanco.GetTodosLosPuestos();
                         Puesto puestodelempleado = listapuestos.FirstOrDefault(p => p.Categoria == empleadoseleccionado.Puesto);
-                        decimal SueldoBase = puestodelempleado != null ? Convert.ToDecimal(puestodelempleado.Sueldo) : 0m;
-                        int Horasextra = Convert.ToInt32(txtMonto.Text);
-                        int tarifaHorasextra = 100;
-                        decimal montoCalculado = SueldoBase + (Horasextra * tarifaHorasextra);
-                        gestorbanco.AgregarNomina(EmpleadoId, fecha,montoCalculado,estado);
-                     }
+                        decimal Sueldobase =puestodelempleado != null ? Convert.ToDecimal(puestodelempleado.Sueldo) : 0m;
+
+                        int.TryParse(txtbxHorasdobles.Text, out int horasdoble);
+                        int.TryParse(txtBoxhorastriples.Text, out int horastriples);
+
+                        decimal valorHoranormal = Sueldobase / 240m;
+                        decimal pagohorasdobles = valorHoranormal * 2m * horasdoble;
+                        decimal pagohorastriples = valorHoranormal * 3m * horastriples;
+                        decimal montocalculado = Sueldobase + pagohorasdobles + pagohorastriples;
+                        montocalculado = Math.Round(montocalculado,2);
+                        gestorbanco.AgregarNomina(EmpleadoId, fecha, montocalculado, estado);
+                    }
 
                 if(tiposeleccionado == "Gasto Externo")
                     {
+                        string concepto = txtConcepto.Text;
+                        decimal monto = Convert.ToDecimal(txtMonto.Text);
                         Random rand = new Random();
                         int exterior = rand.Next(1, 9999);
                         gestorbanco.AgregarPagoexterno(exterior,concepto, fecha,monto, estado);
@@ -93,7 +106,11 @@ namespace Proyecto
                 txtConcepto.Visible = false;
                 cmbempleado.Visible = true;
                 label2.Text = "Empleado";
-                label4.Text = "Cantidad de horas extra";
+                txtBoxhorastriples.Visible = true;
+                label4.Visible = false;
+                txtbxHorasdobles.Visible = true;
+                horasdoblestxt.Visible = true;
+                Horastriplestxt.Visible = true;
             }
 
             if (cmbTipo.SelectedItem.ToString() == "Gasto Externo")
@@ -102,6 +119,10 @@ namespace Proyecto
                 cmbempleado.Visible = false;
                 label2.Text = "Concepto";
                 label4.Text = "Monto";
+                txtbxHorasdobles.Visible = false;
+                horasdoblestxt.Visible = false;
+                Horastriplestxt.Visible = false;
+                txtBoxhorastriples.Visible = false;
             }
         }
     }
