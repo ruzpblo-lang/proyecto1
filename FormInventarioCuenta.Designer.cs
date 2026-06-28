@@ -43,6 +43,7 @@
             this.dgvInventarioCuenta.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvInventarioCuenta.Location = new System.Drawing.Point(49, 21);
             this.dgvInventarioCuenta.Name = "dgvInventarioCuenta";
+            this.dgvInventarioCuenta.ReadOnly = true;
             this.dgvInventarioCuenta.RowHeadersWidth = 51;
             this.dgvInventarioCuenta.RowTemplate.Height = 24;
             this.dgvInventarioCuenta.Size = new System.Drawing.Size(639, 326);
@@ -65,14 +66,14 @@
             this.agregarToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(733, 30);
+            this.menuStrip1.Size = new System.Drawing.Size(733, 28);
             this.menuStrip1.TabIndex = 3;
             this.menuStrip1.Text = "menuStrip1";
             // 
             // agregarToolStripMenuItem
             // 
             this.agregarToolStripMenuItem.Name = "agregarToolStripMenuItem";
-            this.agregarToolStripMenuItem.Size = new System.Drawing.Size(75, 26);
+            this.agregarToolStripMenuItem.Size = new System.Drawing.Size(75, 24);
             this.agregarToolStripMenuItem.Text = "agregar";
             this.agregarToolStripMenuItem.Click += new System.EventHandler(this.agregarToolStripMenuItem_Click);
             // 

@@ -35,17 +35,21 @@
             // dgvpersonal
             // 
             this.dgvpersonal.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvpersonal.Location = new System.Drawing.Point(38, 55);
+            this.dgvpersonal.Location = new System.Drawing.Point(61, 71);
+            this.dgvpersonal.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dgvpersonal.Name = "dgvpersonal";
-            this.dgvpersonal.Size = new System.Drawing.Size(710, 338);
+            this.dgvpersonal.ReadOnly = true;
+            this.dgvpersonal.RowHeadersWidth = 51;
+            this.dgvpersonal.Size = new System.Drawing.Size(947, 416);
             this.dgvpersonal.TabIndex = 0;
             // 
             // ESTADO_CLIENTES
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1067, 554);
             this.Controls.Add(this.dgvpersonal);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "ESTADO_CLIENTES";
             this.Text = "ESTADO_CLIENTES";
             this.Load += new System.EventHandler(this.ESTADO_CLIENTES_Load);

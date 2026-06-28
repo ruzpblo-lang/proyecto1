@@ -35,10 +35,10 @@
             // 
             // btnEliminar
             // 
-            this.btnEliminar.Location = new System.Drawing.Point(37, 132);
-            this.btnEliminar.Margin = new System.Windows.Forms.Padding(2);
+            this.btnEliminar.Location = new System.Drawing.Point(49, 162);
+            this.btnEliminar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnEliminar.Name = "btnEliminar";
-            this.btnEliminar.Size = new System.Drawing.Size(57, 27);
+            this.btnEliminar.Size = new System.Drawing.Size(76, 33);
             this.btnEliminar.TabIndex = 5;
             this.btnEliminar.Text = "cambiar";
             this.btnEliminar.UseVisualStyleBackColor = true;
@@ -46,30 +46,33 @@
             // 
             // cmbEstado
             // 
+            this.cmbEstado.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbEstado.FormattingEnabled = true;
-            this.cmbEstado.Location = new System.Drawing.Point(37, 92);
-            this.cmbEstado.Margin = new System.Windows.Forms.Padding(2);
+            this.cmbEstado.Location = new System.Drawing.Point(49, 113);
+            this.cmbEstado.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cmbEstado.Name = "cmbEstado";
-            this.cmbEstado.Size = new System.Drawing.Size(82, 21);
+            this.cmbEstado.Size = new System.Drawing.Size(108, 24);
             this.cmbEstado.TabIndex = 4;
             // 
             // cmbEmpleado
             // 
+            this.cmbEmpleado.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbEmpleado.FormattingEnabled = true;
-            this.cmbEmpleado.Location = new System.Drawing.Point(37, 44);
-            this.cmbEmpleado.Margin = new System.Windows.Forms.Padding(2);
+            this.cmbEmpleado.Location = new System.Drawing.Point(49, 54);
+            this.cmbEmpleado.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cmbEmpleado.Name = "cmbEmpleado";
-            this.cmbEmpleado.Size = new System.Drawing.Size(82, 21);
+            this.cmbEmpleado.Size = new System.Drawing.Size(108, 24);
             this.cmbEmpleado.TabIndex = 3;
             // 
             // Clientesdown
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(166, 212);
+            this.ClientSize = new System.Drawing.Size(221, 261);
             this.Controls.Add(this.btnEliminar);
             this.Controls.Add(this.cmbEstado);
             this.Controls.Add(this.cmbEmpleado);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Clientesdown";
             this.Text = "Clientesdown";
             this.Load += new System.EventHandler(this.Clientesdown_Load);

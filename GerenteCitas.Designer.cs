@@ -36,9 +36,10 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(24, 207);
+            this.button1.Location = new System.Drawing.Point(21, 166);
+            this.button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(102, 56);
+            this.button1.Size = new System.Drawing.Size(91, 45);
             this.button1.TabIndex = 0;
             this.button1.Text = "btn";
             this.button1.UseVisualStyleBackColor = true;
@@ -46,36 +47,42 @@
             // 
             // cmbAsistentes
             // 
+            this.cmbAsistentes.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbAsistentes.FormattingEnabled = true;
-            this.cmbAsistentes.Location = new System.Drawing.Point(24, 12);
+            this.cmbAsistentes.Location = new System.Drawing.Point(21, 10);
+            this.cmbAsistentes.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cmbAsistentes.Name = "cmbAsistentes";
-            this.cmbAsistentes.Size = new System.Drawing.Size(121, 28);
+            this.cmbAsistentes.Size = new System.Drawing.Size(108, 24);
             this.cmbAsistentes.TabIndex = 1;
             // 
             // dtpFecha
             // 
-            this.dtpFecha.Location = new System.Drawing.Point(24, 84);
+            this.dtpFecha.Location = new System.Drawing.Point(21, 67);
+            this.dtpFecha.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dtpFecha.Name = "dtpFecha";
-            this.dtpFecha.Size = new System.Drawing.Size(200, 26);
+            this.dtpFecha.Size = new System.Drawing.Size(178, 22);
             this.dtpFecha.TabIndex = 2;
             // 
             // cmbHoras
             // 
+            this.cmbHoras.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbHoras.FormattingEnabled = true;
-            this.cmbHoras.Location = new System.Drawing.Point(24, 135);
+            this.cmbHoras.Location = new System.Drawing.Point(21, 108);
+            this.cmbHoras.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cmbHoras.Name = "cmbHoras";
-            this.cmbHoras.Size = new System.Drawing.Size(121, 28);
+            this.cmbHoras.Size = new System.Drawing.Size(108, 24);
             this.cmbHoras.TabIndex = 3;
             // 
             // GerenteCitas
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(711, 360);
             this.Controls.Add(this.cmbHoras);
             this.Controls.Add(this.dtpFecha);
             this.Controls.Add(this.cmbAsistentes);
             this.Controls.Add(this.button1);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "GerenteCitas";
             this.Text = "GerenteCitas";
             this.Load += new System.EventHandler(this.GerenteCitas_Load);

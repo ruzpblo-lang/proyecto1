@@ -46,6 +46,7 @@
             this.dgvInventario.Location = new System.Drawing.Point(33, 47);
             this.dgvInventario.Margin = new System.Windows.Forms.Padding(4);
             this.dgvInventario.Name = "dgvInventario";
+            this.dgvInventario.ReadOnly = true;
             this.dgvInventario.RowHeadersWidth = 51;
             this.dgvInventario.Size = new System.Drawing.Size(567, 427);
             this.dgvInventario.TabIndex = 0;

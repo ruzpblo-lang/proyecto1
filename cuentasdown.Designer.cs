@@ -36,10 +36,10 @@
             // 
             // btnEliminar
             // 
-            this.btnEliminar.Location = new System.Drawing.Point(37, 129);
-            this.btnEliminar.Margin = new System.Windows.Forms.Padding(2);
+            this.btnEliminar.Location = new System.Drawing.Point(49, 159);
+            this.btnEliminar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnEliminar.Name = "btnEliminar";
-            this.btnEliminar.Size = new System.Drawing.Size(57, 27);
+            this.btnEliminar.Size = new System.Drawing.Size(76, 33);
             this.btnEliminar.TabIndex = 8;
             this.btnEliminar.Text = "cambiar";
             this.btnEliminar.UseVisualStyleBackColor = true;
@@ -47,39 +47,44 @@
             // 
             // cmbEstado
             // 
+            this.cmbEstado.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbEstado.FormattingEnabled = true;
-            this.cmbEstado.Location = new System.Drawing.Point(37, 89);
-            this.cmbEstado.Margin = new System.Windows.Forms.Padding(2);
+            this.cmbEstado.Location = new System.Drawing.Point(49, 110);
+            this.cmbEstado.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cmbEstado.Name = "cmbEstado";
-            this.cmbEstado.Size = new System.Drawing.Size(82, 21);
+            this.cmbEstado.Size = new System.Drawing.Size(108, 24);
             this.cmbEstado.TabIndex = 7;
             // 
             // cmbEmpleado
             // 
+            this.cmbEmpleado.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbEmpleado.FormattingEnabled = true;
-            this.cmbEmpleado.Location = new System.Drawing.Point(37, 55);
-            this.cmbEmpleado.Margin = new System.Windows.Forms.Padding(2);
+            this.cmbEmpleado.Location = new System.Drawing.Point(49, 68);
+            this.cmbEmpleado.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cmbEmpleado.Name = "cmbEmpleado";
-            this.cmbEmpleado.Size = new System.Drawing.Size(82, 21);
+            this.cmbEmpleado.Size = new System.Drawing.Size(108, 24);
             this.cmbEmpleado.TabIndex = 6;
             // 
             // cmbcliente
             // 
+            this.cmbcliente.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbcliente.FormattingEnabled = true;
-            this.cmbcliente.Location = new System.Drawing.Point(37, 13);
+            this.cmbcliente.Location = new System.Drawing.Point(49, 16);
+            this.cmbcliente.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.cmbcliente.Name = "cmbcliente";
-            this.cmbcliente.Size = new System.Drawing.Size(82, 21);
+            this.cmbcliente.Size = new System.Drawing.Size(108, 24);
             this.cmbcliente.TabIndex = 9;
             // 
             // cuentasdown
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(234, 235);
+            this.ClientSize = new System.Drawing.Size(312, 289);
             this.Controls.Add(this.cmbcliente);
             this.Controls.Add(this.btnEliminar);
             this.Controls.Add(this.cmbEstado);
             this.Controls.Add(this.cmbEmpleado);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "cuentasdown";
             this.Text = "cuentasdown";
             this.Load += new System.EventHandler(this.cuentasdown_Load);

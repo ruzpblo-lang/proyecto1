@@ -36,32 +36,38 @@
             // 
             // cmbcliente
             // 
+            this.cmbcliente.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbcliente.FormattingEnabled = true;
-            this.cmbcliente.Location = new System.Drawing.Point(39, 23);
+            this.cmbcliente.Location = new System.Drawing.Point(52, 28);
+            this.cmbcliente.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.cmbcliente.Name = "cmbcliente";
-            this.cmbcliente.Size = new System.Drawing.Size(121, 21);
+            this.cmbcliente.Size = new System.Drawing.Size(160, 24);
             this.cmbcliente.TabIndex = 0;
             // 
             // cmbtipocuenta
             // 
+            this.cmbtipocuenta.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbtipocuenta.FormattingEnabled = true;
-            this.cmbtipocuenta.Location = new System.Drawing.Point(39, 59);
+            this.cmbtipocuenta.Location = new System.Drawing.Point(52, 73);
+            this.cmbtipocuenta.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.cmbtipocuenta.Name = "cmbtipocuenta";
-            this.cmbtipocuenta.Size = new System.Drawing.Size(121, 21);
+            this.cmbtipocuenta.Size = new System.Drawing.Size(160, 24);
             this.cmbtipocuenta.TabIndex = 1;
             // 
             // txtsaldo
             // 
-            this.txtsaldo.Location = new System.Drawing.Point(39, 114);
+            this.txtsaldo.Location = new System.Drawing.Point(52, 140);
+            this.txtsaldo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtsaldo.Name = "txtsaldo";
-            this.txtsaldo.Size = new System.Drawing.Size(100, 20);
+            this.txtsaldo.Size = new System.Drawing.Size(132, 22);
             this.txtsaldo.TabIndex = 2;
             // 
             // btnagregar
             // 
-            this.btnagregar.Location = new System.Drawing.Point(39, 153);
+            this.btnagregar.Location = new System.Drawing.Point(52, 188);
+            this.btnagregar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnagregar.Name = "btnagregar";
-            this.btnagregar.Size = new System.Drawing.Size(75, 23);
+            this.btnagregar.Size = new System.Drawing.Size(100, 28);
             this.btnagregar.TabIndex = 3;
             this.btnagregar.Text = "agregar";
             this.btnagregar.UseVisualStyleBackColor = true;
@@ -69,13 +75,14 @@
             // 
             // Altacuenta
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(198, 450);
+            this.ClientSize = new System.Drawing.Size(264, 554);
             this.Controls.Add(this.btnagregar);
             this.Controls.Add(this.txtsaldo);
             this.Controls.Add(this.cmbtipocuenta);
             this.Controls.Add(this.cmbcliente);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Altacuenta";
             this.Text = "Altacuenta";
             this.Load += new System.EventHandler(this.Altacuenta_Load);

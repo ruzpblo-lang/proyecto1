@@ -43,6 +43,7 @@
             this.dgvProductoDeposito.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvProductoDeposito.Location = new System.Drawing.Point(28, 46);
             this.dgvProductoDeposito.Name = "dgvProductoDeposito";
+            this.dgvProductoDeposito.ReadOnly = true;
             this.dgvProductoDeposito.RowHeadersWidth = 51;
             this.dgvProductoDeposito.RowTemplate.Height = 24;
             this.dgvProductoDeposito.Size = new System.Drawing.Size(389, 227);

@@ -48,6 +48,7 @@
             this.dgvAgregarProducto.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvAgregarProducto.Location = new System.Drawing.Point(0, 21);
             this.dgvAgregarProducto.Name = "dgvAgregarProducto";
+            this.dgvAgregarProducto.ReadOnly = true;
             this.dgvAgregarProducto.RowHeadersWidth = 51;
             this.dgvAgregarProducto.RowTemplate.Height = 24;
             this.dgvAgregarProducto.Size = new System.Drawing.Size(431, 328);
@@ -55,6 +56,7 @@
             // 
             // cmbProducto
             // 
+            this.cmbProducto.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbProducto.FormattingEnabled = true;
             this.cmbProducto.Location = new System.Drawing.Point(504, 40);
             this.cmbProducto.Name = "cmbProducto";
@@ -73,6 +75,7 @@
             // 
             // cmbProveedor
             // 
+            this.cmbProveedor.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbProveedor.FormattingEnabled = true;
             this.cmbProveedor.Location = new System.Drawing.Point(504, 123);
             this.cmbProveedor.Name = "cmbProveedor";

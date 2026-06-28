@@ -43,66 +43,71 @@
             // 
             // txtNombre
             // 
-            this.txtNombre.Location = new System.Drawing.Point(44, 49);
+            this.txtNombre.Location = new System.Drawing.Point(39, 39);
+            this.txtNombre.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtNombre.Name = "txtNombre";
-            this.txtNombre.Size = new System.Drawing.Size(100, 26);
+            this.txtNombre.Size = new System.Drawing.Size(89, 22);
             this.txtNombre.TabIndex = 0;
             // 
             // txtTelefono
             // 
-            this.txtTelefono.Location = new System.Drawing.Point(44, 207);
+            this.txtTelefono.Location = new System.Drawing.Point(39, 166);
+            this.txtTelefono.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtTelefono.Name = "txtTelefono";
-            this.txtTelefono.Size = new System.Drawing.Size(100, 26);
+            this.txtTelefono.Size = new System.Drawing.Size(89, 22);
             this.txtTelefono.TabIndex = 1;
             // 
             // txtCorreo
             // 
-            this.txtCorreo.Location = new System.Drawing.Point(44, 127);
+            this.txtCorreo.Location = new System.Drawing.Point(39, 102);
+            this.txtCorreo.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtCorreo.Name = "txtCorreo";
-            this.txtCorreo.Size = new System.Drawing.Size(100, 26);
+            this.txtCorreo.Size = new System.Drawing.Size(89, 22);
             this.txtCorreo.TabIndex = 2;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(207, 49);
+            this.label1.Location = new System.Drawing.Point(184, 39);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(65, 20);
+            this.label1.Size = new System.Drawing.Size(56, 16);
             this.label1.TabIndex = 3;
             this.label1.Text = "Nombre";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(207, 130);
+            this.label2.Location = new System.Drawing.Point(184, 104);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(57, 20);
+            this.label2.Size = new System.Drawing.Size(48, 16);
             this.label2.TabIndex = 4;
             this.label2.Text = "Correo";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(207, 213);
+            this.label3.Location = new System.Drawing.Point(184, 170);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(71, 20);
+            this.label3.Size = new System.Drawing.Size(61, 16);
             this.label3.TabIndex = 5;
             this.label3.Text = "Telefono";
             // 
             // cmbpuesto
             // 
+            this.cmbpuesto.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbpuesto.FormattingEnabled = true;
-            this.cmbpuesto.Location = new System.Drawing.Point(44, 282);
+            this.cmbpuesto.Location = new System.Drawing.Point(39, 229);
+            this.cmbpuesto.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cmbpuesto.Name = "cmbpuesto";
-            this.cmbpuesto.Size = new System.Drawing.Size(220, 28);
+            this.cmbpuesto.Size = new System.Drawing.Size(196, 24);
             this.cmbpuesto.TabIndex = 6;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(272, 290);
+            this.label4.Location = new System.Drawing.Point(242, 232);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(59, 20);
+            this.label4.Size = new System.Drawing.Size(49, 16);
             this.label4.TabIndex = 7;
             this.label4.Text = "Puesto";
             // 
@@ -118,18 +123,20 @@
             this.groupBox1.Controls.Add(this.txtCorreo);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Location = new System.Drawing.Point(12, 1);
+            this.groupBox1.Location = new System.Drawing.Point(11, 1);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(551, 447);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.groupBox1.Size = new System.Drawing.Size(490, 358);
             this.groupBox1.TabIndex = 8;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "groupBox1";
             // 
             // btnagregar
             // 
-            this.btnagregar.Location = new System.Drawing.Point(69, 345);
+            this.btnagregar.Location = new System.Drawing.Point(61, 276);
+            this.btnagregar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnagregar.Name = "btnagregar";
-            this.btnagregar.Size = new System.Drawing.Size(75, 40);
+            this.btnagregar.Size = new System.Drawing.Size(67, 32);
             this.btnagregar.TabIndex = 8;
             this.btnagregar.Text = "Agregar";
             this.btnagregar.UseVisualStyleBackColor = true;
@@ -137,10 +144,11 @@
             // 
             // AgregarEmpleado
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(636, 450);
+            this.ClientSize = new System.Drawing.Size(565, 360);
             this.Controls.Add(this.groupBox1);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "AgregarEmpleado";
             this.Text = "AgregarEmpleado";
             this.Load += new System.EventHandler(this.AgregarEmpleado_Load);

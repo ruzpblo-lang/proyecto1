@@ -41,12 +41,12 @@
             this.label4 = new System.Windows.Forms.Label();
             this.CmbEstado = new System.Windows.Forms.ComboBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.CmbMes = new System.Windows.Forms.ComboBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.btCM = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.groupBox1.SuspendLayout();
@@ -110,6 +110,7 @@
             this.dataGridView1.Location = new System.Drawing.Point(23, 43);
             this.dataGridView1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.ReadOnly = true;
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
             this.dataGridView1.Size = new System.Drawing.Size(647, 290);
@@ -129,6 +130,7 @@
             // 
             // CmbTipopago
             // 
+            this.CmbTipopago.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.CmbTipopago.FormattingEnabled = true;
             this.CmbTipopago.Location = new System.Drawing.Point(723, 75);
             this.CmbTipopago.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -157,6 +159,7 @@
             // 
             // CmbEstado
             // 
+            this.CmbEstado.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.CmbEstado.FormattingEnabled = true;
             this.CmbEstado.Location = new System.Drawing.Point(724, 132);
             this.CmbEstado.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -189,10 +192,20 @@
             this.groupBox1.TabIndex = 6;
             this.groupBox1.TabStop = false;
             // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(506, 338);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(164, 23);
+            this.button2.TabIndex = 12;
+            this.button2.Text = "Ingresos vs egresos";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
             // button1
             // 
             this.button1.Location = new System.Drawing.Point(715, 271);
-            this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button1.Margin = new System.Windows.Forms.Padding(4);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(140, 28);
             this.button1.TabIndex = 11;
@@ -202,6 +215,7 @@
             // 
             // CmbMes
             // 
+            this.CmbMes.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.CmbMes.FormattingEnabled = true;
             this.CmbMes.Location = new System.Drawing.Point(723, 183);
             this.CmbMes.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -238,16 +252,6 @@
             this.btCM.Text = "Realizar Pagos";
             this.btCM.UseVisualStyleBackColor = true;
             this.btCM.Click += new System.EventHandler(this.btCM_Click);
-            // 
-            // button2
-            // 
-            this.button2.Location = new System.Drawing.Point(506, 338);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(164, 23);
-            this.button2.TabIndex = 12;
-            this.button2.Text = "Ingresos vs egresos";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // FormFinanza
             // 

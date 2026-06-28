@@ -70,21 +70,21 @@
             // citarProvedoorToolStripMenuItem
             // 
             this.citarProvedoorToolStripMenuItem.Name = "citarProvedoorToolStripMenuItem";
-            this.citarProvedoorToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.citarProvedoorToolStripMenuItem.Size = new System.Drawing.Size(195, 26);
             this.citarProvedoorToolStripMenuItem.Text = "citarProvedoor";
             this.citarProvedoorToolStripMenuItem.Click += new System.EventHandler(this.citarProvedoorToolStripMenuItem_Click);
             // 
             // citarEmpleadosToolStripMenuItem
             // 
             this.citarEmpleadosToolStripMenuItem.Name = "citarEmpleadosToolStripMenuItem";
-            this.citarEmpleadosToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.citarEmpleadosToolStripMenuItem.Size = new System.Drawing.Size(195, 26);
             this.citarEmpleadosToolStripMenuItem.Text = "citarEmpleados";
             this.citarEmpleadosToolStripMenuItem.Click += new System.EventHandler(this.citarEmpleadosToolStripMenuItem_Click);
             // 
             // citarClienteToolStripMenuItem
             // 
             this.citarClienteToolStripMenuItem.Name = "citarClienteToolStripMenuItem";
-            this.citarClienteToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.citarClienteToolStripMenuItem.Size = new System.Drawing.Size(195, 26);
             this.citarClienteToolStripMenuItem.Text = "citarCliente";
             this.citarClienteToolStripMenuItem.Click += new System.EventHandler(this.citarClienteToolStripMenuItem_Click);
             // 
@@ -94,6 +94,7 @@
             this.dgvCitas.Location = new System.Drawing.Point(7, 101);
             this.dgvCitas.Margin = new System.Windows.Forms.Padding(4);
             this.dgvCitas.Name = "dgvCitas";
+            this.dgvCitas.ReadOnly = true;
             this.dgvCitas.RowHeadersWidth = 62;
             this.dgvCitas.Size = new System.Drawing.Size(508, 265);
             this.dgvCitas.TabIndex = 2;
@@ -133,6 +134,7 @@
             // 
             // cmbCliente
             // 
+            this.cmbCliente.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbCliente.FormattingEnabled = true;
             this.cmbCliente.Location = new System.Drawing.Point(59, 68);
             this.cmbCliente.Margin = new System.Windows.Forms.Padding(4);

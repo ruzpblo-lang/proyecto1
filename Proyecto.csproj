@@ -324,6 +324,9 @@
     <EmbeddedResource Include="FormInventario.resx">
       <DependentUpon>FormInventario.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="GerenteCitas.resx">
+      <DependentUpon>GerenteCitas.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Ingresosvsegresos.resx">
       <DependentUpon>Ingresosvsegresos.cs</DependentUpon>
     </EmbeddedResource>

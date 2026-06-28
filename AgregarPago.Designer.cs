@@ -29,6 +29,11 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.horasdoblestxt = new System.Windows.Forms.Label();
+            this.Horastriplestxt = new System.Windows.Forms.Label();
+            this.txtbxHorasdobles = new System.Windows.Forms.TextBox();
+            this.txtBoxhorastriples = new System.Windows.Forms.TextBox();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.cmbempleado = new System.Windows.Forms.ComboBox();
             this.cmbEstado = new System.Windows.Forms.ComboBox();
             this.label5 = new System.Windows.Forms.Label();
@@ -37,14 +42,9 @@
             this.label4 = new System.Windows.Forms.Label();
             this.cmbTipo = new System.Windows.Forms.ComboBox();
             this.txtConcepto = new System.Windows.Forms.TextBox();
-            this.txtMonto = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.horasdoblestxt = new System.Windows.Forms.Label();
-            this.Horastriplestxt = new System.Windows.Forms.Label();
-            this.txtbxHorasdobles = new System.Windows.Forms.TextBox();
-            this.txtBoxhorastriples = new System.Windows.Forms.TextBox();
+            this.txtMonto = new System.Windows.Forms.TextBox();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -72,8 +72,48 @@
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             // 
+            // horasdoblestxt
+            // 
+            this.horasdoblestxt.AutoSize = true;
+            this.horasdoblestxt.Location = new System.Drawing.Point(229, 194);
+            this.horasdoblestxt.Name = "horasdoblestxt";
+            this.horasdoblestxt.Size = new System.Drawing.Size(89, 16);
+            this.horasdoblestxt.TabIndex = 21;
+            this.horasdoblestxt.Text = "Horas dobles";
+            // 
+            // Horastriplestxt
+            // 
+            this.Horastriplestxt.AutoSize = true;
+            this.Horastriplestxt.Location = new System.Drawing.Point(512, 194);
+            this.Horastriplestxt.Name = "Horastriplestxt";
+            this.Horastriplestxt.Size = new System.Drawing.Size(83, 16);
+            this.Horastriplestxt.TabIndex = 22;
+            this.Horastriplestxt.Text = "Horas triples";
+            // 
+            // txtbxHorasdobles
+            // 
+            this.txtbxHorasdobles.Location = new System.Drawing.Point(27, 188);
+            this.txtbxHorasdobles.Name = "txtbxHorasdobles";
+            this.txtbxHorasdobles.Size = new System.Drawing.Size(196, 22);
+            this.txtbxHorasdobles.TabIndex = 23;
+            // 
+            // txtBoxhorastriples
+            // 
+            this.txtBoxhorastriples.Location = new System.Drawing.Point(324, 188);
+            this.txtBoxhorastriples.Name = "txtBoxhorastriples";
+            this.txtBoxhorastriples.Size = new System.Drawing.Size(175, 22);
+            this.txtBoxhorastriples.TabIndex = 24;
+            // 
+            // dateTimePicker1
+            // 
+            this.dateTimePicker1.Location = new System.Drawing.Point(27, 142);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(472, 22);
+            this.dateTimePicker1.TabIndex = 20;
+            // 
             // cmbempleado
             // 
+            this.cmbempleado.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbempleado.FormattingEnabled = true;
             this.cmbempleado.Location = new System.Drawing.Point(27, 92);
             this.cmbempleado.Name = "cmbempleado";
@@ -82,6 +122,7 @@
             // 
             // cmbEstado
             // 
+            this.cmbEstado.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbEstado.FormattingEnabled = true;
             this.cmbEstado.Location = new System.Drawing.Point(27, 226);
             this.cmbEstado.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -129,6 +170,7 @@
             // 
             // cmbTipo
             // 
+            this.cmbTipo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbTipo.FormattingEnabled = true;
             this.cmbTipo.Location = new System.Drawing.Point(27, 47);
             this.cmbTipo.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -144,14 +186,6 @@
             this.txtConcepto.Name = "txtConcepto";
             this.txtConcepto.Size = new System.Drawing.Size(196, 22);
             this.txtConcepto.TabIndex = 10;
-            // 
-            // txtMonto
-            // 
-            this.txtMonto.Location = new System.Drawing.Point(27, 188);
-            this.txtMonto.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.txtMonto.Name = "txtMonto";
-            this.txtMonto.Size = new System.Drawing.Size(472, 22);
-            this.txtMonto.TabIndex = 11;
             // 
             // label2
             // 
@@ -171,44 +205,13 @@
             this.label1.TabIndex = 12;
             this.label1.Text = "Tipo";
             // 
-            // dateTimePicker1
+            // txtMonto
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(27, 142);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(472, 22);
-            this.dateTimePicker1.TabIndex = 20;
-            // 
-            // horasdoblestxt
-            // 
-            this.horasdoblestxt.AutoSize = true;
-            this.horasdoblestxt.Location = new System.Drawing.Point(229, 194);
-            this.horasdoblestxt.Name = "horasdoblestxt";
-            this.horasdoblestxt.Size = new System.Drawing.Size(89, 16);
-            this.horasdoblestxt.TabIndex = 21;
-            this.horasdoblestxt.Text = "Horas dobles";
-            // 
-            // Horastriplestxt
-            // 
-            this.Horastriplestxt.AutoSize = true;
-            this.Horastriplestxt.Location = new System.Drawing.Point(512, 194);
-            this.Horastriplestxt.Name = "Horastriplestxt";
-            this.Horastriplestxt.Size = new System.Drawing.Size(83, 16);
-            this.Horastriplestxt.TabIndex = 22;
-            this.Horastriplestxt.Text = "Horas triples";
-            // 
-            // txtbxHorasdobles
-            // 
-            this.txtbxHorasdobles.Location = new System.Drawing.Point(27, 188);
-            this.txtbxHorasdobles.Name = "txtbxHorasdobles";
-            this.txtbxHorasdobles.Size = new System.Drawing.Size(196, 22);
-            this.txtbxHorasdobles.TabIndex = 23;
-            // 
-            // txtBoxhorastriples
-            // 
-            this.txtBoxhorastriples.Location = new System.Drawing.Point(324, 188);
-            this.txtBoxhorastriples.Name = "txtBoxhorastriples";
-            this.txtBoxhorastriples.Size = new System.Drawing.Size(175, 22);
-            this.txtBoxhorastriples.TabIndex = 24;
+            this.txtMonto.Location = new System.Drawing.Point(27, 188);
+            this.txtMonto.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtMonto.Name = "txtMonto";
+            this.txtMonto.Size = new System.Drawing.Size(472, 22);
+            this.txtMonto.TabIndex = 11;
             // 
             // AgregarPago_
             // 
