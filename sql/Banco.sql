@@ -9,6 +9,10 @@ DROP TABLE IF EXISTS [Inventario];
 DROP TABLE IF EXISTS [Proveedores];
 DROP TABLE IF EXISTS [ProductosBodega];
 DROP TABLE IF EXISTS [PreciosProveedor];
+DROP TABLE IF EXISTS [CatalogoServicios];
+DROP TABLE IF EXISTS [Ingresos];
+DROP TABLE IF EXISTS [CortesMensuales];
+DROP TABLE IF EXISTS [Cuentas];
 
 PRAGMA foreign_keys = ON;
 
@@ -59,12 +63,17 @@ CREATE TABLE [Nomina] (
   [Estado] TEXT NOT NULL DEFAULT 'Pendiente'
 );
 
+CREATE TABLE [CatalogoServicios] (
+  [ServicioId] INTEGER PRIMARY KEY AUTOINCREMENT,
+  [Nombre] TEXT UNIQUE NOT NULL
+);
+
 CREATE TABLE [Pagos] (
   [PagoId] INTEGER PRIMARY KEY AUTOINCREMENT,
-  [ExteriorId] INTEGER NOT NULL,
+  [ServicioId] INTEGER REFERENCES CatalogoServicios(ServicioId),
   [Nombre] TEXT NOT NULL,
-  [FechaPago] TEXT,
-  [SueldoBase] DECIMAL,
+  [FechaPago] TEXT NOT NULL,  
+  [SueldoBase] DECIMAL NOT NULL,   
   [Estado] TEXT NOT NULL DEFAULT 'Pendiente'
 );
   
@@ -92,6 +101,35 @@ CREATE TABLE [PreciosProveedor] (
   [Precio] DECIMAL NOT NULL DEFAULT 0
 );
 
+CREATE TABLE [Ingresos] (
+  [IngresoId] INTEGER PRIMARY KEY AUTOINCREMENT,
+  [Concepto] TEXT NOT NULL,
+  [Monto] DECIMAL NOT NULL,
+  [FechaIngreso] TEXT NOT NULL,
+  [Origen] TEXT NOT NULL DEFAULT 'Central',
+  [Estado] TEXT NOT NULL DEFAULT 'Realizado'
+);
+
+CREATE TABLE [CortesMensuales] (
+  [CorteId] INTEGER PRIMARY KEY AUTOINCREMENT,
+  [MesAnio] TEXT UNIQUE NOT NULL,
+  [TotalIngresos] DECIMAL NOT NULL DEFAULT 0,
+  [TotalEgresos] DECIMAL NOT NULL DEFAULT 0,
+  [SaldoNeto] DECIMAL NOT NULL DEFAULT 0,
+  [EstadoBalance] TEXT NOT NULL,
+  [FechaCierre] TEXT NOT NULL
+);
+
+CREATE TABLE [Cuentas] (
+  [CuentaId] INTEGER PRIMARY KEY AUTOINCREMENT,
+  [ClienteId] INTEGER NOT NULL REFERENCES Clientes(ClienteId),
+  [NumeroCuenta] INTEGER UNIQUE NOT NULL,
+  [TipoCuenta] TEXT NOT NULL,
+  [Saldo] DECIMAL NOT NULL DEFAULT 0,
+  [Estado] INTEGER NOT NULL DEFAULT 1
+);
+
+
 -- ========================================================
 -- 2. INSERCIÓN DE DATOS SIMULADOS
 -- ========================================================
@@ -107,13 +145,11 @@ INSERT INTO [Empleados] (Nombre, Correo, TelNum, PuestoId, Estado) VALUES
 ('Byron', 'byron.cajero@banco.mx', '9992223344', 1, 1),
 ('Valeria Gomez', 'valeria.gerente@banco.mx', '9993334455', 2, 1);
 
--- Se añade el monto correspondiente a la nueva columna
 INSERT INTO [Clientes] (CuentaId, Nombre, Correo, TelNum, Estado, Monto) VALUES
 (50001, 'Ana Perez', 'ana.perez@correo.com', '9994445566', 1, 67.00),
 (50002, 'Juan Lopez', 'juan.lopez@correo.com', '9995556677', 1, 41.00),
 (50003, 'Maria Fernandez', 'maria.f@correo.com', '9996667788', 1, 777.00);
 
--- Adaptado a la nueva estructura de la tabla Citas
 INSERT INTO [Citas] (EmpleadoId, ClienteId, Fecha, Hora, Estado) VALUES
 (3, 1, '2026-06-08', '09:00', 'Confirmada'), 
 (3, 2, '2026-06-08', '10:30', 'Pendiente'),  
@@ -124,9 +160,20 @@ INSERT INTO [Nomina] (EmpleadoId, FechaPago, SueldoBase) VALUES
 (2, '2026-06-15', 6000.00),  
 (3, '2026-06-15', 17500.00); 
 
-INSERT INTO [Pagos] (ExteriorId, Nombre, FechaPago, SueldoBase, Estado) VALUES
-(801, 'CFE Servicio Eléctrico', '2026-06-05', 4500.50, 'Realizado'),
-(802, 'Cometra - Transporte de Valores', '2026-06-06', 12500.00, 'Pendiente');
+INSERT INTO [CatalogoServicios] (Nombre) VALUES
+('CFE - Servicio Eléctrico'),
+('JAPAY - Agua Potable'),
+('Infinitum - Internet Corporativo'),
+('Arrendamiento de Sucursal');
+
+INSERT INTO [Pagos] (ServicioId, Nombre, FechaPago, SueldoBase, Estado) VALUES
+(1, 'Pago de recibo de luz periodo Mayo-Junio', '2026-06-05', 4500.50, 'Realizado'),
+(NULL, 'Cometra - Transporte de Valores (Gasto Externo)', '2026-06-06', 12500.00, 'Pendiente'),
+(NULL, 'Compra de papelería urgente de emergencia', '2026-06-12', 350.00, 'Realizado');
+
+INSERT INTO [Ingresos] (Concepto, Monto, FechaIngreso, Origen) VALUES
+('Asignación de Saldo Mensual Junio', 50000.00, '2026-06-01', 'Central'),
+('Comisiones por apertura de cuentas', 3500.00, '2026-06-15', 'Interno');
 
 INSERT INTO [Inventario] (Tipo, Cantidad) VALUES
 ('Billete de 1000', 50),
@@ -154,31 +201,3 @@ INSERT INTO [PreciosProveedor] (ObjetoId, ProveedorId, Precio) VALUES
 (3, 1, 3.50),  
 (3, 3, 3.00),  
 (4, 1, 6.00);
-
-SELECT c.FolioId, 
-        CASE 
-            WHEN c.ClienteId > 0 THEN cl.Nombre
-            WHEN c.ClienteId < 0 THEN 'Proveedor'
-            ELSE 'Sin cliente'
-        END AS Cliente,
-        e.Nombre AS Empleado, 
-        (c.Fecha || ' ' || c.Hora) AS Horario, 
-        c.Estado
-    FROM [Citas] c
-    LEFT JOIN [Clientes] cl ON c.ClienteId = cl.ClienteId
-    INNER JOIN [Empleados] e ON c.EmpleadoId = e.EmpleadoId;
-    
-    
-    
-    SELECT c.FolioId, 
-    CASE 
-        WHEN c.ClienteId > 0 THEN cl.Nombre
-        WHEN c.ClienteId < 0 THEN 'Proveedor'
-        WHEN c.ClienteId = 0 THEN e.Nombre
-    END AS Cliente,
-    e.Nombre AS Empleado, 
-    (c.Fecha || ' ' || c.Hora) AS Horario, 
-    c.Estado
-FROM [Citas] c
-LEFT JOIN [Clientes] cl ON c.ClienteId = cl.ClienteId
-INNER JOIN [Empleados] e ON c.EmpleadoId = e.EmpleadoId;

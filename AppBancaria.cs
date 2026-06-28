@@ -422,26 +422,32 @@ public List<PrecioProveedor> MostrarProductosProveedores()
             return preciosproveedores;
         }
 
-        internal void RegistrarPagosProducto(string tipo, decimal totalCompra)
+        internal void RegistrarPagosProducto(string tipo, string proveedor, decimal totalCompra)
         {
-            int nuevoPagoExterior = 1;
-            string query = "SELECT IFNULL(MAX(ExteriorId), 0) AS MaxId FROM Pagos";
+            string nombreServicio = "Compra de insumos de bodega";
+            string queryServicio = "INSERT   OR IGNORE INTO CatalogoServicios (Nombre) VALUES ($nombre)";
+            conn.ExecuteNonQuery(queryServicio, ("$nombre", nombreServicio));
 
-            var rs = conn.ExecuteReader(query);
+            int ServicioId = 0;
+            string queryGetId = "SELECT ServicioId FROM CatalogoServicios WHERE Nombre = $nombre";
+            var rs = conn.ExecuteReader(queryGetId, ("$nombre", nombreServicio));
+
             while (rs.Read())
             {
-                nuevoPagoExterior = rs.GetInt("MaxId") + 1;
-            }
+                ServicioId = rs.GetInt("ServicioId");
+            } 
 
             string fecha = DateTime.Now.ToString("dd/MM/y");
-            string queryInsert = "INSERT INTO Pagos (ExteriorId, Nombre, FechaPago, SueldoBase) " +
-                                 "VALUES ($exteriorId, $nombre, $fechaPago, $sueldoBase)";
+            string concepto = tipo + "-" + proveedor;
+            string queryInsert = "INSERT INTO Pagos (ServicioId, Nombre, FechaPago, SueldoBase, Estado) " +
+                                 "VALUES ($servicioId, $nombre, $fechaPago, $sueldoBase, $estado)";
 
             conn.ExecuteNonQuery(queryInsert,
-                ("$exteriorId", nuevoPagoExterior),
-                ("$nombre", tipo),
+                ("servicioId", ServicioId),
+                ("$nombre", concepto),
                 ("$fechaPago", fecha),
-                ("$sueldoBase", totalCompra)
+                ("$sueldoBase", totalCompra),
+                ("$estado", "Realizado")
                 );
         }
 

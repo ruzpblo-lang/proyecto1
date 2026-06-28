@@ -290,6 +290,9 @@
     <EmbeddedResource Include="FormInventarioCuenta.resx">
       <DependentUpon>FormInventarioCuenta.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormInventarioDeposito.resx">
+      <DependentUpon>FormInventarioDeposito.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormPersonal.resx">
       <DependentUpon>FormPersonal.cs</DependentUpon>
     </EmbeddedResource>

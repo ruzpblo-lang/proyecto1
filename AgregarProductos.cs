@@ -41,6 +41,7 @@ namespace Proyecto
             }
             dgvAgregarProducto.DataSource = null;
             dgvAgregarProducto.DataSource = listaFiltrada;
+            dgvAgregarProducto.Columns["PrecioId"].Visible = false;
 
             CalcularTodo();
         }
@@ -78,9 +79,9 @@ namespace Proyecto
             //dgvAgregarProducto.Columns["PrecioId"].Visible = false;
 
             cmbProducto.Items.Add("Todos");
-            cmbProducto.Items.Add("Garrafón de agua 20L");
+            cmbProducto.Items.Add("Garrafon de agua 20L");
             cmbProducto.Items.Add("Paquete de hojas blancas");
-            cmbProducto.Items.Add("Folder tamaño carta");
+            cmbProducto.Items.Add("Folder tamano carta");
             cmbProducto.Items.Add("Plumas color negro");
             cmbProducto.SelectedIndex = 0;
             cmbProveedor.Items.Add("Todos");
@@ -88,7 +89,6 @@ namespace Proyecto
             cmbProveedor.Items.Add("Garrafones del Sureste");
             cmbProveedor.Items.Add("Papelera Yucateca");
             cmbProveedor.SelectedIndex = 0;
-
             UpdateData();
         }
 
@@ -106,7 +106,7 @@ namespace Proyecto
                     MessageBox.Show("Producto Agregado!");  
                     precioProveedores = gestorempresa.MostrarProductosProveedores();
                     decimal totalCompra = cantidad * (decimal)producto[0].Precio;
-                    gestorempresa.RegistrarPagosProducto(producto[0].Tipo, totalCompra);
+                    gestorempresa.RegistrarPagosProducto(producto[0].Tipo, producto[0].Proveedor, totalCompra);
                     UpdateData();
                     break;
                 case DialogResult.No:
@@ -122,10 +122,14 @@ namespace Proyecto
 
         private void cmbProveedor_SelectedIndexChanged(object sender, EventArgs e)
         {
-            UpdateData();   
+            UpdateData();
+        }
+        private void lblTotal_TextChanged(object sender, EventArgs e)
+        {
+            CalcularTodo();
         }
 
-        private void lblTotal_Click(object sender, EventArgs e)
+        private void txtCantidad_TextChanged(object sender, EventArgs e)
         {
             CalcularTodo();
         }
