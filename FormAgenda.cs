@@ -128,28 +128,10 @@ namespace Proyecto
         {
             if (dgvCitas.CurrentRow != null)
             {
-
                 FullCita citaSeleccionada = (FullCita)dgvCitas.CurrentRow.DataBoundItem;
-                int idCita = citaSeleccionada.FolioId;
-
-                int idCliente = citaSeleccionada.ClienteId;
-
-                if (idCliente > 0)
-                {
-
-                }
-                else if (idCliente == 0)
-                {
-
-                }
-                else
-                {
-
-                }
-                FormInfoCita formInfoCita = new FormInfoCita();
+                FormInfoCita formInfoCita = new FormInfoCita(gestorcitas, citaSeleccionada);
                 formInfoCita.ShowDialog();
-
-               //¿MessageBox.Show($"Abriendo detalles para el Folio de Cita: {idCita}");
+                RefreshCitas();
             }
             else
             {

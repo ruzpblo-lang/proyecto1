@@ -7,15 +7,31 @@
       "RelativeMoniker": "D:0:0:{5ED591AE-3C6E-43F6-9E76-265A2B3EABD6}|Proyecto.csproj|solutionrelative:formagenda.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5ED591AE-3C6E-43F6-9E76-265A2B3EABD6}|Proyecto.csproj|C:\\Users\\Igniter\\OneDrive\\Documentos\\Proyecto Bancario\\proyecto1\\formagenda.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{5ED591AE-3C6E-43F6-9E76-265A2B3EABD6}|Proyecto.csproj|solutionrelative:formagenda.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{5ED591AE-3C6E-43F6-9E76-265A2B3EABD6}|Proyecto.csproj|c:\\users\\igniter\\onedrive\\documentos\\proyecto bancario\\proyecto1\\forminfocita.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5ED591AE-3C6E-43F6-9E76-265A2B3EABD6}|Proyecto.csproj|solutionrelative:forminfocita.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{5ED591AE-3C6E-43F6-9E76-265A2B3EABD6}|Proyecto.csproj|C:\\Users\\Igniter\\OneDrive\\Documentos\\Proyecto Bancario\\proyecto1\\appbancaria.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5ED591AE-3C6E-43F6-9E76-265A2B3EABD6}|Proyecto.csproj|solutionrelative:appbancaria.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5ED591AE-3C6E-43F6-9E76-265A2B3EABD6}|Proyecto.csproj|c:\\users\\igniter\\onedrive\\documentos\\proyecto bancario\\proyecto1\\fullcita.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{5ED591AE-3C6E-43F6-9E76-265A2B3EABD6}|Proyecto.csproj|c:\\users\\igniter\\onedrive\\documentos\\proyecto bancario\\proyecto1\\gerentecitas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5ED591AE-3C6E-43F6-9E76-265A2B3EABD6}|Proyecto.csproj|solutionrelative:gerentecitas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5ED591AE-3C6E-43F6-9E76-265A2B3EABD6}|Proyecto.csproj|c:\\users\\igniter\\onedrive\\documentos\\proyecto bancario\\proyecto1\\gerentecitas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{5ED591AE-3C6E-43F6-9E76-265A2B3EABD6}|Proyecto.csproj|solutionrelative:gerentecitas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5ED591AE-3C6E-43F6-9E76-265A2B3EABD6}|Proyecto.csproj|C:\\Users\\Igniter\\OneDrive\\Documentos\\Proyecto Bancario\\proyecto1\\formagenda.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{5ED591AE-3C6E-43F6-9E76-265A2B3EABD6}|Proyecto.csproj|solutionrelative:formagenda.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5ED591AE-3C6E-43F6-9E76-265A2B3EABD6}|Proyecto.csproj|c:\\users\\igniter\\onedrive\\documentos\\proyecto bancario\\proyecto1\\forminfocita.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{5ED591AE-3C6E-43F6-9E76-265A2B3EABD6}|Proyecto.csproj|solutionrelative:forminfocita.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5ED591AE-3C6E-43F6-9E76-265A2B3EABD6}|Proyecto.csproj|C:\\Users\\Igniter\\OneDrive\\Documentos\\Proyecto Bancario\\proyecto1\\fullcita.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5ED591AE-3C6E-43F6-9E76-265A2B3EABD6}|Proyecto.csproj|solutionrelative:fullcita.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -26,7 +42,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Document",
@@ -36,9 +52,23 @@
               "RelativeDocumentMoniker": "AppBancaria.cs",
               "ToolTip": "C:\\Users\\Igniter\\OneDrive\\Documentos\\Proyecto Bancario\\proyecto1\\AppBancaria.cs",
               "RelativeToolTip": "AppBancaria.cs",
-              "ViewState": "AgIAALYAAAAAAAAAAAAEwM4AAAAtAAAAAAAAAA==",
+              "ViewState": "AgIAAP4BAAAAAAAAAAAkwBECAABdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-06-23T00:29:42.934Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "FormInfoCita.cs",
+              "DocumentMoniker": "C:\\Users\\Igniter\\OneDrive\\Documentos\\Proyecto Bancario\\proyecto1\\FormInfoCita.cs",
+              "RelativeDocumentMoniker": "FormInfoCita.cs",
+              "ToolTip": "C:\\Users\\Igniter\\OneDrive\\Documentos\\Proyecto Bancario\\proyecto1\\FormInfoCita.cs*",
+              "RelativeToolTip": "FormInfoCita.cs*",
+              "ViewState": "AgIAADkAAAAAAAAAAAAowEcAAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-28T23:12:36.439Z",
               "IsPinned": true,
               "EditorCaption": ""
             },
@@ -53,6 +83,56 @@
             {
               "$type": "Document",
               "DocumentIndex": 3,
+              "Title": "GerenteCitas.cs",
+              "DocumentMoniker": "C:\\Users\\Igniter\\OneDrive\\Documentos\\Proyecto Bancario\\proyecto1\\GerenteCitas.cs",
+              "RelativeDocumentMoniker": "GerenteCitas.cs",
+              "ToolTip": "C:\\Users\\Igniter\\OneDrive\\Documentos\\Proyecto Bancario\\proyecto1\\GerenteCitas.cs",
+              "RelativeToolTip": "GerenteCitas.cs",
+              "ViewState": "AgIAAF4AAAAAAAAAAADwv24AAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-29T00:27:42.194Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "GerenteCitas.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Igniter\\OneDrive\\Documentos\\Proyecto Bancario\\proyecto1\\GerenteCitas.cs",
+              "RelativeDocumentMoniker": "GerenteCitas.cs",
+              "ToolTip": "C:\\Users\\Igniter\\OneDrive\\Documentos\\Proyecto Bancario\\proyecto1\\GerenteCitas.cs [Design]",
+              "RelativeToolTip": "GerenteCitas.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-29T00:27:40.593Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "FormAgenda.cs",
+              "DocumentMoniker": "C:\\Users\\Igniter\\OneDrive\\Documentos\\Proyecto Bancario\\proyecto1\\FormAgenda.cs",
+              "RelativeDocumentMoniker": "FormAgenda.cs",
+              "ToolTip": "C:\\Users\\Igniter\\OneDrive\\Documentos\\Proyecto Bancario\\proyecto1\\FormAgenda.cs*",
+              "RelativeToolTip": "FormAgenda.cs*",
+              "ViewState": "AgIAAHgAAAAAAAAAAAAuwIUAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-23T00:29:42.934Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "FormInfoCita.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Igniter\\OneDrive\\Documentos\\Proyecto Bancario\\proyecto1\\FormInfoCita.cs",
+              "RelativeDocumentMoniker": "FormInfoCita.cs",
+              "ToolTip": "C:\\Users\\Igniter\\OneDrive\\Documentos\\Proyecto Bancario\\proyecto1\\FormInfoCita.cs [Design]*",
+              "RelativeToolTip": "FormInfoCita.cs [Design]*",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-28T23:12:34.468Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
               "Title": "FullCita.cs",
               "DocumentMoniker": "C:\\Users\\Igniter\\OneDrive\\Documentos\\Proyecto Bancario\\proyecto1\\FullCita.cs",
               "RelativeDocumentMoniker": "FullCita.cs",
@@ -65,28 +145,15 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 5,
               "Title": "FormAgenda.cs [Design]",
               "DocumentMoniker": "C:\\Users\\Igniter\\OneDrive\\Documentos\\Proyecto Bancario\\proyecto1\\FormAgenda.cs",
               "RelativeDocumentMoniker": "FormAgenda.cs",
-              "ToolTip": "C:\\Users\\Igniter\\OneDrive\\Documentos\\Proyecto Bancario\\proyecto1\\FormAgenda.cs [Design]",
-              "RelativeToolTip": "FormAgenda.cs [Design]",
+              "ToolTip": "C:\\Users\\Igniter\\OneDrive\\Documentos\\Proyecto Bancario\\proyecto1\\FormAgenda.cs [Design]*",
+              "RelativeToolTip": "FormAgenda.cs [Design]*",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-06-23T00:29:42.934Z",
               "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "FormAgenda.cs",
-              "DocumentMoniker": "C:\\Users\\Igniter\\OneDrive\\Documentos\\Proyecto Bancario\\proyecto1\\FormAgenda.cs",
-              "RelativeDocumentMoniker": "FormAgenda.cs",
-              "ToolTip": "C:\\Users\\Igniter\\OneDrive\\Documentos\\Proyecto Bancario\\proyecto1\\FormAgenda.cs",
-              "RelativeToolTip": "FormAgenda.cs",
-              "ViewState": "AgIAAGUAAAAAAAAAAAAiwHkAAAATAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-23T00:29:42.934Z",
-              "EditorCaption": ""
             }
           ]
         }
