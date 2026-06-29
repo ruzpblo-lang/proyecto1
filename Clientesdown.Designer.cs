@@ -74,7 +74,7 @@
             this.Controls.Add(this.cmbEmpleado);
             this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Clientesdown";
-            this.Text = "Clientesdown";
+            this.Text = "iuj";
             this.Load += new System.EventHandler(this.Clientesdown_Load);
             this.ResumeLayout(false);
 

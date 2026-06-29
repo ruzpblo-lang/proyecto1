@@ -321,9 +321,6 @@
     <EmbeddedResource Include="GerenteCitas.resx">
       <DependentUpon>GerenteCitas.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Ingresosvsegresos.resx">
-      <DependentUpon>Ingresosvsegresos.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>

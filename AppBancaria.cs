@@ -162,13 +162,24 @@ namespace Proyecto
         {
             List<FullCita> CitasDipsonibles = new List<FullCita>();
 
-            string query = "  SELECT c.FolioId, \r\n    CASE \r\n        WHEN c.ClienteId > 0 THEN cl.Nombre\r\n        WHEN c.ClienteId < 0 THEN 'Proveedor'\r\n        WHEN c.ClienteId = 0 THEN e.Nombre\r\n    END AS Cliente,\r\n    e.Nombre AS Empleado, \r\n    (c.Fecha || ' ' || c.Hora) AS Horario, \r\n    c.Estado\r\nFROM [Citas] c\r\nLEFT JOIN [Clientes] cl ON c.ClienteId = cl.ClienteId\r\nINNER JOIN [Empleados] e ON c.EmpleadoId = e.EmpleadoId;";
+            string query = "SELECT c.FolioId, c.ClienteId, " +
+                            "\r\nCASE" +
+                            "\r\nWHEN c.ClienteId > 0 THEN cl.Nombre" +
+                            "\r\nWHEN c.ClienteId < 0 THEN 'Proveedor'" +
+                            "\r\nWHEN c.ClienteId = 0 THEN e.Nombre" +
+                            "\r\nEND AS Cliente," +
+                            "\r\ne.Nombre AS Empleado," +
+                            "\r\n(c.Fecha || ' ' || c.Hora) AS Horario," +
+                            "\r\nc.Estado\r\nFROM [Citas] c" +
+                            "\r\nLEFT JOIN [Clientes] cl ON c.ClienteId = cl.ClienteId" +
+                            "\r\nINNER JOIN [Empleados] e ON c.EmpleadoId = e.EmpleadoId;";
 
             var rs = conn.ExecuteReader(query);
             while (rs.Read())
             {
                 CitasDipsonibles.Add(new FullCita(
                     rs.GetInt("FolioId"),
+                    rs.GetInt("ClienteId"),
                     rs.GetString("Cliente"),
                     rs.GetString("Empleado"),
                     rs.GetString("Horario"),
@@ -178,28 +189,49 @@ namespace Proyecto
             return CitasDipsonibles;
         }
 
-        public List<Cita> GetCitaPorPaciente(int cuentaId)
+        public bool ConfirmarCita(int folioId)
         {
-            List<Cita> CitaPorPaciente = new List<Cita>();
-            string query = $"SELECT cl.Nombre AS Cliente, (c.Fecha || ' ' || c.Hora) AS Horario, c.Estado" +
+            string queryUpdate = "UPDATE Citas SET Estado = 'Confirmada' WHERE FolioId = @folioId;";
+
+            // Se ejecuta directo usando tu formato de tuplas
+            conn.ExecuteNonQuery(queryUpdate,
+                ("@folioId", folioId)
+            );
+
+            return true;
+        }
+
+        public List<FullCita> GetCitaPorPaciente(int cuentaId)
+        {
+            List<FullCita> CitaPorPaciente = new List<FullCita>();
+            string query = $"SELECT c.FolioId, c.ClienteId, cl.Nombre AS Cliente, e.Nombre AS Empleado, (c.Fecha || ' ' || c.Hora) AS Horario, c.Estado " +
                             $"\r\nFROM [Citas] c" +
-                            $"\r\nINNER JOIN [Clientes] cl ON c.ClienteId = cl.ClienteId\r\nWHERE c.ClienteId = {cuentaId};";
+                            $"\r\nINNER JOIN [Clientes] cl ON c.ClienteId = cl.ClienteId" +
+                            $"\r\nINNER JOIN [Empleados] e ON c.EmpleadoId = e.EmpleadoId" +
+                            $"\r\nWHERE c.ClienteId = {cuentaId};";
 
             var rs = conn.ExecuteReader(query);
             while (rs.Read())
             {
-                CitaPorPaciente.Add(new Cita(
+                CitaPorPaciente.Add(new FullCita(
+                    rs.GetInt("FolioId"),
+                    rs.GetInt("ClienteId"),
                     rs.GetString("Cliente"),
+                    rs.GetString("Empleado"),
                     rs.GetString("Horario"),
                     rs.GetString("Estado")));
             }
             return CitaPorPaciente;
         }
+
+
         public List<FullEmpleado> GetTodosLosEmpleados()
         {
             List<FullEmpleado> listaCompleta = new List<FullEmpleado>();
 
-            string query = "SELECT e.EmpleadoId, e.Nombre, e.Correo, e.TelNum, e.Estado, p.Categoria, p.Sueldo\r\nFROM Empleados e\r\nINNER JOIN Puestos p ON e.PuestoId = p.PuestoId;";
+            string query = "SELECT e.EmpleadoId, e.Nombre, e.Correo, e.TelNum, e.Estado, p.Categoria, p.Sueldo" +
+                            "\r\nFROM Empleados e" +
+                            "\r\nINNER JOIN Puestos p ON e.PuestoId = p.PuestoId;";
 
             var rs = conn.ExecuteReader(query);
             while (rs.Read())
@@ -502,7 +534,7 @@ public List<PrecioProveedor> MostrarProductosProveedores()
             }
 
             string queryInsert = @"INSERT INTO Citas (EmpleadoId, ClienteId, Fecha, Hora, Estado) 
-                                   VALUES ($empleadoId, $clienteId, $fecha, $hora, 'Confirmada');";
+                                   VALUES ($empleadoId, $clienteId, $fecha, $hora, 'Pendiente');";
 
             conn.ExecuteNonQuery(queryInsert,
                 ("$empleadoId", empleadoId),
