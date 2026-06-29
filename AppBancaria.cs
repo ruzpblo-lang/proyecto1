@@ -502,7 +502,7 @@ public List<PrecioProveedor> MostrarProductosProveedores()
             }
 
             string queryInsert = @"INSERT INTO Citas (EmpleadoId, ClienteId, Fecha, Hora, Estado) 
-                                   VALUES ($empleadoId, $clienteId, $fecha, $hora, 'Confirmada');";
+                                   VALUES ($empleadoId, $clienteId, $fecha, $hora, 'pendiente');";
 
             conn.ExecuteNonQuery(queryInsert,
                 ("$empleadoId", empleadoId),
@@ -733,6 +733,18 @@ public List<PrecioProveedor> MostrarProductosProveedores()
                 servicios.Add(rs.GetString("Nombre"));
             }
             return servicios;
+        }
+
+        public bool ConfirmarCita(int folioId)
+        {
+            string queryUpdate = "UPDATE Citas SET Estado = 'Confirmada' WHERE FolioId = @folioId;";
+
+            // Se ejecuta directo usando tu formato de tuplas
+            conn.ExecuteNonQuery(queryUpdate,
+                ("@folioId", folioId)
+            );
+
+            return true;
         }
     }
 }

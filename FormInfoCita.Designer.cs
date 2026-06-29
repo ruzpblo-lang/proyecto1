@@ -29,16 +29,17 @@
         private void InitializeComponent()
         {
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.txtEmpleado = new System.Windows.Forms.TextBox();
+            this.txtFolio = new System.Windows.Forms.TextBox();
+            this.txtEstado = new System.Windows.Forms.TextBox();
+            this.txtHorario = new System.Windows.Forms.TextBox();
+            this.txtAsistente = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
+            this.btnFinalizar = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -50,49 +51,54 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "-- INFORMACION DE CITA --";
             // 
-            // textBox1
+            // txtEmpleado
             // 
-            this.textBox1.Location = new System.Drawing.Point(83, 151);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 1;
+            this.txtEmpleado.Location = new System.Drawing.Point(83, 151);
+            this.txtEmpleado.Name = "txtEmpleado";
+            this.txtEmpleado.ReadOnly = true;
+            this.txtEmpleado.Size = new System.Drawing.Size(100, 20);
+            this.txtEmpleado.TabIndex = 1;
             // 
-            // textBox2
+            // txtFolio
             // 
-            this.textBox2.Location = new System.Drawing.Point(83, 125);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 20);
-            this.textBox2.TabIndex = 1;
+            this.txtFolio.Location = new System.Drawing.Point(83, 125);
+            this.txtFolio.Name = "txtFolio";
+            this.txtFolio.ReadOnly = true;
+            this.txtFolio.Size = new System.Drawing.Size(100, 20);
+            this.txtFolio.TabIndex = 1;
             // 
-            // textBox3
+            // txtEstado
             // 
-            this.textBox3.Location = new System.Drawing.Point(273, 151);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(100, 20);
-            this.textBox3.TabIndex = 1;
+            this.txtEstado.Location = new System.Drawing.Point(273, 151);
+            this.txtEstado.Name = "txtEstado";
+            this.txtEstado.ReadOnly = true;
+            this.txtEstado.Size = new System.Drawing.Size(100, 20);
+            this.txtEstado.TabIndex = 1;
             // 
-            // textBox4
+            // txtHorario
             // 
-            this.textBox4.Location = new System.Drawing.Point(273, 125);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(100, 20);
-            this.textBox4.TabIndex = 1;
+            this.txtHorario.Location = new System.Drawing.Point(273, 125);
+            this.txtHorario.Name = "txtHorario";
+            this.txtHorario.ReadOnly = true;
+            this.txtHorario.Size = new System.Drawing.Size(100, 20);
+            this.txtHorario.TabIndex = 1;
             // 
-            // textBox5
+            // txtAsistente
             // 
-            this.textBox5.Location = new System.Drawing.Point(180, 86);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(100, 20);
-            this.textBox5.TabIndex = 1;
+            this.txtAsistente.Location = new System.Drawing.Point(180, 86);
+            this.txtAsistente.Name = "txtAsistente";
+            this.txtAsistente.ReadOnly = true;
+            this.txtAsistente.Size = new System.Drawing.Size(100, 20);
+            this.txtAsistente.TabIndex = 1;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(109, 89);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(55, 13);
+            this.label2.Size = new System.Drawing.Size(53, 13);
             this.label2.TabIndex = 0;
-            this.label2.Text = "CLIENTE:";
+            this.label2.Text = "Asistente:";
             // 
             // label3
             // 
@@ -130,16 +136,27 @@
             this.label6.TabIndex = 0;
             this.label6.Text = "EMPLEADO:";
             // 
+            // btnFinalizar
+            // 
+            this.btnFinalizar.Location = new System.Drawing.Point(112, 208);
+            this.btnFinalizar.Name = "btnFinalizar";
+            this.btnFinalizar.Size = new System.Drawing.Size(179, 23);
+            this.btnFinalizar.TabIndex = 2;
+            this.btnFinalizar.Text = "Finalizar";
+            this.btnFinalizar.UseVisualStyleBackColor = true;
+            this.btnFinalizar.Click += new System.EventHandler(this.button1_Click);
+            // 
             // FormInfoCita
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(432, 246);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.ClientSize = new System.Drawing.Size(430, 252);
+            this.Controls.Add(this.btnFinalizar);
+            this.Controls.Add(this.txtHorario);
+            this.Controls.Add(this.txtAsistente);
+            this.Controls.Add(this.txtEstado);
+            this.Controls.Add(this.txtFolio);
+            this.Controls.Add(this.txtEmpleado);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label5);
@@ -148,6 +165,7 @@
             this.Controls.Add(this.label1);
             this.Name = "FormInfoCita";
             this.Text = "FormInfoCita";
+            this.Load += new System.EventHandler(this.FormInfoCita_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -156,15 +174,16 @@
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox txtEmpleado;
+        private System.Windows.Forms.TextBox txtFolio;
+        private System.Windows.Forms.TextBox txtEstado;
+        private System.Windows.Forms.TextBox txtHorario;
+        private System.Windows.Forms.TextBox txtAsistente;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Button btnFinalizar;
     }
 }
