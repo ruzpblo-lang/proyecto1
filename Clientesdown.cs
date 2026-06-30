@@ -23,7 +23,7 @@ namespace Proyecto
 
         private void btnEliminar_Click(object sender, EventArgs e)
         {
-            switch (MessageBox.Show("¿Confirmas la modificación del empleado?", "Confirmación", MessageBoxButtons.YesNo, MessageBoxIcon.Question))
+            switch (MessageBox.Show("¿Confirmas la modificación del Cliente?", "Confirmación", MessageBoxButtons.YesNo, MessageBoxIcon.Question))
             {
                 case DialogResult.Yes:
 

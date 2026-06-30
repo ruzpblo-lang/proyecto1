@@ -71,7 +71,7 @@ namespace Proyecto
             string query = "";
             if (tipo == "Nómina")
             {
-                query = "DELETE FROM Nomina WHERE NominaID ? $id;";
+                query = query = "DELETE FROM Nomina WHERE NominaID = $id;";
             }
             else if (tipo == "Gasto Externo")
             {
@@ -110,12 +110,12 @@ namespace Proyecto
                 ("$estado", estado)
                 );
         }
-        public void AgregarPagoexterno(int exteriorID,string nombre,string fechapago, decimal sueldobase, string estado)
+        public void AgregarPagoexterno(int exteriorID, string nombre, string fechapago, decimal sueldobase, string estado)
         {
-            string queryInsert = @"INSERT INTO Pagos (ExteriorID,Nombre, FechaPago, SueldoBase,Estado)
-                                   VALUES ($exteriorId, $nombre, $fecha, $sueldo, $estado);";
+            object idParaBD = exteriorID <= 0 ? (object)DBNull.Value : exteriorID;
+            string queryInsert = "INSERT INTO Pagos (ServicioId, Nombre, FechaPago, SueldoBase, Estado) VALUES ($exteriorId, $nombre, $fecha, $sueldo, $estado);";
             conn.ExecuteNonQuery(queryInsert,
-                ("$exteriorId", exteriorID),
+                ("$exteriorId", idParaBD),
                 ("$nombre", nombre),
                 ("$fecha", fechapago),
                 ("$sueldo", sueldobase),
@@ -706,20 +706,20 @@ public List<PrecioProveedor> MostrarProductosProveedores()
             string queryservicio = "INSERT OR IGNORE INTO CatalogoServicios (Nombre) VALUES ($nombre)";
             conn.ExecuteNonQuery(queryservicio, ("$nombre", Nombreservicio));
             int servicioID = 0;
-            string querygetID = "SELECT ServicioId FROM CatalgoServicios WHERE Nombre = $nombre";
+            string querygetID = "SELECT ServicioId FROM CatalogoServicios WHERE Nombre = $nombre";
             var rs = conn.ExecuteReader(querygetID, ("$nombre",  Nombreservicio));
             if(rs.Read())
             {
                 servicioID = rs.GetInt("ServicioId");
             }
-            string queryinsert = @"INSERT INTO Pagos (ServicioId, Nombre, FechaPago, SueldoBase, Estado
-                                   VALUES ($servicioId, $nombre, $fechaPago, $sueldobase, $estado)";
+            string queryinsert = "INSERT INTO Pagos (ServicioId, Nombre, FechaPago, SueldoBase, Estado) " +
+                         "VALUES ($servicioId, $nombre, $fechaPago, $sueldobase, $estado);";
 
             conn.ExecuteNonQuery(queryinsert,
                 ("$servicioId",  servicioID),
                 ("$nombre", Nombreservicio),
                 ("$fechaPago", fecha),
-                ("$sueldoBase", monto),
+                ("$sueldobase", monto),
                 ("$estado", estado)
                 );
         }
@@ -745,6 +745,48 @@ public List<PrecioProveedor> MostrarProductosProveedores()
             );
 
             return true;
+        }
+        public List<FullCuenta> GetCuentasConCliente()
+        {
+            List<FullCuenta> listaCuentas = new List<FullCuenta>();
+
+            string query = "SELECT c.CuentaId, cl.Nombre, c.NumeroCuenta, c.TipoCuenta, c.Saldo, c.Estado FROM Cuentas c INNER JOIN Clientes cl ON c.ClienteId = cl.ClienteId;";
+            var rs = conn.ExecuteReader(query);
+            while (rs.Read())
+            {
+                string estadoTexto = rs.GetInt("Estado") == 1 ? "Activo" : "Inactivo";
+
+                listaCuentas.Add(new FullCuenta(
+                    rs.GetInt("CuentaId"),
+                    rs.GetString("Nombre"),
+                    rs.GetInt("NumeroCuenta"),
+                    rs.GetString("TipoCuenta"),
+                    (decimal)rs.GetDouble("Saldo"),
+                    estadoTexto
+                ));
+            }
+            return listaCuentas;
+        }
+        public List<Cuenta> GetCuentasPorCliente(int clienteId)
+        {
+            List<Cuenta> listaCuentas = new List<Cuenta>();
+            string query = $"SELECT CuentaId, ClienteId, NumeroCuenta, TipoCuenta, Saldo, Estado FROM Cuentas WHERE ClienteId = {clienteId}";
+
+            var rs = conn.ExecuteReader(query);
+            while (rs.Read())
+            {
+                string estadoTexto = rs.GetInt("Estado") == 1 ? "Activo" : "Inactivo";
+
+                listaCuentas.Add(new Cuenta(
+                    rs.GetInt("CuentaId"),
+                    rs.GetInt("ClienteId"),
+                    rs.GetInt("NumeroCuenta"),
+                    rs.GetString("TipoCuenta"),
+                    (decimal)rs.GetDouble("Saldo"),
+                    estadoTexto
+                ));
+            }
+            return listaCuentas;
         }
     }
 }

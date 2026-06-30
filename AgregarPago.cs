@@ -79,9 +79,8 @@ namespace Proyecto
                     {
                         string concepto = txtConcepto.Text;
                         decimal monto = Convert.ToDecimal(txtMonto.Text);
-                        Random rand = new Random();
-                        int exterior = rand.Next(1, 9999);
-                        gestorbanco.AgregarPagoexterno(exterior,concepto, fecha,monto, estado);
+
+                        gestorbanco.AgregarPagoexterno(0, concepto, fecha, monto, estado);
                     }
                 else if (tiposeleccionado == "Servicio")
                     {

@@ -225,6 +225,7 @@
       <DependentUpon>FormInventario.cs</DependentUpon>
     </Compile>
     <Compile Include="FullCita.cs" />
+    <Compile Include="FullCuenta.cs" />
     <Compile Include="FullEmpleados.cs" />
     <Compile Include="Fullpagos.cs" />
     <Compile Include="GerenteCitas.cs">
@@ -246,6 +247,12 @@
     </Compile>
     <Compile Include="FormInventarioDeposito.Designer.cs">
       <DependentUpon>FormInventarioDeposito.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mostrarcuentas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mostrarcuentas.Designer.cs">
+      <DependentUpon>Mostrarcuentas.cs</DependentUpon>
     </Compile>
     <Compile Include="Nomina.cs" />
     <Compile Include="Pago.cs" />
@@ -323,6 +330,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Ingresosvsegresos.resx">
       <DependentUpon>Ingresosvsegresos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mostrarcuentas.resx">
+      <DependentUpon>Mostrarcuentas.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

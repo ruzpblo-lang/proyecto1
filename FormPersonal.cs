@@ -100,6 +100,12 @@ namespace Proyecto
             cuentasdown forms = new cuentasdown(gestorbanco);
             forms.ShowDialog();
         }
+
+        private void mostrarCuentasToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Mostrarcuentas forms = new Mostrarcuentas(gestorbanco);
+            forms.ShowDialog();
+        }
     }
     }
 

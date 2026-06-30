@@ -22,15 +22,14 @@ namespace Proyecto
 
         private void cuentasdown_Load(object sender, EventArgs e)
         {
-          
 
-            cmbEmpleado.DataSource = gestorbanco.GetCuentas();
-            cmbEmpleado.DisplayMember = "NumeroCuenta";
-            cmbEmpleado.ValueMember = "CuentaId";
 
+            cmbCliente.DataSource = gestorbanco.GetTodosLosClientes();
+            cmbCliente.DisplayMember = "Nombre";
+            cmbCliente.ValueMember = "ClienteId";
+            cmbCliente.SelectedIndex = -1;
             cmbEstado.Items.Add("Activo");
             cmbEstado.Items.Add("Inactivo");
-
         }
 
         private void btnEliminar_Click(object sender, EventArgs e)
@@ -38,8 +37,7 @@ namespace Proyecto
             switch (MessageBox.Show("¿Confirmas la modificación de la cuenta?", "Confirmación", MessageBoxButtons.YesNo, MessageBoxIcon.Question))
             {
                 case DialogResult.Yes:
-                    // 1. CORRECCIÓN: Obtener el ID de la cuenta, no del empleado
-                    int cuentaId = Convert.ToInt32(cmbEmpleado.SelectedValue);
+                    int cuentaId = Convert.ToInt32(cmbCuenta.SelectedValue);
 
                     string nuevoEstado = cmbEstado.Text;
                     int nuevoEstado2 = 0;
@@ -53,7 +51,6 @@ namespace Proyecto
                         nuevoEstado2 = 0;
                     }
 
-                    
                     gestorbanco.ModificarEstadoCuenta(cuentaId, nuevoEstado2);
 
                     MessageBox.Show("¡Cuenta modificada con éxito!", "AVISO", MessageBoxButtons.OK, MessageBoxIcon.Information);
@@ -62,6 +59,17 @@ namespace Proyecto
 
                 case DialogResult.No:
                     break;
+            }
+        }
+        
+
+        private void cmbCliente_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (cmbCliente.SelectedValue != null && cmbCliente.SelectedValue is int clienteId)
+            {
+                cmbCuenta.DataSource = gestorbanco.GetCuentasPorCliente(clienteId);
+                cmbCuenta.DisplayMember = "NumeroCuenta";
+                cmbCuenta.ValueMember = "CuentaId";
             }
         }
     }

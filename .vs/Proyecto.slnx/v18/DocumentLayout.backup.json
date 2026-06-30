@@ -3,48 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\shani\\Desktop\\Git\\proyecto1\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{5ED591AE-3C6E-43F6-9E76-265A2B3EABD6}|Proyecto.csproj|C:\\Users\\shani\\Desktop\\Git\\proyecto1\\formagenda.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5ED591AE-3C6E-43F6-9E76-265A2B3EABD6}|Proyecto.csproj|solutionrelative:formagenda.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5ED591AE-3C6E-43F6-9E76-265A2B3EABD6}|Proyecto.csproj|C:\\Users\\shani\\Desktop\\Git\\proyecto1\\formagenda.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{5ED591AE-3C6E-43F6-9E76-265A2B3EABD6}|Proyecto.csproj|solutionrelative:formagenda.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{5ED591AE-3C6E-43F6-9E76-265A2B3EABD6}|Proyecto.csproj|C:\\Users\\shani\\Desktop\\Git\\proyecto1\\appbancaria.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{5ED591AE-3C6E-43F6-9E76-265A2B3EABD6}|Proyecto.csproj|solutionrelative:appbancaria.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{5ED591AE-3C6E-43F6-9E76-265A2B3EABD6}|Proyecto.csproj|C:\\Users\\shani\\Desktop\\Git\\proyecto1\\appbancaria.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5ED591AE-3C6E-43F6-9E76-265A2B3EABD6}|Proyecto.csproj|solutionrelative:appbancaria.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5ED591AE-3C6E-43F6-9E76-265A2B3EABD6}|Proyecto.csproj|c:\\users\\shani\\desktop\\git\\proyecto1\\formagenda.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5ED591AE-3C6E-43F6-9E76-265A2B3EABD6}|Proyecto.csproj|solutionrelative:formagenda.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{5ED591AE-3C6E-43F6-9E76-265A2B3EABD6}|Proyecto.csproj|C:\\Users\\shani\\Desktop\\Git\\proyecto1\\sqlconnectionextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5ED591AE-3C6E-43F6-9E76-265A2B3EABD6}|Proyecto.csproj|solutionrelative:sqlconnectionextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5ED591AE-3C6E-43F6-9E76-265A2B3EABD6}|Proyecto.csproj|c:\\users\\shani\\desktop\\git\\proyecto1\\forminfocita.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5ED591AE-3C6E-43F6-9E76-265A2B3EABD6}|Proyecto.csproj|solutionrelative:forminfocita.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5ED591AE-3C6E-43F6-9E76-265A2B3EABD6}|Proyecto.csproj|C:\\Users\\shani\\Desktop\\Git\\proyecto1\\forminfocita.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{5ED591AE-3C6E-43F6-9E76-265A2B3EABD6}|Proyecto.csproj|solutionrelative:forminfocita.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5ED591AE-3C6E-43F6-9E76-265A2B3EABD6}|Proyecto.csproj|C:\\Users\\shani\\Desktop\\Git\\proyecto1\\fullcita.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5ED591AE-3C6E-43F6-9E76-265A2B3EABD6}|Proyecto.csproj|solutionrelative:fullcita.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5ED591AE-3C6E-43F6-9E76-265A2B3EABD6}|Proyecto.csproj|c:\\users\\shani\\desktop\\git\\proyecto1\\forminventariodeposito.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{5ED591AE-3C6E-43F6-9E76-265A2B3EABD6}|Proyecto.csproj|solutionrelative:forminventariodeposito.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5ED591AE-3C6E-43F6-9E76-265A2B3EABD6}|Proyecto.csproj|C:\\Users\\shani\\Desktop\\Git\\proyecto1\\gerentecitas.resx||{81828910-B8B3-4D2B-99A3-067027C180C1}",
-      "RelativeMoniker": "D:0:0:{5ED591AE-3C6E-43F6-9E76-265A2B3EABD6}|Proyecto.csproj|solutionrelative:gerentecitas.resx||{81828910-B8B3-4D2B-99A3-067027C180C1}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5ED591AE-3C6E-43F6-9E76-265A2B3EABD6}|Proyecto.csproj|C:\\Users\\shani\\Desktop\\Git\\proyecto1\\gerentecitas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{5ED591AE-3C6E-43F6-9E76-265A2B3EABD6}|Proyecto.csproj|solutionrelative:gerentecitas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{5ED591AE-3C6E-43F6-9E76-265A2B3EABD6}|Proyecto.csproj|C:\\Users\\shani\\Desktop\\Git\\proyecto1\\agregarpago.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -55,16 +23,108 @@
       "RelativeMoniker": "D:0:0:{5ED591AE-3C6E-43F6-9E76-265A2B3EABD6}|Proyecto.csproj|solutionrelative:agregarpago.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{5ED591AE-3C6E-43F6-9E76-265A2B3EABD6}|Proyecto.csproj|C:\\Users\\shani\\Desktop\\Git\\proyecto1\\agregarcliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5ED591AE-3C6E-43F6-9E76-265A2B3EABD6}|Proyecto.csproj|solutionrelative:agregarcliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5ED591AE-3C6E-43F6-9E76-265A2B3EABD6}|Proyecto.csproj|C:\\Users\\shani\\Desktop\\Git\\proyecto1\\agregarcliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{5ED591AE-3C6E-43F6-9E76-265A2B3EABD6}|Proyecto.csproj|solutionrelative:agregarcliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5ED591AE-3C6E-43F6-9E76-265A2B3EABD6}|Proyecto.csproj|c:\\users\\shani\\desktop\\git\\proyecto1\\mostrarcuentas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{5ED591AE-3C6E-43F6-9E76-265A2B3EABD6}|Proyecto.csproj|solutionrelative:mostrarcuentas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5ED591AE-3C6E-43F6-9E76-265A2B3EABD6}|Proyecto.csproj|C:\\Users\\shani\\Desktop\\Git\\proyecto1\\cuentasdown.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5ED591AE-3C6E-43F6-9E76-265A2B3EABD6}|Proyecto.csproj|solutionrelative:cuentasdown.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5ED591AE-3C6E-43F6-9E76-265A2B3EABD6}|Proyecto.csproj|C:\\Users\\shani\\Desktop\\Git\\proyecto1\\cuentasdown.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{5ED591AE-3C6E-43F6-9E76-265A2B3EABD6}|Proyecto.csproj|solutionrelative:cuentasdown.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5ED591AE-3C6E-43F6-9E76-265A2B3EABD6}|Proyecto.csproj|C:\\Users\\shani\\Desktop\\Git\\proyecto1\\formpersonal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5ED591AE-3C6E-43F6-9E76-265A2B3EABD6}|Proyecto.csproj|solutionrelative:formpersonal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5ED591AE-3C6E-43F6-9E76-265A2B3EABD6}|Proyecto.csproj|C:\\Users\\shani\\Desktop\\Git\\proyecto1\\formpersonal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{5ED591AE-3C6E-43F6-9E76-265A2B3EABD6}|Proyecto.csproj|solutionrelative:formpersonal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5ED591AE-3C6E-43F6-9E76-265A2B3EABD6}|Proyecto.csproj|C:\\Users\\shani\\Desktop\\Git\\proyecto1\\clientesdown.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5ED591AE-3C6E-43F6-9E76-265A2B3EABD6}|Proyecto.csproj|solutionrelative:clientesdown.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5ED591AE-3C6E-43F6-9E76-265A2B3EABD6}|Proyecto.csproj|c:\\users\\shani\\desktop\\git\\proyecto1\\mostrarcuentas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5ED591AE-3C6E-43F6-9E76-265A2B3EABD6}|Proyecto.csproj|solutionrelative:mostrarcuentas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5ED591AE-3C6E-43F6-9E76-265A2B3EABD6}|Proyecto.csproj|c:\\users\\shani\\desktop\\git\\proyecto1\\fullcuenta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5ED591AE-3C6E-43F6-9E76-265A2B3EABD6}|Proyecto.csproj|solutionrelative:fullcuenta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5ED591AE-3C6E-43F6-9E76-265A2B3EABD6}|Proyecto.csproj|C:\\Users\\shani\\Desktop\\Git\\proyecto1\\gerentecitas.resx||{81828910-B8B3-4D2B-99A3-067027C180C1}",
+      "RelativeMoniker": "D:0:0:{5ED591AE-3C6E-43F6-9E76-265A2B3EABD6}|Proyecto.csproj|solutionrelative:gerentecitas.resx||{81828910-B8B3-4D2B-99A3-067027C180C1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5ED591AE-3C6E-43F6-9E76-265A2B3EABD6}|Proyecto.csproj|C:\\Users\\shani\\Desktop\\Git\\proyecto1\\agregarproductos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5ED591AE-3C6E-43F6-9E76-265A2B3EABD6}|Proyecto.csproj|solutionrelative:agregarproductos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5ED591AE-3C6E-43F6-9E76-265A2B3EABD6}|Proyecto.csproj|C:\\Users\\shani\\Desktop\\Git\\proyecto1\\forminfocita.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5ED591AE-3C6E-43F6-9E76-265A2B3EABD6}|Proyecto.csproj|solutionrelative:forminfocita.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5ED591AE-3C6E-43F6-9E76-265A2B3EABD6}|Proyecto.csproj|C:\\Users\\shani\\Desktop\\Git\\proyecto1\\formagenda.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5ED591AE-3C6E-43F6-9E76-265A2B3EABD6}|Proyecto.csproj|solutionrelative:formagenda.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5ED591AE-3C6E-43F6-9E76-265A2B3EABD6}|Proyecto.csproj|C:\\Users\\shani\\Desktop\\Git\\proyecto1\\cuenta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5ED591AE-3C6E-43F6-9E76-265A2B3EABD6}|Proyecto.csproj|solutionrelative:cuenta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5ED591AE-3C6E-43F6-9E76-265A2B3EABD6}|Proyecto.csproj|C:\\Users\\shani\\Desktop\\Git\\proyecto1\\altacuenta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5ED591AE-3C6E-43F6-9E76-265A2B3EABD6}|Proyecto.csproj|solutionrelative:altacuenta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5ED591AE-3C6E-43F6-9E76-265A2B3EABD6}|Proyecto.csproj|C:\\Users\\shani\\Desktop\\Git\\proyecto1\\altacuenta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{5ED591AE-3C6E-43F6-9E76-265A2B3EABD6}|Proyecto.csproj|solutionrelative:altacuenta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5ED591AE-3C6E-43F6-9E76-265A2B3EABD6}|Proyecto.csproj|C:\\Users\\shani\\Desktop\\Git\\proyecto1\\forminventariocuenta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5ED591AE-3C6E-43F6-9E76-265A2B3EABD6}|Proyecto.csproj|solutionrelative:forminventariocuenta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5ED591AE-3C6E-43F6-9E76-265A2B3EABD6}|Proyecto.csproj|c:\\users\\shani\\desktop\\git\\proyecto1\\formagenda.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5ED591AE-3C6E-43F6-9E76-265A2B3EABD6}|Proyecto.csproj|solutionrelative:formagenda.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5ED591AE-3C6E-43F6-9E76-265A2B3EABD6}|Proyecto.csproj|C:\\Users\\shani\\Desktop\\Git\\proyecto1\\formagenda.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{5ED591AE-3C6E-43F6-9E76-265A2B3EABD6}|Proyecto.csproj|solutionrelative:formagenda.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5ED591AE-3C6E-43F6-9E76-265A2B3EABD6}|Proyecto.csproj|C:\\Users\\shani\\Desktop\\Git\\proyecto1\\forminfocita.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{5ED591AE-3C6E-43F6-9E76-265A2B3EABD6}|Proyecto.csproj|solutionrelative:forminfocita.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5ED591AE-3C6E-43F6-9E76-265A2B3EABD6}|Proyecto.csproj|C:\\Users\\shani\\Desktop\\Git\\proyecto1\\fullcita.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5ED591AE-3C6E-43F6-9E76-265A2B3EABD6}|Proyecto.csproj|solutionrelative:fullcita.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5ED591AE-3C6E-43F6-9E76-265A2B3EABD6}|Proyecto.csproj|C:\\Users\\shani\\Desktop\\Git\\proyecto1\\forminventariodeposito.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{5ED591AE-3C6E-43F6-9E76-265A2B3EABD6}|Proyecto.csproj|solutionrelative:forminventariodeposito.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5ED591AE-3C6E-43F6-9E76-265A2B3EABD6}|Proyecto.csproj|C:\\Users\\shani\\Desktop\\Git\\proyecto1\\gerentecitas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{5ED591AE-3C6E-43F6-9E76-265A2B3EABD6}|Proyecto.csproj|solutionrelative:gerentecitas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{5ED591AE-3C6E-43F6-9E76-265A2B3EABD6}|Proyecto.csproj|C:\\Users\\shani\\Desktop\\Git\\proyecto1\\formfinanza.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5ED591AE-3C6E-43F6-9E76-265A2B3EABD6}|Proyecto.csproj|solutionrelative:formfinanza.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{5ED591AE-3C6E-43F6-9E76-265A2B3EABD6}|Proyecto.csproj|C:\\Users\\shani\\Desktop\\Git\\proyecto1\\formfinanza.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{5ED591AE-3C6E-43F6-9E76-265A2B3EABD6}|Proyecto.csproj|solutionrelative:formfinanza.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5ED591AE-3C6E-43F6-9E76-265A2B3EABD6}|Proyecto.csproj|C:\\Users\\shani\\Desktop\\Git\\proyecto1\\agregarproductos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5ED591AE-3C6E-43F6-9E76-265A2B3EABD6}|Proyecto.csproj|solutionrelative:agregarproductos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{5ED591AE-3C6E-43F6-9E76-265A2B3EABD6}|Proyecto.csproj|C:\\Users\\shani\\Desktop\\Git\\proyecto1\\agregarproductos.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -75,16 +135,8 @@
       "RelativeMoniker": "D:0:0:{5ED591AE-3C6E-43F6-9E76-265A2B3EABD6}|Proyecto.csproj|solutionrelative:forminventariodeposito.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5ED591AE-3C6E-43F6-9E76-265A2B3EABD6}|Proyecto.csproj|C:\\Users\\shani\\Desktop\\Git\\proyecto1\\formpersonal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5ED591AE-3C6E-43F6-9E76-265A2B3EABD6}|Proyecto.csproj|solutionrelative:formpersonal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{5ED591AE-3C6E-43F6-9E76-265A2B3EABD6}|Proyecto.csproj|C:\\Users\\shani\\Desktop\\Git\\proyecto1\\ingresosvsegresos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{5ED591AE-3C6E-43F6-9E76-265A2B3EABD6}|Proyecto.csproj|solutionrelative:ingresosvsegresos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5ED591AE-3C6E-43F6-9E76-265A2B3EABD6}|Proyecto.csproj|C:\\Users\\shani\\Desktop\\Git\\proyecto1\\formpersonal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{5ED591AE-3C6E-43F6-9E76-265A2B3EABD6}|Proyecto.csproj|solutionrelative:formpersonal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{5ED591AE-3C6E-43F6-9E76-265A2B3EABD6}|Proyecto.csproj|C:\\Users\\shani\\Desktop\\Git\\proyecto1\\forminventariocuenta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
@@ -111,20 +163,8 @@
       "RelativeMoniker": "D:0:0:{5ED591AE-3C6E-43F6-9E76-265A2B3EABD6}|Proyecto.csproj|solutionrelative:despedirgente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5ED591AE-3C6E-43F6-9E76-265A2B3EABD6}|Proyecto.csproj|C:\\Users\\shani\\Desktop\\Git\\proyecto1\\cuentasdown.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{5ED591AE-3C6E-43F6-9E76-265A2B3EABD6}|Proyecto.csproj|solutionrelative:cuentasdown.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{5ED591AE-3C6E-43F6-9E76-265A2B3EABD6}|Proyecto.csproj|C:\\Users\\shani\\Desktop\\Git\\proyecto1\\clientesdown.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{5ED591AE-3C6E-43F6-9E76-265A2B3EABD6}|Proyecto.csproj|solutionrelative:clientesdown.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5ED591AE-3C6E-43F6-9E76-265A2B3EABD6}|Proyecto.csproj|C:\\Users\\shani\\Desktop\\Git\\proyecto1\\appbancaria.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{5ED591AE-3C6E-43F6-9E76-265A2B3EABD6}|Proyecto.csproj|solutionrelative:appbancaria.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5ED591AE-3C6E-43F6-9E76-265A2B3EABD6}|Proyecto.csproj|C:\\Users\\shani\\Desktop\\Git\\proyecto1\\altacuenta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{5ED591AE-3C6E-43F6-9E76-265A2B3EABD6}|Proyecto.csproj|solutionrelative:altacuenta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{5ED591AE-3C6E-43F6-9E76-265A2B3EABD6}|Proyecto.csproj|C:\\Users\\shani\\Desktop\\Git\\proyecto1\\agregarproductos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
@@ -139,32 +179,8 @@
       "RelativeMoniker": "D:0:0:{5ED591AE-3C6E-43F6-9E76-265A2B3EABD6}|Proyecto.csproj|solutionrelative:agregar ingreso.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5ED591AE-3C6E-43F6-9E76-265A2B3EABD6}|Proyecto.csproj|C:\\Users\\shani\\Desktop\\Git\\proyecto1\\agregarcliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{5ED591AE-3C6E-43F6-9E76-265A2B3EABD6}|Proyecto.csproj|solutionrelative:agregarcliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5ED591AE-3C6E-43F6-9E76-265A2B3EABD6}|Proyecto.csproj|C:\\Users\\shani\\Desktop\\Git\\proyecto1\\forminventariocuenta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5ED591AE-3C6E-43F6-9E76-265A2B3EABD6}|Proyecto.csproj|solutionrelative:forminventariocuenta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5ED591AE-3C6E-43F6-9E76-265A2B3EABD6}|Proyecto.csproj|C:\\Users\\shani\\Desktop\\Git\\proyecto1\\cuentasdown.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5ED591AE-3C6E-43F6-9E76-265A2B3EABD6}|Proyecto.csproj|solutionrelative:cuentasdown.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5ED591AE-3C6E-43F6-9E76-265A2B3EABD6}|Proyecto.csproj|C:\\Users\\shani\\Desktop\\Git\\proyecto1\\clientesdown.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5ED591AE-3C6E-43F6-9E76-265A2B3EABD6}|Proyecto.csproj|solutionrelative:clientesdown.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{5ED591AE-3C6E-43F6-9E76-265A2B3EABD6}|Proyecto.csproj|C:\\Users\\shani\\Desktop\\Git\\proyecto1\\cliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5ED591AE-3C6E-43F6-9E76-265A2B3EABD6}|Proyecto.csproj|solutionrelative:cliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5ED591AE-3C6E-43F6-9E76-265A2B3EABD6}|Proyecto.csproj|C:\\Users\\shani\\Desktop\\Git\\proyecto1\\cuenta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5ED591AE-3C6E-43F6-9E76-265A2B3EABD6}|Proyecto.csproj|solutionrelative:cuenta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5ED591AE-3C6E-43F6-9E76-265A2B3EABD6}|Proyecto.csproj|C:\\Users\\shani\\Desktop\\Git\\proyecto1\\altacuenta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5ED591AE-3C6E-43F6-9E76-265A2B3EABD6}|Proyecto.csproj|solutionrelative:altacuenta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{5ED591AE-3C6E-43F6-9E76-265A2B3EABD6}|Proyecto.csproj|C:\\Users\\shani\\Desktop\\Git\\proyecto1\\estadoclientes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -177,10 +193,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{5ED591AE-3C6E-43F6-9E76-265A2B3EABD6}|Proyecto.csproj|C:\\Users\\shani\\Desktop\\Git\\proyecto1\\despedirgente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5ED591AE-3C6E-43F6-9E76-265A2B3EABD6}|Proyecto.csproj|solutionrelative:despedirgente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5ED591AE-3C6E-43F6-9E76-265A2B3EABD6}|Proyecto.csproj|C:\\Users\\shani\\Desktop\\Git\\proyecto1\\agregarcliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5ED591AE-3C6E-43F6-9E76-265A2B3EABD6}|Proyecto.csproj|solutionrelative:agregarcliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{5ED591AE-3C6E-43F6-9E76-265A2B3EABD6}|Proyecto.csproj|C:\\Users\\shani\\Desktop\\Git\\proyecto1\\forminventario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -214,17 +226,17 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 46,
+          "SelectedChildIndex": 31,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "AppBancaria.cs",
               "DocumentMoniker": "C:\\Users\\shani\\Desktop\\Git\\proyecto1\\AppBancaria.cs",
               "RelativeDocumentMoniker": "AppBancaria.cs",
               "ToolTip": "C:\\Users\\shani\\Desktop\\Git\\proyecto1\\AppBancaria.cs",
               "RelativeToolTip": "AppBancaria.cs",
-              "ViewState": "AgIAAI8BAAAAAAAAAAAqwP8BAAAOAAAAAAAAAA==",
+              "ViewState": "AgIAAEUAAAAAAAAAAAAlwFAAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-06-23T00:29:42.934Z",
               "IsPinned": true,
@@ -232,7 +244,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 30,
               "Title": "FormFinanza.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\shani\\Desktop\\Git\\proyecto1\\FormFinanza.cs",
               "RelativeDocumentMoniker": "FormFinanza.cs",
@@ -244,7 +256,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 29,
               "Title": "FormFinanza.cs",
               "DocumentMoniker": "C:\\Users\\shani\\Desktop\\Git\\proyecto1\\FormFinanza.cs",
               "RelativeDocumentMoniker": "FormFinanza.cs",
@@ -257,7 +269,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 4,
               "Title": "AgregarPago.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\shani\\Desktop\\Git\\proyecto1\\AgregarPago.cs",
               "RelativeDocumentMoniker": "AgregarPago.cs",
@@ -265,24 +277,79 @@
               "RelativeToolTip": "AgregarPago.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-06-23T00:29:42.934Z",
-              "IsPinned": true
+              "IsPinned": true,
+              "EditorCaption": " [Dise\u00F1o]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 3,
               "Title": "AgregarPago.cs",
               "DocumentMoniker": "C:\\Users\\shani\\Desktop\\Git\\proyecto1\\AgregarPago.cs",
               "RelativeDocumentMoniker": "AgregarPago.cs",
               "ToolTip": "C:\\Users\\shani\\Desktop\\Git\\proyecto1\\AgregarPago.cs",
               "RelativeToolTip": "AgregarPago.cs",
-              "ViewState": "AgIAAJMAAAAAAAAAAAAQwJoAAAAmAAAAAAAAAA==",
+              "ViewState": "AgIAAE8AAAAAAAAAAAAAAFQAAAA4AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-06-23T00:29:41.767Z",
-              "IsPinned": true
+              "IsPinned": true,
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 19,
+              "Title": "Cuenta.cs",
+              "DocumentMoniker": "C:\\Users\\shani\\Desktop\\Git\\proyecto1\\Cuenta.cs",
+              "RelativeDocumentMoniker": "Cuenta.cs",
+              "ToolTip": "C:\\Users\\shani\\Desktop\\Git\\proyecto1\\Cuenta.cs",
+              "RelativeToolTip": "Cuenta.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAIA9wAgAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-23T23:40:14.367Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Mostrarcuentas.cs",
+              "DocumentMoniker": "C:\\Users\\shani\\Desktop\\Git\\proyecto1\\Mostrarcuentas.cs",
+              "RelativeDocumentMoniker": "Mostrarcuentas.cs",
+              "ToolTip": "C:\\Users\\shani\\Desktop\\Git\\proyecto1\\Mostrarcuentas.cs",
+              "RelativeToolTip": "Mostrarcuentas.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAAAwwB4AAABLAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-30T06:19:32.411Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "FullCuenta.cs",
+              "DocumentMoniker": "C:\\Users\\shani\\Desktop\\Git\\proyecto1\\FullCuenta.cs",
+              "RelativeDocumentMoniker": "FullCuenta.cs",
+              "ToolTip": "C:\\Users\\shani\\Desktop\\Git\\proyecto1\\FullCuenta.cs",
+              "RelativeToolTip": "FullCuenta.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAAQwB0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-30T06:24:16.613Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Mostrarcuentas.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\shani\\Desktop\\Git\\proyecto1\\Mostrarcuentas.cs",
+              "RelativeDocumentMoniker": "Mostrarcuentas.cs",
+              "ToolTip": "C:\\Users\\shani\\Desktop\\Git\\proyecto1\\Mostrarcuentas.cs [Dise\u00F1o]",
+              "RelativeToolTip": "Mostrarcuentas.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-30T06:18:35.948Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
               "Title": "FormAgenda.Designer.cs",
               "DocumentMoniker": "C:\\Users\\shani\\Desktop\\Git\\proyecto1\\FormAgenda.Designer.cs",
               "RelativeDocumentMoniker": "FormAgenda.Designer.cs",
@@ -295,7 +362,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 17,
               "Title": "FormInfoCita.cs",
               "DocumentMoniker": "C:\\Users\\shani\\Desktop\\Git\\proyecto1\\FormInfoCita.cs",
               "RelativeDocumentMoniker": "FormInfoCita.cs",
@@ -308,31 +375,32 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 15,
               "Title": "GerenteCitas.resx",
               "DocumentMoniker": "C:\\Users\\shani\\Desktop\\Git\\proyecto1\\GerenteCitas.resx",
               "RelativeDocumentMoniker": "GerenteCitas.resx",
               "ToolTip": "C:\\Users\\shani\\Desktop\\Git\\proyecto1\\GerenteCitas.resx",
               "RelativeToolTip": "GerenteCitas.resx",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001005|",
-              "WhenOpened": "2026-06-29T03:01:52.853Z"
+              "WhenOpened": "2026-06-29T03:01:52.853Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 2,
               "Title": "SqlConnectionExtensions.cs",
               "DocumentMoniker": "C:\\Users\\shani\\Desktop\\Git\\proyecto1\\SqlConnectionExtensions.cs",
               "RelativeDocumentMoniker": "SqlConnectionExtensions.cs",
               "ToolTip": "C:\\Users\\shani\\Desktop\\Git\\proyecto1\\SqlConnectionExtensions.cs",
               "RelativeToolTip": "SqlConnectionExtensions.cs",
-              "ViewState": "AgIAABoAAAAAAAAAAAAlwB4AAAAMAAAAAAAAAA==",
+              "ViewState": "AgIAABcAAAAAAAAAAAAIwB4AAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-06-23T21:52:31.282Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 32,
               "Title": "FormInventarioDeposito.cs",
               "DocumentMoniker": "C:\\Users\\shani\\Desktop\\Git\\proyecto1\\FormInventarioDeposito.cs",
               "RelativeDocumentMoniker": "FormInventarioDeposito.cs",
@@ -340,12 +408,11 @@
               "RelativeToolTip": "FormInventarioDeposito.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAswCEAAAA5AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-25T18:31:14.967Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-06-25T18:31:14.967Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 31,
               "Title": "AgregarProductos.Designer.cs",
               "DocumentMoniker": "C:\\Users\\shani\\Desktop\\Git\\proyecto1\\AgregarProductos.Designer.cs",
               "RelativeDocumentMoniker": "AgregarProductos.Designer.cs",
@@ -353,11 +420,12 @@
               "RelativeToolTip": "AgregarProductos.Designer.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-25T18:17:36.089Z"
+              "WhenOpened": "2026-06-25T18:17:36.089Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 16,
               "Title": "AgregarProductos.cs",
               "DocumentMoniker": "C:\\Users\\shani\\Desktop\\Git\\proyecto1\\AgregarProductos.cs",
               "RelativeDocumentMoniker": "AgregarProductos.cs",
@@ -365,35 +433,25 @@
               "RelativeToolTip": "AgregarProductos.cs",
               "ViewState": "AgIAAEkAAAAAAAAAAAArwGwAAAAwAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-25T16:55:26.822Z"
+              "WhenOpened": "2026-06-25T16:55:26.822Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 39,
-              "Title": "Cuenta.cs",
-              "DocumentMoniker": "C:\\Users\\shani\\Desktop\\Git\\proyecto1\\Cuenta.cs",
-              "RelativeDocumentMoniker": "Cuenta.cs",
-              "ToolTip": "C:\\Users\\shani\\Desktop\\Git\\proyecto1\\Cuenta.cs",
-              "RelativeToolTip": "Cuenta.cs",
-              "ViewState": "AgIAAAUAAAAAAAAAAAAAAAkAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-23T23:40:14.367Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 10,
               "Title": "FormPersonal.cs",
               "DocumentMoniker": "C:\\Users\\shani\\Desktop\\Git\\proyecto1\\FormPersonal.cs",
               "RelativeDocumentMoniker": "FormPersonal.cs",
               "ToolTip": "C:\\Users\\shani\\Desktop\\Git\\proyecto1\\FormPersonal.cs",
               "RelativeToolTip": "FormPersonal.cs",
-              "ViewState": "AgIAAFoAAAAAAAAAAAAawGUAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAF0AAAAAAAAAAAAawGMAAAAsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-23T00:29:42.934Z"
+              "WhenOpened": "2026-06-23T00:29:42.934Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 43,
+              "DocumentIndex": 47,
               "Title": "DespedirGente.cs",
               "DocumentMoniker": "C:\\Users\\shani\\Desktop\\Git\\proyecto1\\DespedirGente.cs",
               "RelativeDocumentMoniker": "DespedirGente.cs",
@@ -405,18 +463,19 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 40,
               "Title": "Clientesdown.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\shani\\Desktop\\Git\\proyecto1\\Clientesdown.cs",
               "RelativeDocumentMoniker": "Clientesdown.cs",
-              "ToolTip": "C:\\Users\\pablp\\proyecto1\\Clientesdown.cs [Dise\u00F1o]",
-              "RelativeToolTip": "..\\..\\..\\..\\pablp\\proyecto1\\Clientesdown.cs [Dise\u00F1o]",
+              "ToolTip": "C:\\Users\\shani\\Desktop\\Git\\proyecto1\\Clientesdown.cs [Dise\u00F1o]",
+              "RelativeToolTip": "Clientesdown.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-23T22:23:55.518Z"
+              "WhenOpened": "2026-06-23T22:23:55.518Z",
+              "EditorCaption": " [Dise\u00F1o]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 41,
+              "DocumentIndex": 45,
               "Title": "ESTADOCLIENTES.cs",
               "DocumentMoniker": "C:\\Users\\shani\\Desktop\\Git\\proyecto1\\ESTADOCLIENTES.cs",
               "RelativeDocumentMoniker": "ESTADOCLIENTES.cs",
@@ -428,41 +487,42 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 34,
               "Title": "FormInventarioCuenta.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\shani\\Desktop\\Git\\proyecto1\\FormInventarioCuenta.cs",
               "RelativeDocumentMoniker": "FormInventarioCuenta.cs",
-              "ToolTip": "C:\\Users\\pablp\\proyecto1\\FormInventarioCuenta.cs [Dise\u00F1o]",
-              "RelativeToolTip": "..\\..\\..\\..\\pablp\\proyecto1\\FormInventarioCuenta.cs [Dise\u00F1o]",
+              "ToolTip": "C:\\Users\\shani\\Desktop\\Git\\proyecto1\\FormInventarioCuenta.cs [Dise\u00F1o]",
+              "RelativeToolTip": "FormInventarioCuenta.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-23T21:29:58.856Z"
+              "WhenOpened": "2026-06-23T21:29:58.856Z",
+              "EditorCaption": " [Dise\u00F1o]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 27,
               "Title": "FormInventarioDeposito.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\shani\\Desktop\\Git\\proyecto1\\FormInventarioDeposito.cs",
               "RelativeDocumentMoniker": "FormInventarioDeposito.cs",
               "ToolTip": "C:\\Users\\shani\\Desktop\\Git\\proyecto1\\FormInventarioDeposito.cs [Dise\u00F1o]",
               "RelativeToolTip": "FormInventarioDeposito.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-23T21:29:56.59Z",
+              "WhenOpened": "2026-06-23T21:29:56.59Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "FormPersonal.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\shani\\Desktop\\Git\\proyecto1\\FormPersonal.cs",
+              "RelativeDocumentMoniker": "FormPersonal.cs",
+              "ToolTip": "C:\\Users\\shani\\Desktop\\Git\\proyecto1\\FormPersonal.cs [Dise\u00F1o]",
+              "RelativeToolTip": "FormPersonal.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-23T22:52:33.725Z",
               "EditorCaption": " [Dise\u00F1o]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "FormPersonal.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\shani\\Desktop\\Git\\proyecto1\\FormPersonal.cs",
-              "RelativeDocumentMoniker": "FormPersonal.cs",
-              "ToolTip": "C:\\Users\\ricar\\OneDrive\\Documentos\\GitHub\\proyecto1\\FormPersonal.cs [Dise\u00F1o]",
-              "RelativeToolTip": "..\\..\\..\\..\\ricar\\OneDrive\\Documentos\\GitHub\\proyecto1\\FormPersonal.cs [Dise\u00F1o]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-23T22:52:33.725Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 33,
               "Title": "Ingresosvsegresos.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\shani\\Desktop\\Git\\proyecto1\\Ingresosvsegresos.cs",
               "RelativeDocumentMoniker": "Ingresosvsegresos.cs",
@@ -473,7 +533,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 28,
               "Title": "GerenteCitas.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\shani\\Desktop\\Git\\proyecto1\\GerenteCitas.cs",
               "RelativeDocumentMoniker": "GerenteCitas.cs",
@@ -484,7 +544,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 35,
               "Title": "FormInventarioBancoboton.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\shani\\Desktop\\Git\\proyecto1\\FormInventarioBancoboton.cs",
               "RelativeDocumentMoniker": "FormInventarioBancoboton.cs",
@@ -495,7 +555,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 36,
               "Title": "FormInventario.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\shani\\Desktop\\Git\\proyecto1\\FormInventario.cs",
               "RelativeDocumentMoniker": "FormInventario.cs",
@@ -506,7 +566,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 25,
               "Title": "FormInfoCita.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\shani\\Desktop\\Git\\proyecto1\\FormInfoCita.cs",
               "RelativeDocumentMoniker": "FormInfoCita.cs",
@@ -518,7 +578,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 37,
               "Title": "FormBusquedaPuesto.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\shani\\Desktop\\Git\\proyecto1\\FormBusquedaPuesto.cs",
               "RelativeDocumentMoniker": "FormBusquedaPuesto.cs",
@@ -529,7 +589,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 38,
               "Title": "ESTADOCLIENTES.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\shani\\Desktop\\Git\\proyecto1\\ESTADOCLIENTES.cs",
               "RelativeDocumentMoniker": "ESTADOCLIENTES.cs",
@@ -540,7 +600,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 39,
               "Title": "DespedirGente.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\shani\\Desktop\\Git\\proyecto1\\DespedirGente.cs",
               "RelativeDocumentMoniker": "DespedirGente.cs",
@@ -551,7 +611,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 0,
               "Title": "AppBancaria.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\shani\\Desktop\\Git\\proyecto1\\AppBancaria.cs",
               "RelativeDocumentMoniker": "AppBancaria.cs",
@@ -563,18 +623,19 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 21,
               "Title": "Altacuenta.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\shani\\Desktop\\Git\\proyecto1\\Altacuenta.cs",
               "RelativeDocumentMoniker": "Altacuenta.cs",
-              "ToolTip": "C:\\Users\\pablp\\proyecto1\\Altacuenta.cs [Dise\u00F1o]",
-              "RelativeToolTip": "..\\..\\..\\..\\pablp\\proyecto1\\Altacuenta.cs [Dise\u00F1o]",
+              "ToolTip": "C:\\Users\\shani\\Desktop\\Git\\proyecto1\\Altacuenta.cs [Dise\u00F1o]",
+              "RelativeToolTip": "Altacuenta.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-23T22:52:23.79Z"
+              "WhenOpened": "2026-06-23T22:52:23.79Z",
+              "EditorCaption": " [Dise\u00F1o]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 24,
               "Title": "FormAgenda.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\shani\\Desktop\\Git\\proyecto1\\FormAgenda.cs",
               "RelativeDocumentMoniker": "FormAgenda.cs",
@@ -586,29 +647,31 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
+              "DocumentIndex": 41,
               "Title": "AgregarProductos.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\shani\\Desktop\\Git\\proyecto1\\AgregarProductos.cs",
               "RelativeDocumentMoniker": "AgregarProductos.cs",
-              "ToolTip": "C:\\Users\\ricar\\OneDrive\\Documentos\\GitHub\\proyecto1\\AgregarProductos.cs [Dise\u00F1o]",
-              "RelativeToolTip": "..\\..\\..\\..\\ricar\\OneDrive\\Documentos\\GitHub\\proyecto1\\AgregarProductos.cs [Dise\u00F1o]",
+              "ToolTip": "C:\\Users\\shani\\Desktop\\Git\\proyecto1\\AgregarProductos.cs [Dise\u00F1o]",
+              "RelativeToolTip": "AgregarProductos.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-25T16:55:24.002Z"
+              "WhenOpened": "2026-06-25T16:55:24.002Z",
+              "EditorCaption": " [Dise\u00F1o]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 9,
               "Title": "cuentasdown.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\shani\\Desktop\\Git\\proyecto1\\cuentasdown.cs",
               "RelativeDocumentMoniker": "cuentasdown.cs",
-              "ToolTip": "C:\\Users\\pablp\\proyecto1\\cuentasdown.cs [Dise\u00F1o]",
-              "RelativeToolTip": "..\\..\\..\\..\\pablp\\proyecto1\\cuentasdown.cs [Dise\u00F1o]",
+              "ToolTip": "C:\\Users\\shani\\Desktop\\Git\\proyecto1\\cuentasdown.cs [Dise\u00F1o]",
+              "RelativeToolTip": "cuentasdown.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-23T23:34:27.188Z"
+              "WhenOpened": "2026-06-23T23:34:27.188Z",
+              "EditorCaption": " [Dise\u00F1o]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 32,
+              "DocumentIndex": 42,
               "Title": "AgregarEmpleado.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\shani\\Desktop\\Git\\proyecto1\\AgregarEmpleado.cs",
               "RelativeDocumentMoniker": "AgregarEmpleado.cs",
@@ -619,7 +682,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 33,
+              "DocumentIndex": 43,
               "Title": "Agregar ingreso.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\shani\\Desktop\\Git\\proyecto1\\Agregar ingreso.cs",
               "RelativeDocumentMoniker": "Agregar ingreso.cs",
@@ -630,18 +693,19 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 34,
+              "DocumentIndex": 6,
               "Title": "AgregarCliente.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\shani\\Desktop\\Git\\proyecto1\\AgregarCliente.cs",
               "RelativeDocumentMoniker": "AgregarCliente.cs",
-              "ToolTip": "C:\\Users\\pablp\\proyecto1\\AgregarCliente.cs [Dise\u00F1o]",
-              "RelativeToolTip": "..\\..\\..\\..\\pablp\\proyecto1\\AgregarCliente.cs [Dise\u00F1o]",
+              "ToolTip": "C:\\Users\\shani\\Desktop\\Git\\proyecto1\\AgregarCliente.cs [Dise\u00F1o]",
+              "RelativeToolTip": "AgregarCliente.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-23T21:25:16.27Z"
+              "WhenOpened": "2026-06-23T21:25:16.27Z",
+              "EditorCaption": " [Dise\u00F1o]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 35,
+              "DocumentIndex": 22,
               "Title": "FormInventarioCuenta.cs",
               "DocumentMoniker": "C:\\Users\\shani\\Desktop\\Git\\proyecto1\\FormInventarioCuenta.cs",
               "RelativeDocumentMoniker": "FormInventarioCuenta.cs",
@@ -649,11 +713,12 @@
               "RelativeToolTip": "FormInventarioCuenta.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-23T23:24:05.573Z"
+              "WhenOpened": "2026-06-23T23:24:05.573Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 38,
+              "DocumentIndex": 44,
               "Title": "Cliente.cs",
               "DocumentMoniker": "C:\\Users\\shani\\Desktop\\Git\\proyecto1\\Cliente.cs",
               "RelativeDocumentMoniker": "Cliente.cs",
@@ -665,43 +730,46 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 37,
+              "DocumentIndex": 12,
               "Title": "Clientesdown.cs",
               "DocumentMoniker": "C:\\Users\\shani\\Desktop\\Git\\proyecto1\\Clientesdown.cs",
               "RelativeDocumentMoniker": "Clientesdown.cs",
               "ToolTip": "C:\\Users\\shani\\Desktop\\Git\\proyecto1\\Clientesdown.cs",
               "RelativeToolTip": "Clientesdown.cs",
-              "ViewState": "AgIAACIAAAAAAAAAAAAgwDYAAAANAAAAAAAAAA==",
+              "ViewState": "AgIAADgAAAAAAAAAAAAAAEUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-23T23:36:26.845Z"
+              "WhenOpened": "2026-06-23T23:36:26.845Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 36,
+              "DocumentIndex": 8,
               "Title": "cuentasdown.cs",
               "DocumentMoniker": "C:\\Users\\shani\\Desktop\\Git\\proyecto1\\cuentasdown.cs",
               "RelativeDocumentMoniker": "cuentasdown.cs",
               "ToolTip": "C:\\Users\\shani\\Desktop\\Git\\proyecto1\\cuentasdown.cs",
               "RelativeToolTip": "cuentasdown.cs",
-              "ViewState": "AgIAABAAAAAAAAAAAAA1wBgAAAAKAAAAAAAAAA==",
+              "ViewState": "AgIAABUAAAAAAAAAAAAvwB0AAAAqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-23T23:36:43.825Z"
+              "WhenOpened": "2026-06-23T23:36:43.825Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 40,
+              "DocumentIndex": 20,
               "Title": "Altacuenta.cs",
               "DocumentMoniker": "C:\\Users\\shani\\Desktop\\Git\\proyecto1\\Altacuenta.cs",
               "RelativeDocumentMoniker": "Altacuenta.cs",
               "ToolTip": "C:\\Users\\shani\\Desktop\\Git\\proyecto1\\Altacuenta.cs",
               "RelativeToolTip": "Altacuenta.cs",
-              "ViewState": "AgIAAC4AAAAAAAAAAAAIwDMAAAAlAAAAAAAAAA==",
+              "ViewState": "AgIAADEAAAAAAAAAAAAAAD4AAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-23T22:54:09.509Z"
+              "WhenOpened": "2026-06-23T22:54:09.509Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 42,
+              "DocumentIndex": 46,
               "Title": "AgregarEmpleado.cs",
               "DocumentMoniker": "C:\\Users\\shani\\Desktop\\Git\\proyecto1\\AgregarEmpleado.cs",
               "RelativeDocumentMoniker": "AgregarEmpleado.cs",
@@ -713,19 +781,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 44,
+              "DocumentIndex": 5,
               "Title": "AgregarCliente.cs",
               "DocumentMoniker": "C:\\Users\\shani\\Desktop\\Git\\proyecto1\\AgregarCliente.cs",
               "RelativeDocumentMoniker": "AgregarCliente.cs",
               "ToolTip": "C:\\Users\\shani\\Desktop\\Git\\proyecto1\\AgregarCliente.cs",
               "RelativeToolTip": "AgregarCliente.cs",
-              "ViewState": "AgIAACEAAAAAAAAAAAAAwC0AAAArAAAAAAAAAA==",
+              "ViewState": "AgIAACgAAAAAAAAAAAAhwC0AAAArAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-23T21:25:39.946Z"
+              "WhenOpened": "2026-06-23T21:25:39.946Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 45,
+              "DocumentIndex": 48,
               "Title": "FormInventario.cs",
               "DocumentMoniker": "C:\\Users\\shani\\Desktop\\Git\\proyecto1\\FormInventario.cs",
               "RelativeDocumentMoniker": "FormInventario.cs",
@@ -737,7 +806,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 46,
+              "DocumentIndex": 49,
               "Title": "FullEmpleados.cs",
               "DocumentMoniker": "C:\\Users\\shani\\Desktop\\Git\\proyecto1\\FullEmpleados.cs",
               "RelativeDocumentMoniker": "FullEmpleados.cs",
@@ -749,7 +818,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 47,
+              "DocumentIndex": 50,
               "Title": "GerenteCitas.cs",
               "DocumentMoniker": "C:\\Users\\shani\\Desktop\\Git\\proyecto1\\GerenteCitas.cs",
               "RelativeDocumentMoniker": "GerenteCitas.cs",
@@ -761,7 +830,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 23,
               "Title": "FormAgenda.cs",
               "DocumentMoniker": "C:\\Users\\shani\\Desktop\\Git\\proyecto1\\FormAgenda.cs",
               "RelativeDocumentMoniker": "FormAgenda.cs",
@@ -774,7 +843,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 48,
+              "DocumentIndex": 51,
               "Title": "Proveedor.cs",
               "DocumentMoniker": "C:\\Users\\shani\\Desktop\\Git\\proyecto1\\Proveedor.cs",
               "RelativeDocumentMoniker": "Proveedor.cs",
@@ -786,7 +855,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 49,
+              "DocumentIndex": 52,
               "Title": "Provedor.cs",
               "DocumentMoniker": "C:\\Users\\shani\\Desktop\\Git\\proyecto1\\Provedor.cs",
               "RelativeDocumentMoniker": "Provedor.cs",
@@ -798,7 +867,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 26,
               "Title": "FullCita.cs",
               "DocumentMoniker": "C:\\Users\\shani\\Desktop\\Git\\proyecto1\\FullCita.cs",
               "RelativeDocumentMoniker": "FullCita.cs",
@@ -806,12 +875,11 @@
               "RelativeToolTip": "FullCita.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAGAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-23T00:29:43.663Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-06-23T00:29:43.663Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 50,
+              "DocumentIndex": 53,
               "Title": "packages.config",
               "DocumentMoniker": "C:\\Users\\shani\\Desktop\\Git\\proyecto1\\packages.config",
               "RelativeDocumentMoniker": "packages.config",
