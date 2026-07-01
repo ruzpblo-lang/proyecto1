@@ -94,18 +94,25 @@ namespace Proyecto
 
         private void btnAgregar_Click(object sender, EventArgs e)
         {
+            string tipo = cmbProducto.SelectedItem.ToString();
+            int cantidad = Convert.ToInt32(txtCantidad.Text);
+            var producto = precioProveedores.Where(p => p.Tipo == tipo).ToList();
+            decimal totalCompra = cantidad * (decimal)producto[0].Precio;
+
+            double precioBase = gestorempresa.ObtenerSaldo(); 
+            if((double)totalCompra > precioBase)
+            {
+                MessageBox.Show($"operacion no aceptada, debido a que el total de compra: {totalCompra} es superior {precioBase}","operacion cancelada",MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
             switch(MessageBox.Show("Confirmas agregar los productos!","Confirmacion", MessageBoxButtons.YesNo, MessageBoxIcon.Question))
             {
                 case DialogResult.Yes:
-                    string tipo = cmbProducto.SelectedItem.ToString();
-                    int cantidad = Convert.ToInt32(txtCantidad.Text);
-                    var producto = precioProveedores.Where(p => p.Tipo == tipo).ToList();
                     //primer elemento de la lista producto
                     gestorempresa.AgregarProducto(producto[0].ObjetoId, cantidad);
 
                     MessageBox.Show("Producto Agregado!");  
                     precioProveedores = gestorempresa.MostrarProductosProveedores();
-                    decimal totalCompra = cantidad * (decimal)producto[0].Precio;
                     gestorempresa.RegistrarPagosProducto(producto[0].Tipo, producto[0].Proveedor, totalCompra);
                     UpdateData();
                     break;
