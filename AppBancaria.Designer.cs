@@ -35,15 +35,17 @@
             this.btnGestionarPersonal = new System.Windows.Forms.Button();
             this.btnConsultarAgenda = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(201, 82);
+            this.label1.Location = new System.Drawing.Point(189, 135);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(493, 20);
+            this.label1.Size = new System.Drawing.Size(419, 16);
             this.label1.TabIndex = 0;
             this.label1.Text = "Aplicacion de gestion de una sucursal bancaria de uso administrativo";
             // 
@@ -55,20 +57,20 @@
             this.groupBox1.Controls.Add(this.btnGestionarPersonal);
             this.groupBox1.Controls.Add(this.btnConsultarAgenda);
             this.groupBox1.Controls.Add(this.label2);
-            this.groupBox1.Location = new System.Drawing.Point(190, 145);
+            this.groupBox1.Location = new System.Drawing.Point(158, 167);
             this.groupBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.groupBox1.Size = new System.Drawing.Size(522, 321);
+            this.groupBox1.Size = new System.Drawing.Size(464, 257);
             this.groupBox1.TabIndex = 1;
             this.groupBox1.TabStop = false;
             // 
             // btnInventario
             // 
-            this.btnInventario.Location = new System.Drawing.Point(28, 218);
+            this.btnInventario.Location = new System.Drawing.Point(25, 174);
             this.btnInventario.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnInventario.Name = "btnInventario";
-            this.btnInventario.Size = new System.Drawing.Size(465, 41);
+            this.btnInventario.Size = new System.Drawing.Size(413, 33);
             this.btnInventario.TabIndex = 4;
             this.btnInventario.Text = "Inventario";
             this.btnInventario.UseVisualStyleBackColor = true;
@@ -76,10 +78,10 @@
             // 
             // btnFinanzas
             // 
-            this.btnFinanzas.Location = new System.Drawing.Point(28, 169);
+            this.btnFinanzas.Location = new System.Drawing.Point(25, 135);
             this.btnFinanzas.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnFinanzas.Name = "btnFinanzas";
-            this.btnFinanzas.Size = new System.Drawing.Size(465, 41);
+            this.btnFinanzas.Size = new System.Drawing.Size(413, 33);
             this.btnFinanzas.TabIndex = 3;
             this.btnFinanzas.Text = "Comprobar finanzas";
             this.btnFinanzas.UseVisualStyleBackColor = true;
@@ -87,10 +89,10 @@
             // 
             // btnGestionarPersonal
             // 
-            this.btnGestionarPersonal.Location = new System.Drawing.Point(28, 121);
+            this.btnGestionarPersonal.Location = new System.Drawing.Point(25, 97);
             this.btnGestionarPersonal.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnGestionarPersonal.Name = "btnGestionarPersonal";
-            this.btnGestionarPersonal.Size = new System.Drawing.Size(465, 41);
+            this.btnGestionarPersonal.Size = new System.Drawing.Size(413, 33);
             this.btnGestionarPersonal.TabIndex = 2;
             this.btnGestionarPersonal.Text = "Gestionar personal";
             this.btnGestionarPersonal.UseVisualStyleBackColor = true;
@@ -98,10 +100,10 @@
             // 
             // btnConsultarAgenda
             // 
-            this.btnConsultarAgenda.Location = new System.Drawing.Point(28, 72);
+            this.btnConsultarAgenda.Location = new System.Drawing.Point(25, 58);
             this.btnConsultarAgenda.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnConsultarAgenda.Name = "btnConsultarAgenda";
-            this.btnConsultarAgenda.Size = new System.Drawing.Size(465, 41);
+            this.btnConsultarAgenda.Size = new System.Drawing.Size(413, 33);
             this.btnConsultarAgenda.TabIndex = 1;
             this.btnConsultarAgenda.Text = "Consultar agenda";
             this.btnConsultarAgenda.UseVisualStyleBackColor = true;
@@ -110,17 +112,29 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(233, 22);
+            this.label2.Location = new System.Drawing.Point(207, 18);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(49, 20);
+            this.label2.Size = new System.Drawing.Size(40, 16);
             this.label2.TabIndex = 0;
             this.label2.Text = "Menu";
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::Proyecto.Properties.Resources.WhatsApp_Image_2026_07_01_at_10_12_42_AM;
+            this.pictureBox1.Location = new System.Drawing.Point(322, 12);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(132, 104);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 2;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
+            // 
             // AppBancaria
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(900, 562);
+            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.label1);
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -130,6 +144,7 @@
             this.Load += new System.EventHandler(this.AppBancaria_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -144,6 +159,7 @@
         private System.Windows.Forms.Button btnGestionarPersonal;
         private System.Windows.Forms.Button btnConsultarAgenda;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
 
