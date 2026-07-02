@@ -83,6 +83,7 @@
             // 
             // cmbBIllete
             // 
+            this.cmbBIllete.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbBIllete.FormattingEnabled = true;
             this.cmbBIllete.Location = new System.Drawing.Point(177, 527);
             this.cmbBIllete.Margin = new System.Windows.Forms.Padding(4);

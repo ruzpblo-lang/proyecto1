@@ -55,6 +55,7 @@
             // 
             // Cmbano
             // 
+            this.Cmbano.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.Cmbano.FormattingEnabled = true;
             this.Cmbano.Location = new System.Drawing.Point(73, 393);
             this.Cmbano.Name = "Cmbano";
