@@ -30,6 +30,15 @@ namespace Proyecto
 
         private void btnagregar_Click(object sender, EventArgs e)
         {
+            if (string.IsNullOrWhiteSpace(txtNombre.Text) ||
+        string.IsNullOrWhiteSpace(txtCorreo.Text) ||
+        string.IsNullOrWhiteSpace(txtTelefono.Text) ||
+        cmbpuesto.SelectedIndex == -1)
+            {
+             
+                MessageBox.Show("Rellenar todos los espacios!!");
+                return; 
+            }
 
             switch (MessageBox.Show("¿Confirmas la creación del empleado?", "Confirmación", MessageBoxButtons.YesNo, MessageBoxIcon.Question))
             {

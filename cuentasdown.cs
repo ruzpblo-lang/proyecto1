@@ -34,6 +34,14 @@ namespace Proyecto
 
         private void btnEliminar_Click(object sender, EventArgs e)
         {
+            if (cmbCuenta.SelectedIndex == -1 || string.IsNullOrWhiteSpace(cmbEstado.Text))
+            {
+                // Muestra exactamente el mismo mensaje de validación
+                MessageBox.Show("Rellenar todos los espacios!!");
+
+                // Detiene el código por completo para que no avance
+                return;
+            }
             switch (MessageBox.Show("¿Confirmas la modificación de la cuenta?", "Confirmación", MessageBoxButtons.YesNo, MessageBoxIcon.Question))
             {
                 case DialogResult.Yes:

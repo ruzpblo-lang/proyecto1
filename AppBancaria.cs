@@ -162,17 +162,22 @@ namespace Proyecto
         {
             List<FullCita> CitasDipsonibles = new List<FullCita>();
 
-            string query = "  SELECT c.FolioId, \r\n    CASE \r\n        WHEN c.ClienteId > 0 THEN cl.Nombre\r\n        WHEN c.ClienteId < 0 THEN 'Proveedor'\r\n        WHEN c.ClienteId = 0 THEN e.Nombre\r\n    END AS Cliente,\r\n    e.Nombre AS Empleado, \r\n    (c.Fecha || ' ' || c.Hora) AS Horario, \r\n    c.Estado\r\nFROM [Citas] c\r\nLEFT JOIN [Clientes] cl ON c.ClienteId = cl.ClienteId\r\nINNER JOIN [Empleados] e ON c.EmpleadoId = e.EmpleadoId;";
+            string query = "  SELECT c.FolioId, c.ClienteId, \r\n    CASE \r\n        WHEN c.ClienteId > 0 THEN cl.Nombre\r\n        WHEN c.ClienteId < 0 THEN 'Proveedor'\r\n        WHEN c.ClienteId = 0 THEN e.Nombre\r\n    END AS Cliente,\r\n    e.Nombre AS Empleado, \r\n    (c.Fecha || ' ' || c.Hora) AS Horario, \r\n    c.Estado\r\nFROM [Citas] c\r\nLEFT JOIN [Clientes] cl ON c.ClienteId = cl.ClienteId\r\nINNER JOIN [Empleados] e ON c.EmpleadoId = e.EmpleadoId;";
 
             var rs = conn.ExecuteReader(query);
             while (rs.Read())
             {
-                CitasDipsonibles.Add(new FullCita(
+                var cita = new FullCita(
                     rs.GetInt("FolioId"),
                     rs.GetString("Cliente"),
                     rs.GetString("Empleado"),
                     rs.GetString("Horario"),
-                    rs.GetString("Estado")));
+                    rs.GetString("Estado")
+                );
+
+                cita.ClienteId = rs.GetInt("ClienteId");
+
+                CitasDipsonibles.Add(cita);
             }
 
             return CitasDipsonibles;

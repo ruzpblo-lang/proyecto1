@@ -32,57 +32,63 @@
             this.cmbtipocuenta = new System.Windows.Forms.ComboBox();
             this.txtsaldo = new System.Windows.Forms.TextBox();
             this.btnagregar = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // cmbcliente
             // 
             this.cmbcliente.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbcliente.FormattingEnabled = true;
-            this.cmbcliente.Location = new System.Drawing.Point(52, 28);
-            this.cmbcliente.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cmbcliente.Location = new System.Drawing.Point(39, 23);
             this.cmbcliente.Name = "cmbcliente";
-            this.cmbcliente.Size = new System.Drawing.Size(160, 24);
+            this.cmbcliente.Size = new System.Drawing.Size(121, 21);
             this.cmbcliente.TabIndex = 0;
             // 
             // cmbtipocuenta
             // 
             this.cmbtipocuenta.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbtipocuenta.FormattingEnabled = true;
-            this.cmbtipocuenta.Location = new System.Drawing.Point(52, 73);
-            this.cmbtipocuenta.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cmbtipocuenta.Location = new System.Drawing.Point(39, 59);
             this.cmbtipocuenta.Name = "cmbtipocuenta";
-            this.cmbtipocuenta.Size = new System.Drawing.Size(160, 24);
+            this.cmbtipocuenta.Size = new System.Drawing.Size(121, 21);
             this.cmbtipocuenta.TabIndex = 1;
             // 
             // txtsaldo
             // 
-            this.txtsaldo.Location = new System.Drawing.Point(52, 140);
-            this.txtsaldo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtsaldo.Location = new System.Drawing.Point(39, 114);
             this.txtsaldo.Name = "txtsaldo";
-            this.txtsaldo.Size = new System.Drawing.Size(132, 22);
+            this.txtsaldo.Size = new System.Drawing.Size(100, 20);
             this.txtsaldo.TabIndex = 2;
             // 
             // btnagregar
             // 
-            this.btnagregar.Location = new System.Drawing.Point(52, 188);
-            this.btnagregar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnagregar.Location = new System.Drawing.Point(39, 153);
             this.btnagregar.Name = "btnagregar";
-            this.btnagregar.Size = new System.Drawing.Size(100, 28);
+            this.btnagregar.Size = new System.Drawing.Size(75, 23);
             this.btnagregar.TabIndex = 3;
             this.btnagregar.Text = "agregar";
             this.btnagregar.UseVisualStyleBackColor = true;
             this.btnagregar.Click += new System.EventHandler(this.btnagregar_Click);
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(157, 121);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(37, 13);
+            this.label1.TabIndex = 4;
+            this.label1.Text = "Monto";
+            // 
             // Altacuenta
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(264, 554);
+            this.ClientSize = new System.Drawing.Size(253, 219);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.btnagregar);
             this.Controls.Add(this.txtsaldo);
             this.Controls.Add(this.cmbtipocuenta);
             this.Controls.Add(this.cmbcliente);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Altacuenta";
             this.Text = "Altacuenta";
             this.Load += new System.EventHandler(this.Altacuenta_Load);
@@ -97,5 +103,6 @@
         private System.Windows.Forms.ComboBox cmbtipocuenta;
         private System.Windows.Forms.TextBox txtsaldo;
         private System.Windows.Forms.Button btnagregar;
+        private System.Windows.Forms.Label label1;
     }
 }

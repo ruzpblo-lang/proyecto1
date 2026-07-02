@@ -45,21 +45,7 @@ namespace Proyecto
         }
         public void RefreshCitas()
         {
-            var lista = gestorcitas.GetFullCitas();
-            dgvCitas.DataSource = null;
-            dgvCitas.DataSource = lista;
-
-            // --- AQUÍ ESTÁ EL CAMBIO ---
-            if (dgvCitas.Columns["Cliente"] != null)
-            {
-                dgvCitas.Columns["Cliente"].HeaderText = "Citado";
-            }
-            // ----------------------------
-
-            // Tus otras validaciones de ocultar columnas
-            if (dgvCitas.Columns["ClienteId"] != null) dgvCitas.Columns["ClienteId"].Visible = false;
-            if (dgvCitas.Columns["Empleado"] != null) dgvCitas.Columns["Empleado"].Visible = false;
-            if (dgvCitas.Columns["FolioId"] != null) dgvCitas.Columns["FolioId"].Visible = false;
+            FiltrosCitas();
         }
 
         private void FiltrosCitas()
@@ -71,25 +57,25 @@ namespace Proyecto
             List<FullCita> lista = gestorcitas.GetFullCitas();
             string seleccion = cmbFiltroTipo.SelectedItem.ToString();
 
-            // 3. FILTRO POR TIPO (Usando .Contains para que sea flexible)
+            // 3. FILTRO POR TIPO (Dinámico, usando los IDs reales)
             if (seleccion == "Cliente")
             {
-                // Trae todo lo que NO contenga "Proveedor" ni "Eric"
-                lista = lista.Where(c => !c.Cliente.Contains("Proveedor") && !c.Cliente.Contains("Eric")).ToList();
+                // Trae a todos los que tengan un ID de cliente válido (mayor a 0)
+                lista = lista.Where(c => c.ClienteId > 0).ToList();
             }
             else if (seleccion == "Empleado")
             {
-                // Trae solo lo que contenga "Eric"
-                lista = lista.Where(c => c.Cliente.Contains("Eric")).ToList();
+                // Empleados (Alan los clasificó con ID 0, asumimos que esa es tu regla)
+                lista = lista.Where(c => c.ClienteId == 0).ToList();
             }
             else if (seleccion == "Proveedor")
             {
-                // Trae solo lo que contenga "Proveedor"
-                lista = lista.Where(c => c.Cliente.Contains("Proveedor")).ToList();
+                // Proveedores (Alan los clasificó con IDs negativos)
+                lista = lista.Where(c => c.ClienteId < 0).ToList();
             }
-            // Si es "Todos", no hacemos nada a la lista, se queda completa.
+            // Si es "Todos", la lista se queda completa.
 
-            // 4. FILTRO POR FECHA (Sobre el resultado anterior)
+            // 4. FILTRO POR FECHA 
             DateTime inicio = dtpFechaInicio.Value.Date;
             DateTime fin = dtpFechaFinal.Value.Date;
 
@@ -104,12 +90,19 @@ namespace Proyecto
                 }).ToList();
             }
 
-            // 5. ASIGNAR AL GRID (Una sola vez)
+            // 5. ASIGNAR AL GRID
             dgvCitas.DataSource = null;
             dgvCitas.DataSource = lista;
 
-            // Opcional: Si quieres que no se vea desfasado, agrega aquí las columnas ocultas
+            if (dgvCitas.Columns["Cliente"] != null)
+            {
+                dgvCitas.Columns["Cliente"].HeaderText = "Citado";
+            }
+
             if (dgvCitas.Columns["ClienteId"] != null) dgvCitas.Columns["ClienteId"].Visible = false;
+            if (dgvCitas.Columns["Empleado"] != null) dgvCitas.Columns["Empleado"].Visible = false;
+            if (dgvCitas.Columns["FolioId"] != null) dgvCitas.Columns["FolioId"].Visible = false;
+         
         }
         private void ComboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {

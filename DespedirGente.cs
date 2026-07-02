@@ -33,6 +33,11 @@ namespace Proyecto
 
         private void btnEliminar_Click(object sender, EventArgs e)
         {
+            if (cmbEmpleado.SelectedIndex == -1 || string.IsNullOrWhiteSpace(cmbEstado.Text))
+            {
+                MessageBox.Show("Rellenar todos los espacios!!");
+                return; // Detiene el código por completo
+            }
             switch (MessageBox.Show("¿Confirmas la modificación del empleado?", "Confirmación", MessageBoxButtons.YesNo, MessageBoxIcon.Question))
             {
                 case DialogResult.Yes:
