@@ -77,6 +77,14 @@ namespace Proyecto
             {
                 query = "DELETE FROM Pagos WHERE PagoId = $id;";
             }
+            else if (tipo == "Ingreso")
+            {
+                query = "DELETE FROM Ingresos WHERE IngresoId = $id;";
+            }
+            else if (tipo == "Servicio")
+            {
+                query = "DELETE FROM Pagos WHERE PagoId = $id;";
+            }
             if (!string.IsNullOrEmpty(query))
             {
                 conn.ExecuteNonQuery(query, ("$id", id));

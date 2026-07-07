@@ -89,21 +89,21 @@
             // ingresosToolStripMenuItem
             // 
             this.ingresosToolStripMenuItem.Name = "ingresosToolStripMenuItem";
-            this.ingresosToolStripMenuItem.Size = new System.Drawing.Size(165, 22);
+            this.ingresosToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.ingresosToolStripMenuItem.Text = "Agregar pago";
             this.ingresosToolStripMenuItem.Click += new System.EventHandler(this.ingresosToolStripMenuItem_Click);
             // 
             // egresosToolStripMenuItem
             // 
             this.egresosToolStripMenuItem.Name = "egresosToolStripMenuItem";
-            this.egresosToolStripMenuItem.Size = new System.Drawing.Size(165, 22);
-            this.egresosToolStripMenuItem.Text = "Eliminar pago";
+            this.egresosToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.egresosToolStripMenuItem.Text = "Eliminar Registro";
             this.egresosToolStripMenuItem.Click += new System.EventHandler(this.egresosToolStripMenuItem_Click);
             // 
             // marcarComoCompletadoToolStripMenuItem
             // 
             this.marcarComoCompletadoToolStripMenuItem.Name = "marcarComoCompletadoToolStripMenuItem";
-            this.marcarComoCompletadoToolStripMenuItem.Size = new System.Drawing.Size(165, 22);
+            this.marcarComoCompletadoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.marcarComoCompletadoToolStripMenuItem.Text = "Agregar al carrito";
             this.marcarComoCompletadoToolStripMenuItem.Click += new System.EventHandler(this.marcarComoCompletadoToolStripMenuItem_Click);
             // 

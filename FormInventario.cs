@@ -25,12 +25,6 @@ namespace Proyecto
             forms.ShowDialog();
         }
 
-        private void btnInventarioCuenta_Click(object sender, EventArgs e)
-        {
-            FormInventarioCuenta forms = new FormInventarioCuenta(gestorempresa);
-            forms.ShowDialog();
-        }
-
         private void btnMenu_Click(object sender, EventArgs e)
         {
             this.Close();

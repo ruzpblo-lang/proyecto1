@@ -52,20 +52,19 @@
             // dgvCitas
             // 
             this.dgvCitas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvCitas.Location = new System.Drawing.Point(25, 185);
-            this.dgvCitas.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dgvCitas.Location = new System.Drawing.Point(19, 150);
             this.dgvCitas.Name = "dgvCitas";
             this.dgvCitas.RowHeadersWidth = 62;
-            this.dgvCitas.Size = new System.Drawing.Size(464, 265);
+            this.dgvCitas.Size = new System.Drawing.Size(348, 215);
             this.dgvCitas.TabIndex = 2;
             // 
             // btnInfo
             // 
             this.btnInfo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
-            this.btnInfo.Location = new System.Drawing.Point(25, 455);
-            this.btnInfo.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnInfo.Location = new System.Drawing.Point(19, 370);
+            this.btnInfo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnInfo.Name = "btnInfo";
-            this.btnInfo.Size = new System.Drawing.Size(75, 23);
+            this.btnInfo.Size = new System.Drawing.Size(56, 19);
             this.btnInfo.TabIndex = 4;
             this.btnInfo.Text = "Info";
             this.btnInfo.UseVisualStyleBackColor = false;
@@ -75,10 +74,10 @@
             // 
             this.btnMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
             this.btnMenu.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.btnMenu.Location = new System.Drawing.Point(414, 455);
-            this.btnMenu.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnMenu.Location = new System.Drawing.Point(310, 370);
+            this.btnMenu.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnMenu.Name = "btnMenu";
-            this.btnMenu.Size = new System.Drawing.Size(75, 23);
+            this.btnMenu.Size = new System.Drawing.Size(56, 19);
             this.btnMenu.TabIndex = 4;
             this.btnMenu.Text = "Menú";
             this.btnMenu.UseVisualStyleBackColor = false;
@@ -86,9 +85,10 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(233, 18);
+            this.label2.Location = new System.Drawing.Point(175, 15);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(68, 16);
+            this.label2.Size = new System.Drawing.Size(56, 13);
             this.label2.TabIndex = 1;
             this.label2.Text = "-- CITAS --";
             // 
@@ -96,19 +96,19 @@
             // 
             this.cmbFiltroTipo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbFiltroTipo.FormattingEnabled = true;
-            this.cmbFiltroTipo.Location = new System.Drawing.Point(107, 53);
-            this.cmbFiltroTipo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cmbFiltroTipo.Location = new System.Drawing.Point(80, 43);
             this.cmbFiltroTipo.Name = "cmbFiltroTipo";
-            this.cmbFiltroTipo.Size = new System.Drawing.Size(183, 24);
+            this.cmbFiltroTipo.Size = new System.Drawing.Size(138, 21);
             this.cmbFiltroTipo.TabIndex = 5;
             this.cmbFiltroTipo.SelectedIndexChanged += new System.EventHandler(this.ComboBox1_SelectedIndexChanged);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(34, 57);
+            this.label1.Location = new System.Drawing.Point(26, 46);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(65, 16);
+            this.label1.Size = new System.Drawing.Size(53, 13);
             this.label1.TabIndex = 1;
             this.label1.Text = "Asistente:";
             // 
@@ -125,48 +125,50 @@
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Controls.Add(this.btnInfo);
-            this.groupBox1.Location = new System.Drawing.Point(0, 30);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.groupBox1.Location = new System.Drawing.Point(0, 24);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.groupBox1.Size = new System.Drawing.Size(559, 494);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox1.Size = new System.Drawing.Size(419, 401);
             this.groupBox1.TabIndex = 6;
             this.groupBox1.TabStop = false;
             this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
             // dtpFechaFinal
             // 
-            this.dtpFechaFinal.Location = new System.Drawing.Point(107, 140);
-            this.dtpFechaFinal.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.dtpFechaFinal.Location = new System.Drawing.Point(80, 114);
+            this.dtpFechaFinal.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dtpFechaFinal.Name = "dtpFechaFinal";
-            this.dtpFechaFinal.Size = new System.Drawing.Size(183, 22);
+            this.dtpFechaFinal.Size = new System.Drawing.Size(138, 20);
             this.dtpFechaFinal.TabIndex = 6;
             this.dtpFechaFinal.ValueChanged += new System.EventHandler(this.dtpFechaFinal_ValueChanged);
             // 
             // dtpFechaInicio
             // 
-            this.dtpFechaInicio.Location = new System.Drawing.Point(107, 106);
-            this.dtpFechaInicio.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.dtpFechaInicio.Location = new System.Drawing.Point(80, 86);
+            this.dtpFechaInicio.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dtpFechaInicio.Name = "dtpFechaInicio";
-            this.dtpFechaInicio.Size = new System.Drawing.Size(183, 22);
+            this.dtpFechaInicio.Size = new System.Drawing.Size(138, 20);
             this.dtpFechaInicio.TabIndex = 6;
             this.dtpFechaInicio.ValueChanged += new System.EventHandler(this.dtpFechaInicio_ValueChanged);
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(21, 140);
+            this.label4.Location = new System.Drawing.Point(16, 114);
+            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(75, 16);
+            this.label4.Size = new System.Drawing.Size(62, 13);
             this.label4.TabIndex = 1;
             this.label4.Text = "Fecha final:\r\n";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(14, 106);
+            this.label3.Location = new System.Drawing.Point(10, 86);
+            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(82, 16);
+            this.label3.Size = new System.Drawing.Size(67, 13);
             this.label3.TabIndex = 1;
             this.label3.Text = "Fecha inicio:";
             // 
@@ -177,27 +179,27 @@
             this.citarEmpleadosToolStripMenuItem,
             this.citarClienteToolStripMenuItem});
             this.gerenciaToolStripMenuItem.Name = "gerenciaToolStripMenuItem";
-            this.gerenciaToolStripMenuItem.Size = new System.Drawing.Size(81, 24);
+            this.gerenciaToolStripMenuItem.Size = new System.Drawing.Size(65, 20);
             this.gerenciaToolStripMenuItem.Text = "Gerencia";
             // 
             // citarProvedoorToolStripMenuItem
             // 
             this.citarProvedoorToolStripMenuItem.Name = "citarProvedoorToolStripMenuItem";
-            this.citarProvedoorToolStripMenuItem.Size = new System.Drawing.Size(195, 26);
+            this.citarProvedoorToolStripMenuItem.Size = new System.Drawing.Size(155, 22);
             this.citarProvedoorToolStripMenuItem.Text = "citarProvedoor";
             this.citarProvedoorToolStripMenuItem.Click += new System.EventHandler(this.citarProvedoorToolStripMenuItem_Click);
             // 
             // citarEmpleadosToolStripMenuItem
             // 
             this.citarEmpleadosToolStripMenuItem.Name = "citarEmpleadosToolStripMenuItem";
-            this.citarEmpleadosToolStripMenuItem.Size = new System.Drawing.Size(195, 26);
+            this.citarEmpleadosToolStripMenuItem.Size = new System.Drawing.Size(155, 22);
             this.citarEmpleadosToolStripMenuItem.Text = "citarEmpleados";
             this.citarEmpleadosToolStripMenuItem.Click += new System.EventHandler(this.citarEmpleadosToolStripMenuItem_Click);
             // 
             // citarClienteToolStripMenuItem
             // 
             this.citarClienteToolStripMenuItem.Name = "citarClienteToolStripMenuItem";
-            this.citarClienteToolStripMenuItem.Size = new System.Drawing.Size(195, 26);
+            this.citarClienteToolStripMenuItem.Size = new System.Drawing.Size(155, 22);
             this.citarClienteToolStripMenuItem.Text = "citarCliente";
             this.citarClienteToolStripMenuItem.Click += new System.EventHandler(this.citarClienteToolStripMenuItem_Click);
             // 
@@ -208,21 +210,21 @@
             this.gerenciaToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Padding = new System.Windows.Forms.Padding(5, 2, 0, 2);
-            this.menuStrip1.Size = new System.Drawing.Size(704, 28);
+            this.menuStrip1.Padding = new System.Windows.Forms.Padding(4, 2, 0, 2);
+            this.menuStrip1.Size = new System.Drawing.Size(528, 24);
             this.menuStrip1.TabIndex = 1;
             this.menuStrip1.Text = "menuStrip1";
             // 
             // FormAgenda
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(704, 524);
+            this.ClientSize = new System.Drawing.Size(528, 426);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.menuStrip1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.MainMenuStrip = this.menuStrip1;
-            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "FormAgenda";
             this.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.Load += new System.EventHandler(this.FormAgenda_Load);

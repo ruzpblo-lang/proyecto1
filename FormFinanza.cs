@@ -180,12 +180,13 @@ namespace Proyecto
                 string tipo = dataGridView1.CurrentRow.Cells["Tipo"].Value.ToString();
                 string concepto = dataGridView1.CurrentRow.Cells["Concepto"].Value.ToString();
 
-                var resultado = MessageBox.Show($"Seguro que desea eliminar este pago de {tipo} '{concepto}'?",
+                var resultado = MessageBox.Show($"Seguro que desea eliminar este Registro de {tipo} '{concepto}'?",
                                                 "Confirmar Eliminación", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
                 if (resultado == DialogResult.Yes)
                 {
                     gestorbanco.eliminarpago(id, tipo);
-                    MessageBox.Show("Pago eliminado exitosamente", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    MessageBox.Show("Registro eliminado exitosamente", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    CargarPeriodosExistentes();
                     UpdateData();
                 }
             }
@@ -274,6 +275,9 @@ namespace Proyecto
         {
             Agregar_ingreso ventana = new Agregar_ingreso(this.gestorbanco);
             ventana.ShowDialog();
+
+            CargarPeriodosExistentes();
+            UpdateData();
         }
 
         private void button2_Click(object sender, EventArgs e)

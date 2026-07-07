@@ -30,15 +30,40 @@ namespace Proyecto
             serieingresos.ChartType = SeriesChartType.Column; //tipo de representacion columna,fila etc
             serieingresos.Color = Color.FromArgb(46, 204, 113);//Color de la columna
             serieingresos.IsValueShownAsLabel = true; //mostrar el valor de la columna flotante arriba
+            serieingresos.LabelFormat = "${0:N0}";
+            serieingresos.Font = new Font("Segoe UI", 9, FontStyle.Bold);
+            serieingresos["PointWidth"] = "0.6";
+
 
             Series serieEgresos = new Series("Egresos");
             serieEgresos.ChartType = SeriesChartType.Column;
             serieEgresos.Color = Color.FromArgb(231, 76, 60);
             serieEgresos.IsValueShownAsLabel = true;
+            serieEgresos.LabelFormat = "${0:N0}";
+            serieEgresos.Font = new Font("Segoe UI", 9, FontStyle.Bold);
+            serieEgresos["PointWidth"] = "0.6";
+
 
             chart1.Series.Add(serieingresos); //agregar las series a la grafica
             chart1.Series.Add(serieEgresos);
+            if(chart1.ChartAreas.Count > 0)
+            {
+                chart1.ChartAreas[0].AxisX.MajorGrid.LineColor = Color.FromArgb(225, 225, 225);
+                chart1.ChartAreas[0].AxisY.MajorGrid.LineColor = Color.FromArgb(225, 225, 225);
 
+                chart1.ChartAreas[0].AxisX.LabelStyle.Font = new Font("Segoe UI", 9);
+                chart1.ChartAreas[0].AxisY.LabelStyle.Font = new Font("Segoe UI", 9);
+
+                chart1.ChartAreas[0].BorderColor = Color.Transparent;
+            }
+            if(chart1.Legends.Count > 0)
+            {
+                chart1.Legends[0].Font = new Font("Segoe UI", 9);
+            }
+            chart1.Titles.Clear();
+            Title titulo = chart1.Titles.Add("Grafica Ingresos vs Egresos");
+            titulo.Font = new Font("Segoe UI", 15, FontStyle.Bold);
+            titulo.ForeColor = Color.FromArgb(44, 62, 80);
             List<Reportemensual> datosDB = gestorbanco.Obtenerdatosgraf();
         }
         private void Cargarañiosexistentes()
